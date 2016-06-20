@@ -1,0 +1,12 @@
+{
+  "vars": {
+    "@grid-columns": "12",
+    "@grid-gutter-width": "20px",
+    "@container-lg": "960px"
+  },
+  "css": [
+    "grid.less"
+  ],
+  "js": [],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=6b5c7c938d5566e48b70a99dfe801a7f"
+}

@@ -1,0 +1,18 @@
+// ========== Font-mixin ========== 
+
+.include-custom-font(@family: arial, @weight: normal, @style: normal){
+	@font-face{
+		font-family: "@{family}";
+		src:url('../fonts/@{family}/@{family}.ttf') format('truetype');
+		font-weight: @weight;
+		font-style: @style;
+	}
+}
+
+// ========== Font-add ========== 
+
+//.include-custom-font(RobotoRegular);
+.include-custom-font(NotoSans-Regular);
+.include-custom-font(NotoSans-Bold);
+.include-custom-font(Exo2-Medium);
+.include-custom-font(Exo2-Bold);

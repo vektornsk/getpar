@@ -1,0 +1,356 @@
+@import "base";
+
+#wrapper {
+	min-height: calc(~ "100vh - 300px" );
+}
+#footer {
+    padding-top: 40px;
+    height: 300px;
+}
+
+.container {
+    width: 960px !important;
+}
+
+section {
+    padding-top: 62px;
+}
+
+/*--head-text--*/
+
+.head-h2 {
+    position: relative;
+    
+    span {
+        font-family: @font-exo-bold;
+        color: @color-gray;
+        font-size: 30px;
+        display: inline-block;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        padding-right: 30px;
+        padding-bottom: 16px;
+    }
+	
+    
+    &:before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        border-bottom: 1px solid #bfbfbf;
+        left: 0;
+        top: 38%;
+        z-index: 0;
+    }
+}
+
+
+/*--HEADER--*/
+
+.header-wrap {
+    width: 100%;
+    background: @color-gray;
+}
+
+.header {
+	padding: 20px 0 20px;
+}
+
+
+/*--MENU--*/
+
+.nav {
+    border-top: 1px solid #fff;
+}
+
+.menu {
+    text-align: justify;
+    height: 56px;
+    
+    &:after {
+        content: " ";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+    }
+    
+    &__item {
+        display: inline-block;
+    }
+    
+    &__link {
+        font-family: @font-exo-medium;
+        color: #fff;
+        font-size: 18px;
+        display: block;
+        height: 56px;
+        line-height: 54px;
+        
+        &:hover {
+            background: @color-red;
+            position: relative;
+            margin: 0 -30px;
+            padding: 0 30px;
+            white-space: nowrap;
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+    }
+}
+
+/*--- Поиск запчастей---*/
+
+.search-parts-box {
+    .cf;
+    
+    &__left {
+        float: left;
+        width: 720px;
+    }
+    
+    &__right {
+        float: right;
+        width: 230px;
+    }
+}
+
+.search-parts-links {
+    .cf;
+    
+    &__item {
+        float: left;
+        height: 58px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    &__link {
+        width: 240px;
+        display: block;
+        height: 58px;
+        line-height: 56px;
+        background-color: @color-gray;
+        font-family: @font-exo-medium;
+        color: #fff;
+        font-size: 16px;
+        
+        &:hover {
+            background-color: @color-red;
+            transition: all .3s;
+        }
+    }
+}
+
+.car-brand {
+    .cf;
+    
+    &_bmw {
+        background: url('/images/brand/bmw.png') no-repeat 50% 50%;
+    }
+    &_toyota {
+        background: url('/images/brand/toyota.png') no-repeat 50% 50%;
+    }
+    &_audi {
+        background: url('/images/brand/audi.png') no-repeat 50% 50%;
+    }
+    &_ford {
+        background: url('/images/brand/ford.png') no-repeat 50% 50%;
+    }
+    &_subaru {
+        background: url('/images/brand/subaru.png') no-repeat 50% 50%;
+    }
+    &_mitsubishi {
+        background: url('/images/brand/mitsubishi.png') no-repeat 50% 50%;
+    }
+    &_honda {
+        background: url('/images/brand/honda.png') no-repeat 50% 50%;
+    }
+    &_cadillac {
+        background: url('/images/brand/cadillac.png') no-repeat 50% 50%;
+    }
+    &_nissan {
+        background: url('/images/brand/nissan.png') no-repeat 50% 50%;
+    }
+    
+    &__item {
+        width: 240px;
+        height: 220px;
+        float: left;
+        position: relative;
+    }
+    &__link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        
+        &:hover {
+            background: @color-red;
+            transition: background .3s;
+        }
+    }
+    &__name {
+        font-family: @font-exo-medium;
+        font-size: 18px;
+        color: #fff;
+        line-height: 215px;
+    }
+}
+
+/*--- Сервисные услуги ---*/
+
+.services {
+    
+    &__item {
+        width: 220px;
+        height: 220px;
+        background-color: @color-gray;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        margin-right: 16px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        &:hover {
+            .services__img {
+                width: 400px;
+                transition: all 0.3s;
+                
+            }
+        }
+    }    
+    &__link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }    
+    &__img {
+        height: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s;
+        
+        &_car {
+            width: 180px;
+        }
+        &_wheel {
+            width: 119px;
+        }
+        &_diagn {
+            width: 89px;
+        }
+        &_wash {
+            width: 80px;
+        }
+    }
+    &__name {
+        font-family: @font-exo-medium;
+        color: #fff;
+        font-size: 18px;
+        line-height: 220px;
+        position: relative;
+    }
+}
+
+
+/*--- Новости на главной ---*/
+
+.news-line {
+    
+    &__item {
+        width: 220px;
+        position: relative;
+        overflow: hidden;
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        margin-right: 16px;
+        cursor: pointer;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        &:hover {
+            .news-line__name {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__img {
+        margin-bottom: 15px;
+    }
+    &__name {
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        line-height: 24px;
+        color: @color-gray;
+        padding: 0 20px;
+        display: inline-block;
+    }
+}
+
+
+/*--- FOOTER ---*/
+
+.footer-wrap {
+    background: @color-gray;
+    height: 260px;
+}
+.footer {
+    .cf;
+    padding-top: 26px;
+    
+    &__left {
+        float: left;
+        width: 162px;
+       
+    }
+    
+    &__right {
+        .cf;
+        float: left;
+        border-left: 1px solid @color-red;
+    }
+}
+
+.footer-link {
+    float: left;
+    margin-left: 75px;
+    
+    &_margin {
+        margin-left: 106px;
+    }
+    
+    &__item {
+        
+    }
+    &__link {
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        color: #fff; 
+        margin-bottom: 18px;
+        display: block;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.copyright {
+    font-family: @font-notosans-reg;
+    font-size: 14px;
+    color: #fff;    
+}
+
+// ========== @MEDIA ========== 
+@import "media";

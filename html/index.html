@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- grid -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize-4.1.1.css">
+	<!-- style -->
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+	<!--[if lt IE 9]>
+    	<script src="libs/html5shiv.js"></script>
+		<script src="libs/respond-1.4.2.min.js"></script>
+		<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+	<![endif]-->
+	
+	<!-- jquery -->
+	<script src="libs/jquery-2.1.3.min.js"></script>
+	
+	<!-- input -->	
+	<script>
+		$(function(){
+			$("#header").load("template/header.html");
+			$("#footer").load("template/footer.html");
+            $("#search-parts").load("template/search-parts.html");
+            $("#services").load("template/services.html");
+            $("#news-line").load("template/news-line.html");
+            $("#popular-parts").load("template/popular-parts.html");
+            
+		});
+	</script>
+	
+	
+	
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		
+		<header id="header">
+			<!-- input header.html -->
+		</header>
+		
+		<section id="search-parts">
+            <!-- input search-parts.html -->
+		</section>
+		
+        <section id="services">
+            <!-- input services.html -->
+        </section>
+		
+        <section id="news-line">
+            <!-- input news-line.html -->
+        </section>
+		
+        <section id="popular-parts">
+            <!-- input popular-parts.html -->
+        </section>
+        
+	</div><!-- end wrapper -->
+	
+	
+	<footer id="footer">
+		<!-- input footer -->
+	</footer>	
+	
+	
+	<!-- javascript -->
+	<script src="js/main.js"></script>
+	
+</body>
+
+</html>
