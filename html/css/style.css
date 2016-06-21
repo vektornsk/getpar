@@ -212,12 +212,6 @@ section {
   position: relative;
   /*hidden*/
 }
-.drop:hover .drop-hidden {
-  display: block;
-}
-.drop:hover .drop__arrow_img {
-  fill: #fff;
-}
 .drop__name {
   font-family: "Exo2-Medium", sans-serif;
   font-size: 14px;
@@ -287,6 +281,14 @@ section {
 .search-line {
   display: inline-block;
   margin-left: 28px;
+  position: relative;
+}
+.search-line__img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  left: 5px;
 }
 .search-line__input {
   width: 378px;
@@ -294,6 +296,39 @@ section {
   background: #1c1d1d;
   border: 1px solid #fff;
   color: #fff;
+  padding-left: 35px;
+}
+.search-line__input::-webkit-input-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.search-line__input::-moz-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.search-line__input:-moz-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.search-line__input:-ms-input-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.search-line__input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.search-line__input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.search-line__input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.search-line__input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 /*--- Логин ---*/
 .login {
@@ -306,9 +341,6 @@ section {
   margin-right: 16px;
   position: relative;
   /*скрытый логин*/
-}
-.login:hover .login-hiddin {
-  display: block;
 }
 .login__icon {
   width: 30px;
