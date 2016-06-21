@@ -1,11 +1,10 @@
 @import "base";
 
 #wrapper {
-	min-height: calc(~ "100vh - 300px" );
+	min-height: calc(~ "100vh - 260px" );
 }
 #footer {
-    padding-top: 40px;
-    height: 300px;
+    height: 260px;
 }
 
 .container {
@@ -55,6 +54,274 @@ section {
 
 .header {
 	padding: 20px 0 20px;
+    .cf;
+    
+    &__inner {
+        float: left;
+        margin-left: 30px;
+        //background: #bfbfbf;
+        
+        &__top {
+            margin-bottom: 6px;
+        }
+        
+        &_right {
+            float: right;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+.logo {
+    float: left;
+}
+
+/*--- Выбор---*/
+.drop {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    
+    &:hover {
+        .drop-hidden {
+            display: block;
+        }
+        .drop__arrow_img {
+            fill: #fff;            
+        }
+    }
+    
+    &__name {
+        font-family: @font-exo-medium;
+        font-size: 14px;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    &__arrow {
+        display: inline-block;
+        vertical-align: middle;
+        height: 8px;
+        width: 12px;
+        margin-left: 10px;
+        position: relative;
+        top: -1px;
+        z-index: 6;
+    }
+    
+    /*hidden*/
+    
+    &-hidden {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        background: @color-red;
+        
+        padding-left: 20px;
+        padding-right: 30px;
+        margin-left: -20px;
+        margin-top: -7px;
+        display: none;
+        padding-top: 1px;
+        cursor: auto;
+        
+        &__item {
+            padding-top: 7px;
+            color: #fff;
+            font-size: 14px;
+            font-family: @font-exo-medium;
+            cursor: pointer;
+            white-space: nowrap;
+            
+            &:last-child {
+                padding-bottom: 10px;
+            }
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/*--- Телефон - шапка ---*/
+
+.tel {
+    display: inline-block;
+    margin-left: 110px;
+    
+    &__img {
+        width: 11px;
+        height: 16px;
+        vertical-align: top;
+        margin-right: 5px;
+        
+        &_size {
+            width: 16px;
+            margin-left: 40px;
+        }
+    }
+    
+    &__number {
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        color: #fff;
+        vertical-align: top;
+    }
+}
+
+/*--- Поиск ---*/
+.search-line {
+    display: inline-block;
+    margin-left: 28px;
+    
+    
+    &__input {
+        width: 378px;
+        height: 30px;
+        background: @color-gray;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    
+}
+
+/*--- Логин ---*/
+
+.login {
+    width: 60px;
+    height: 57px;
+    background: @color-red;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 16px;
+    position: relative;
+    
+    &:hover {
+        .login-hiddin {
+            display: block;
+        }
+    }
+    
+    &__icon {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 12px auto 0;
+    }
+    
+    /*скрытый логин*/
+    
+    &-hiddin {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 220px;
+        height: 114px;
+        background: @color-red;
+        z-index: 1;
+        padding: 10px;
+        text-align: center;
+        cursor: auto;
+        display: none;
+        
+        &__img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            background: @color-gray;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        &__icon {
+            width: 100%;
+            height: auto;            
+        }
+        
+        &__inner {
+            border-bottom: 1px solid #fff;
+            text-align: left;
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+        }
+        
+        &__text {
+            font-family: @font-notosans-reg;
+            font-size: 12px;
+            line-height: 18px;
+            color: #fff;
+        }
+        
+        &__link {
+            font-family: @font-notosans-reg;
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+            
+        }
+    }
+    
+}
+
+
+/*--- корзина ---*/
+
+.cart {
+    width: 140px;
+    height: 57px;
+    background: @color-red;
+    overflow: hidden;
+    padding-top: 8px;
+    padding-left: 12px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    
+    &:hover {
+        .cart__text { text-decoration: underline; }
+        .cart__num { text-decoration: underline; }
+    }
+    
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__icon {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 7px;
+    }
+    
+    &__inner {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: @font-notosans-reg;
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    &__text {}
+    
+    &__num {
+        display: block;
+    }
 }
 
 
@@ -218,7 +485,7 @@ section {
         
         &:hover {
             .services__img {
-                width: 400px;
+                width: 250px;
                 transition: all 0.3s;
                 
             }
@@ -299,6 +566,206 @@ section {
 }
 
 
+/*--- Популярные запчасти табы ---*/
+.popular-parts-tabs {
+    
+    &__content {
+        display: none; 
+        
+        &.active {
+            display: block;
+        }
+    }
+    
+    &__caption {
+        .cf;
+        height: 58px;        
+        background-color: @color-gray;
+    }
+    
+    &__item {
+        display: block;
+        color: #fff;
+        height: 58px;
+        padding-top: 18px;
+        font-family: @font-exo-medium;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        width: 25%;
+        float: left;
+                
+        &:hover {
+            background-color: @color-red;
+            transition: background .3s;
+        }
+        
+        &.active {
+            background-color: @color-red;
+        }
+    } 
+}
+
+/*--- Популярные запчасти ---*/
+
+.popular-parts {
+    .cf;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    &__item {
+        //display: block;
+        //float: left;
+        width: 188px;
+        min-height: 188px;
+        position: relative;
+        overflow: hidden;
+        //border: 1px solid #222;
+        overflow: hidden;
+        
+        &:hover {
+            .popular-parts__price { text-decoration: underline; }
+            .popular-parts__name { text-decoration: underline; }
+        }
+    }
+    
+    &__link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__img {
+        display: block;
+        height: 190px;
+        width: auto;
+        //position: relative;
+        //left: 50%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+    
+    &__name {
+        display: block;
+        text-align: center;
+        font-family: @font-notosans-reg;
+        color: @color-gray;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 10px 10px 0;
+    }
+
+    &__price {
+        display: block;
+        text-align: center;
+        padding: 10px 0 20px 0;
+        font-family: @font-exo-bold;
+        color: @color-gray;
+        font-size: 18px;
+    }
+}
+
+
+/*--- Форма index ---*/
+
+.form-call {
+    .cf;
+    padding-bottom: 83px;
+    
+    &__left {
+        float: left;
+        width: 460px;
+    }
+    
+    &__right {
+        float: left;
+        width: 480px;
+    }
+    
+    &__name {
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        color: @color-gray;
+        margin-bottom: 15px;
+    }
+    
+    &__inner {
+        float: left;
+        margin-left: 20px;
+    }
+    
+    /* части формы */
+    
+    &__text {
+        width: 100%;
+        height: 205px;
+        border: 2px solid @color-gray;
+        padding: 10px;
+        resize: none;
+        margin-bottom: 35px;
+        
+        &::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+        &::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+        &:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+        &:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+
+        &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+        
+        &.error {
+            border-color: @color-red;
+        }
+    }
+    
+    &__btn-submit {
+        display: block;
+        float: right;
+        width: 220px;
+        height: 58px;
+        border: none;
+        background-color: #1c1d1d;
+        color: #fff;
+        font-family: @font-exo-medium;
+        font-size: 18px;
+        
+        &:hover {
+            background-color: @color-red;
+            text-decoration: underline;
+            transition: all 0.3s;
+        }
+    }
+    
+    &__input {
+        border: 2px solid @color-gray;
+        padding: 10px;
+        width: 220px;
+        height: 35px;
+        margin-bottom: 28px;
+        
+        &::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+        &::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+        &:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+        &:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+        
+        &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+        
+        &.error {
+            border-color: @color-red;
+        }
+    }
+    
+}
+
+
 /*--- FOOTER ---*/
 
 .footer-wrap {
@@ -306,9 +773,9 @@ section {
     height: 260px;
 }
 .footer {
-    .cf;
     padding-top: 26px;
-    
+    .cf;
+        
     &__left {
         float: left;
         width: 162px;
@@ -318,7 +785,7 @@ section {
     &__right {
         .cf;
         float: left;
-        border-left: 1px solid @color-red;
+        border-left: 2px solid @color-red;
     }
 }
 
@@ -338,7 +805,7 @@ section {
         font-size: 14px;
         color: #fff; 
         margin-bottom: 18px;
-        display: block;
+        display: inline-block;
         
         &:hover {
             text-decoration: underline;
@@ -351,6 +818,8 @@ section {
     font-size: 14px;
     color: #fff;    
 }
+
+/*---------------------------------------------- END_INDEX--------------------------------------------------*/
 
 // ========== @MEDIA ========== 
 @import "media";
