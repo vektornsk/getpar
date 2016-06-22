@@ -1,6 +1,6 @@
 setTimeout( function() {
     
-	alert(111);
+	alert('go-js');
 /*--- tabs index---*/    
     
     $('ul.popular-parts-tabs__caption').on('click', 'li:not(.active)', function() {
@@ -9,35 +9,60 @@ setTimeout( function() {
             .closest('div.popular-parts-tabs').find('div.popular-parts-tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     });
 	
-/*--- drop head ---*/
-	var flag = 0;
+/*--- login open ---*/
+	var openLogin = 0;
 	
 	$('.login').on('click', function(e){
-		if (flag === 0) {
+        if (openLogin === 0) {
 			$('.login-hiddin').fadeIn(300);
-			flag = 1;
+            openLogin = 1;
 		} else {
 			$('.login-hiddin').fadeOut(300);
-			flag = 0;
+            openLogin = 0;
 		}
 		e.stopPropagation();
 	});
-	
+
+/*--- login close ---*/
 	$(document).on('click', function(e) {
-		if ($(e.target).closest('.login').length) return;
+		if ($(e.target).closest('.login').length) {
+            return;
+        } 
 		$('.login-hiddin').fadeOut(300);
-		flag = 0;
+        openLogin = 0;
 		e.stopPropagation();
 	});
 	
 	
-
+/*--- Open drop ---*/
+    
+    var openDrop = 0;
+    
 	$('.drop').on('click', function(e){
-		var $thisObj = $(this);
-		$thisObj.find('ul').fadeIn(300);
-
+        
+        var $thisObj = $(this).find('ul');
+        
+        if(openDrop === 0) { 
+            $thisObj.fadeIn(300);
+            openDrop = 1;
+        } else {
+            $thisObj.fadeOut(300);
+        }		
+        e.stopPropagation();
 	});
+    
+/*--- drop close ---*/
+    $(document).on('click', function(e) {
+        if ($(e.target).closest('.drop').length) {
+            return;
+        } 
+        $('.drop').find('ul').fadeOut(300);
+        openDrop = 0;
+        e.stopPropagation();
+    });    
 	
+    
+    
 	$('.drop-hidden__item').on('click', function(e){
 		
 		if($('.nsk').is(e.target)){

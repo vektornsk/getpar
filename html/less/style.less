@@ -11,18 +11,30 @@
     width: 960px !important;
 }
 
-section {
+.offset {
     padding-top: 62px;
+    
+    &_min {
+        padding-top: 25px;
+    }
 }
 
 /*--head-text--*/
 
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
 .head-h2 {
     position: relative;
+    color: @color-gray;
     
     span {
         font-family: @font-exo-bold;
-        color: @color-gray;
         font-size: 30px;
         display: inline-block;
         background-color: #fff;
@@ -41,6 +53,10 @@ section {
         left: 0;
         top: 38%;
         z-index: 0;
+    }
+    
+    &_red {
+        color: @color-red;
     }
 }
 
@@ -179,7 +195,7 @@ section {
 		width: 20px;
 		height: 20px;
 		top: 5px;
-		left: 5px;
+		left: 10px;
 	}
 	
     &__input {
@@ -188,7 +204,7 @@ section {
         background: @color-gray;
         border: 1px solid #fff;
         color: #fff;
-		padding-left: 35px;
+		padding-left: 40px;
 		&::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
 		&::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
 		&:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
@@ -622,6 +638,7 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
     
     &__item {
         //display: block;
@@ -629,9 +646,9 @@ section {
         width: 188px;
         min-height: 188px;
         position: relative;
-        overflow: hidden;
         //border: 1px solid #222;
-        overflow: hidden;
+        //overflow: hidden;
+        margin-bottom: 80px;
         
         &:hover {
             .popular-parts__price { text-decoration: underline; }
@@ -647,6 +664,12 @@ section {
         left: 0;
         z-index: 1;
     }
+    
+    &__box-img {
+        overflow: hidden;
+        width: 188px;
+    }
+    
     &__img {
         display: block;
         height: 190px;
@@ -671,10 +694,32 @@ section {
     &__price {
         display: block;
         text-align: center;
-        padding: 10px 0 20px 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-family: @font-exo-bold;
         color: @color-gray;
         font-size: 18px;
+    }
+    
+    &__add-cart {
+        width: 168px;
+        height: 35px;
+        background: @color-red;
+        display: block;
+        position: absolute;
+        bottom: -35px;
+        margin-left: 10px;
+        z-index: 2;
+        text-align: center;
+        font-family: @font-notosans-reg;
+        color: #fff;
+        font-size: 14px;
+        line-height: 35px;
+            
+        &:hover {
+            text-decoration: underline;
+        }
+        
     }
 }
 
@@ -828,7 +873,82 @@ section {
     color: #fff;    
 }
 
+/*--- Хлебные крошки ---*/
+
+.bread-crumbs {
+    padding-top: 35px;
+    
+    &__item {
+        display: inline-block;
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        color: @color-gray;
+        vertical-align: middle;
+    }
+    
+    &__link {
+        font-family: @font-notosans-bold;
+        font-size: 14px;
+        color: @color-gray;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+        
+        &:after {
+            content: ">";
+            display: inline-block;
+            vertical-align: top;
+            color: @color-red;
+            padding-left: 5px;
+            padding-right: 2px;
+            
+        }
+    }
+    
+}
+
+/*--- Box-Link ---*/
+
+.box-link {
+    .cf;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    
+    &__item {
+        display: block;
+        float: left;
+        width: 300px;
+        height: 58px;
+        background: @color-gray;
+        text-align: center;
+        line-height: 58px;
+        font-family: @font-exo-medium;
+        color: #fff;
+        font-size: 16px;
+        
+        &:hover {
+            background: @color-red;
+            transition: all .3s;
+        }
+        
+        &.active {
+            background: @color-red;
+        }
+        
+    }
+    
+    
+}
+
+
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/
+
+/*--- Выбор производителя ---*/
+
+@import "style-brand-choose";
+
+
 
 // ========== @MEDIA ========== 
 @import "media";
