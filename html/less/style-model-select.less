@@ -1,0 +1,55 @@
+.model {
+    .cf;
+    //border: 1px solid green;
+    padding-top: 90px;
+
+    &__item {
+        display: block;
+        float: left;
+        width: 188px;
+        height: 210px;
+        position: relative;
+        text-align: center;
+        margin: 0 0 65px 0;
+        //border: 1px solid blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__inner {
+        width: 188px;
+        height: 95px;        
+        position: relative;
+        //border: 1px solid red;
+    }
+
+    &__link {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    &__name {
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        color: @color-gray;
+        display: block;
+        padding-top: 60px;
+    }
+}

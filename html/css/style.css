@@ -1059,6 +1059,14 @@ h2 {
 .box-link__item.active {
   background: #d81218;
 }
+/*--- Text search results ---*/
+.search-results {
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1c1d1d;
+  padding-bottom: 40px;
+}
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/
 /*--- Выбор производителя ---*/
 .brand {
@@ -1112,4 +1120,58 @@ h2 {
   color: #1c1d1d;
   display: block;
   padding-top: 20px;
+}
+/*--- Выбор модели ---*/
+.model {
+  zoom: 1;
+  padding-top: 90px;
+}
+.model:before,
+.model:after {
+  content: "";
+  display: table;
+}
+.model:after {
+  clear: both;
+}
+.model__item {
+  display: block;
+  float: left;
+  width: 188px;
+  height: 210px;
+  position: relative;
+  text-align: center;
+  margin: 0 0 65px 0;
+}
+.model__item:hover {
+  text-decoration: underline;
+}
+.model__inner {
+  width: 188px;
+  height: 95px;
+  position: relative;
+}
+.model__link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.model__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.model__name {
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  color: #1c1d1d;
+  display: block;
+  padding-top: 60px;
 }
