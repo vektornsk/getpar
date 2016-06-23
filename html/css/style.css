@@ -1061,3 +1061,55 @@ h2 {
 }
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/
 /*--- Выбор производителя ---*/
+.brand {
+  zoom: 1;
+}
+.brand:before,
+.brand:after {
+  content: "";
+  display: table;
+}
+.brand:after {
+  clear: both;
+}
+.brand__item {
+  display: block;
+  float: left;
+  width: 105px;
+  height: 130px;
+  position: relative;
+  text-align: center;
+  margin: 25px 40px 60px 0;
+}
+.brand__item:hover {
+  text-decoration: underline;
+}
+.brand__inner {
+  width: 105px;
+  height: 70px;
+  position: relative;
+}
+.brand__link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.brand__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.brand__name {
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  color: #1c1d1d;
+  display: block;
+  padding-top: 20px;
+}

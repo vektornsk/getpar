@@ -1,0 +1,54 @@
+.brand {
+    .cf;
+    
+    &__item {
+        display: block;
+        float: left;
+        width: 105px;
+        height: 130px;
+        position: relative;
+        text-align: center;
+        margin: 25px 40px 60px 0;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+        
+       
+    }
+    
+    &__inner {
+        width: 105px;
+        height: 70px;        
+        position: relative;
+    }
+    
+    &__link {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        
+        
+    }
+    
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    &__name {
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        color: @color-gray;
+        display: block;
+        padding-top: 20px;
+    }
+}
