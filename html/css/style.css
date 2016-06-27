@@ -999,6 +999,10 @@ h2 {
   font-size: 14px;
   color: #fff;
 }
+.footer-logo-link {
+  float: right;
+  margin-right: 67px;
+}
 /*--- Хлебные крошки ---*/
 .bread-crumbs {
   padding-top: 35px;
