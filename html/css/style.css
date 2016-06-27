@@ -505,6 +505,7 @@ h2 {
 .search-parts-box__right {
   float: right;
   width: 230px;
+  position: relative;
 }
 .search-parts-links {
   zoom: 1;
@@ -554,6 +555,8 @@ h2 {
   vertical-align: text-top;
   margin-right: 5px;
   margin-top: 4px;
+  width: 17px;
+  height: 13px;
 }
 /*--- Баннер, статистика ---*/
 .statistics {
@@ -563,6 +566,7 @@ h2 {
   text-align: center;
   color: #fff;
   padding-top: 30px;
+  margin-top: 61px;
 }
 .statistics__num {
   display: block;
@@ -574,6 +578,38 @@ h2 {
   font-family: "NotoSans-Regular", sans-serif;
   font-size: 14px;
   margin-bottom: 20px;
+}
+/*--- Быстрая заявка ---*/
+.zajavka {
+  text-align: center;
+  position: absolute;
+  top: -55px;
+  background: #fff;
+}
+.zajavka__text {
+  font-family: "Exo2-Medium", sans-serif;
+  font-size: 16px;
+  color: #1c1d1d;
+  display: block;
+  margin-bottom: 5px;
+}
+.zajavka-btn {
+  display: block;
+  background: #d81218;
+  width: 230px;
+  height: 58px;
+  line-height: 58px;
+}
+.zajavka-btn:hover {
+  text-decoration: underline;
+}
+.zajavka-btn__name {
+  color: #fff;
+}
+.zajavka-btn__icon {
+  width: 11px;
+  height: 16px;
+  margin-right: 6px;
 }
 .car-brand {
   zoom: 1;
