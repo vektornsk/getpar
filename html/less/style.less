@@ -369,7 +369,7 @@ h2 {
     
     &__item {
         display: inline-block;
-    }
+	}
     
     &__link {
         font-family: @font-exo-medium;
@@ -378,7 +378,7 @@ h2 {
         display: block;
         height: 56px;
         //line-height: 54px;
-		padding-top: 14px;
+		//padding-top: 14px;
         
         &:hover {
             background: @color-red;
@@ -391,6 +391,10 @@ h2 {
             transition: background 0.3s;
         }
     }
+	&__text {
+		position: relative;
+		top: 14px;
+	}
 }
 
 /*--- Поиск запчастей---*/

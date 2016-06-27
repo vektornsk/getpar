@@ -474,7 +474,6 @@ h2 {
   font-size: 18px;
   display: block;
   height: 56px;
-  padding-top: 14px;
 }
 .menu__link:hover {
   background: #d81218;
@@ -485,6 +484,10 @@ h2 {
   color: #fff;
   text-decoration: none;
   transition: background 0.3s;
+}
+.menu__text {
+  position: relative;
+  top: 14px;
 }
 /*--- Поиск запчастей---*/
 .search-parts-box {
