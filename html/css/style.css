@@ -521,7 +521,6 @@ h2 {
   float: left;
   height: 58px;
   text-align: center;
-  margin-bottom: 10px;
 }
 .search-parts-links__link {
   width: 240px;
@@ -536,6 +535,25 @@ h2 {
 .search-parts-links__link:hover {
   background-color: #d81218;
   transition: all .3s;
+}
+.search-parts-links__link.active {
+  background-color: #d81218;
+}
+.search-parts-links__link_min {
+  width: 235px;
+  height: 48px;
+  line-height: 48px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: #d81218;
+}
+.search-parts-links__link_min:hover {
+  text-decoration: underline;
+}
+.search-parts-links__icon {
+  vertical-align: text-top;
+  margin-right: 5px;
+  margin-top: 4px;
 }
 .car-brand {
   zoom: 1;

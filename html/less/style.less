@@ -415,7 +415,6 @@ h2 {
         float: left;
         height: 58px;
         text-align: center;
-        margin-bottom: 10px;
     }
     
     &__link {
@@ -432,6 +431,30 @@ h2 {
             background-color: @color-red;
             transition: all .3s;
         }
+        
+        &.active {
+            background-color: @color-red;
+        }
+        
+        &_min {
+            width: 235px;
+            height: 48px;
+            line-height: 48px;
+            margin-left: 5px;
+            margin-top: 5px;
+            background-color: @color-red;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
+    
+    &__icon {
+        vertical-align: text-top;
+        margin-right: 5px;
+        margin-top: 4px;
     }
 }
 
