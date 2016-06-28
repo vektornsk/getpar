@@ -563,7 +563,7 @@ h2 {
 }
 /*--- Баннер, статистика ---*/
 .banner {
-  height: 434px;
+  height: 439px;
   overflow: hidden;
 }
 .statistics {
@@ -596,7 +596,7 @@ h2 {
   font-size: 16px;
   color: #1c1d1d;
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 .zajavka-btn {
   display: block;
