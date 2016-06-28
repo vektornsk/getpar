@@ -1343,3 +1343,59 @@ h2 {
   margin-right: 10px;
 }
 /*--- Информация о продукте ---*/
+.info-product {
+  zoom: 1;
+  padding-top: 40px;
+}
+.info-product:before,
+.info-product:after {
+  content: "";
+  display: table;
+}
+.info-product:after {
+  clear: both;
+}
+.info-product__left {
+  width: 380px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.info-product__right {
+  width: 460px;
+  float: right;
+  overflow: hidden;
+  position: relative;
+}
+.info-product__head {
+  font-family: "NotoSans-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.info-product-list__item {
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.info-product-list__item_icon {
+  padding-left: 20px;
+  position: relative;
+}
+.info-product-list__item_icon:before {
+  content: '\2014';
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+}
+.product-info {
+  display: inline-block;
+  vertical-align: top;
+  width: 237px;
+}
+.product-delivery {
+  display: inline-block;
+  vertical-align: top;
+  width: 137px;
+}
