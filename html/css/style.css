@@ -1440,3 +1440,113 @@ h2 {
   width: 137px;
 }
 /*--- Контакты ---*/
+.contacts__item {
+  display: inline-block;
+  margin-right: 54px;
+}
+.contacts__icon {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 7px;
+}
+.contacts__icon_loc {
+  width: 11px;
+  height: 16px;
+}
+.contacts__icon_tel {
+  width: 11px;
+  height: 16px;
+}
+.contacts__icon_eml {
+  width: 16px;
+  height: 13px;
+  margin-top: 3px;
+}
+.contacts__text {
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1c1d1d;
+}
+.contacts__link {
+  text-decoration: underline;
+  color: #1c1d1d;
+}
+.contacts-more {
+  padding-top: 45px;
+}
+.manager {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 90px;
+}
+.manager__head {
+  font-family: "NotoSans-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.manager-list__item {
+  display: inline-block;
+}
+.manager-list__item_email {
+  margin-right: 44px;
+  position: relative;
+  padding-left: 26px;
+}
+.manager-list__item_email:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 13px;
+  background: url(/images/icons/contacts/mail.svg) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.manager-list__item_skype {
+  position: relative;
+  padding-left: 26px;
+}
+.manager-list__item_skype:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(/images/icons/contacts/skype.svg) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.manager-list__link {
+  display: block;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1c1d1d;
+}
+.manager-list__link_email {
+  text-decoration: underline;
+}
+.manager-list__link_skype {
+  font-family: "NotoSans-Bold", sans-serif;
+}
+.manager-list__link_skype:hover {
+  text-decoration: underline;
+}
+.rezhim {
+  display: inline-block;
+  vertical-align: top;
+}
+.rezhim__head {
+  font-family: "NotoSans-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.rezhim-list__item {
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1c1d1d;
+}

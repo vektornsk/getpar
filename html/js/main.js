@@ -84,17 +84,23 @@ setTimeout( function() {
 
     $('.small').on('click', function(e){
         e.preventDefault();
+        $(this).parent().attr('rel', '');
         var bi = b.attr('src');
         var si = $(this).attr('src');
         b.attr('src', si);
+        b.parent().attr('href', si);
         $(this).attr('src', bi);
     });
-
-
-
-    $('.product-foto__link').on('click', function(e){
-        e.preventDefault();
+    b.on('click', function(){
+        $('.small').parent().each(function(){
+            $(this).attr('rel', 'lightbox[group]');
+        });
     });
+    
+    $('.big').imagezoomsl({
+        magnifiersize: [700,500],
+    });
+
 
     
 }, 3000);

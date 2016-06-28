@@ -1,0 +1,137 @@
+.contacts {
+
+    &__item {
+        display: inline-block;
+        margin-right: 54px; 
+    }
+    
+    &__icon {
+        display: inline-block;
+        vertical-align: text-top;
+        margin-right: 7px;
+
+        &_loc {
+            width: 11px;
+            height: 16px;
+        }
+        &_tel {
+            width: 11px;
+            height: 16px;
+        }
+        &_eml {
+            width: 16px;
+            height: 13px;
+            margin-top: 3px;
+        }
+    }
+    
+    &__text {
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        line-height: 24px;
+        color: @color-gray;
+    }
+    
+    &__link {
+        text-decoration: underline;
+        color: @color-gray;
+    }
+}
+
+.contacts-more {
+    padding-top: 45px;
+}
+
+.manager {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 90px;
+    &__head {
+        font-family: @font-notosans-bold;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+.manager-list {
+    
+    &__item {
+        display: inline-block;
+        
+        &_email {            
+            margin-right: 44px;
+            position: relative;
+            padding-left: 26px;
+            
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 13px;
+                background: url(/images/icons/contacts/mail.svg) no-repeat;
+                position: absolute;
+                left: 0;
+                top: 4px;
+            }
+        }
+        
+        &_skype {
+            position: relative;
+            padding-left: 26px;
+            
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background: url(/images/icons/contacts/skype.svg) no-repeat;
+                position: absolute;
+                left: 0;
+                top: 4px;
+            }
+        }
+    }
+    
+    &__link {
+        display: block;
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        line-height: 24px;
+        color: @color-gray;
+        
+        &_email {
+            text-decoration: underline;
+        }
+        
+        &_skype {
+            font-family: @font-notosans-bold;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
+
+.rezhim {
+    display: inline-block;
+    vertical-align: top;
+    
+    &__head {
+        font-family: @font-notosans-bold;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+.rezhim-list {
+    
+    &__item {
+        font-family: @font-notosans-reg;
+        font-size: 14px;
+        line-height: 24px;
+        color: @color-gray;
+    }
+}
