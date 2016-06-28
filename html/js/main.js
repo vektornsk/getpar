@@ -77,6 +77,24 @@ setTimeout( function() {
 			
 	});
 	
+/*--- galerea ---*/
+    
+    var b = $('.big');
+    var s = $(this);
+
+    $('.small').on('click', function(e){
+        e.preventDefault();
+        var bi = b.attr('src');
+        var si = $(this).attr('src');
+        b.attr('src', si);
+        $(this).attr('src', bi);
+    });
 
 
+
+    $('.product-foto__link').on('click', function(e){
+        e.preventDefault();
+    });
+
+    
 }, 3000);
