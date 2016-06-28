@@ -26,18 +26,16 @@
 
         <!-- jquery -->
         <script src="libs/jquery-2.1.3.min.js"></script>
-            
-            
+
         <!-- input -->	
         <script>
             $(function(){
                 $("#header").load("template/header.html");
                 $("#footer").load("template/footer.html");
-                $("#search-parts").load("template/search-parts.html");
-                $("#services").load("template/services.html");
-                $("#news-line").load("template/news-line.html");
-                $("#popular-parts").load("template/popular-parts.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
                 $("#form-call").load("template/form-call.html");
+                $("#product-card").load("template/product.html");
+                $("#info-product").load("template/info-product.html");
             });
         </script>
 
@@ -46,28 +44,28 @@
     </head>
 
     <body>
-
         <div id="wrapper">
-            
+
             <header id="header">
                 <!-- input header.html -->
             </header>
 
-            <div class="container">
-                
-                <ul style="margin:100px;">
-                    <li style="margin-top:10px;"><a href="/">-- Главная</a></li>
-                    <li style="margin-top:10px;"><a href="/brand-choose.html">-- Выбор производителя</a></li>
-                    <li style="margin-top:10px;"><a href="/model-select.html">-- Выбор марки автомобиля</a></li>
-                    <li style="margin-top:10px;"><a href="/search-results.html">-- Результат поиска</a></li>
-                    <li style="margin-top:10px;"><a href="/product-card.html">-- Карта продукта</a></li>
-                    
-                    
-                    
-                </ul>
-                
-                
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Легковые автомобили > Toyota > Rav 4 2013 > Фура противовотуманная левая > GP-21047868 -->
             </div>
+
+            <section id="product-card" class="offset offset_min">
+                <!-- input product-card.html -->
+            </section>
+            
+            <section id="info-product">
+                <!-- input info-product.html -->
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
 
         </div><!-- end wrapper -->
 
@@ -78,7 +76,7 @@
 
 
         <!-- javascript -->
-<!--        <script defer src="js/main.js"></script>-->
+        <script defer src="js/main.js"></script>
 
     </body>
 
