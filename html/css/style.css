@@ -846,16 +846,11 @@ h2 {
 .popular-parts__box-img {
   overflow: hidden;
   width: 188px;
+  height: 190px;
 }
 .popular-parts__img {
-  display: block;
-  height: 190px;
-  width: auto;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 .popular-parts__name {
   display: block;
@@ -1276,7 +1271,7 @@ h2 {
   clear: both;
 }
 .product__left {
-  width: 380px;
+  width: 381px;
   float: left;
   overflow: hidden;
   position: relative;
@@ -1341,6 +1336,51 @@ h2 {
 }
 .product-btn_add-cart {
   margin-right: 10px;
+}
+/*галерея*/
+.product-foto-list {
+  zoom: 1;
+}
+.product-foto-list:before,
+.product-foto-list:after {
+  content: "";
+  display: table;
+}
+.product-foto-list:after {
+  clear: both;
+}
+.product-foto-list__item {
+  float: left;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 127px;
+  height: 127px;
+}
+.product-foto-list__item:hover:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #d81218;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+.product-foto-list__item_big {
+  width: 380px;
+  height: 280px;
+  float: none;
+  margin-bottom: 10px;
+}
+.product-foto-list__item_big:hover:after {
+  content: '';
+  width: 0;
+  height: 0;
+}
+.product-foto__img {
+  width: 100%;
+  height: 100%;
 }
 /*--- Информация о продукте ---*/
 .info-product {
