@@ -1658,3 +1658,64 @@ h2 {
 .transport-company__link:hover {
   text-decoration: underline;
 }
+/*--- Текстовые  ---*/
+.list-num {
+  margin-bottom: 50px;
+  ist-style-type: none;
+  counter-reset: item;
+  padding-left: 20px;
+}
+.list-num_two {
+  margin-bottom: 0;
+  counter-reset: item;
+}
+.list-num_two li {
+  padding-left: 30px !important;
+}
+.list-num li {
+  padding-left: 20px;
+  position: relative;
+}
+.list-num li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+}
+.list-num li.li-none:before {
+  content: '';
+}
+.list-num span {
+  margin-left: -20px;
+  display: block;
+}
+.list-num span.span-mt {
+  margin-top: 20px;
+}
+.list-num span.star-1 {
+  padding-left: 30px;
+  position: relative;
+}
+.list-num span.star-1:before {
+  content: '*';
+  position: absolute;
+  left: 0;
+}
+.list-num span.star-2 {
+  padding-left: 30px;
+  position: relative;
+}
+.list-num span.star-2:before {
+  content: '**';
+  position: absolute;
+  left: 0;
+}
+.list-num span.star-3 {
+  padding-left: 30px;
+  position: relative;
+}
+.list-num span.star-3:before {
+  content: '***';
+  position: absolute;
+  left: 0;
+}
