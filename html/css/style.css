@@ -513,6 +513,7 @@ h2 {
   float: right;
   width: 230px;
   position: relative;
+  top: -21px;
 }
 .search-parts-links {
   zoom: 1;
@@ -607,7 +608,7 @@ h2 {
   background: #d81218;
   width: 230px;
   height: 58px;
-  padding-top: 21px;
+  padding-top: 18px;
   color: #fff;
 }
 .zajavka-btn:hover {
