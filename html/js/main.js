@@ -76,6 +76,25 @@ setTimeout( function() {
 		$('this').parent().hide();
 			
 	});
+    
+/*--- MAP ---*/
+    if ($('.map').length){
+        ymaps.ready(function(){
+            var nskMap = new ymaps.Map('map-nsk', {
+                center: [55.04040477993472,82.94372249999998],
+                zoom: 17
+            }),
+                myPlacemark = new ymaps.Placemark(nskMap.getCenter(), {
+                    
+                    iconCaption: 'Державина, 92'
+                }, {
+                    iconColor: '#D81218',
+                    preset: 'islands#greenDotIconWithCaption'
+                });
+
+            nskMap.geoObjects.add(myPlacemark);
+        });
+    }
 	
 /*--- galerea ---*/
     

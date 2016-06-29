@@ -1550,3 +1550,9 @@ h2 {
   line-height: 24px;
   color: #1c1d1d;
 }
+/*--- MAP ---*/
+.map {
+  margin-top: 25px;
+  width: 940px;
+  height: 400px;
+}
