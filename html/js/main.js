@@ -78,22 +78,38 @@ setTimeout( function() {
 	});
     
 /*--- MAP ---*/
-    if ($('.map').length){
-        ymaps.ready(function(){
-            var nskMap = new ymaps.Map('map-nsk', {
-                center: [55.04040477993472,82.94372249999998],
-                zoom: 17
-            }),
-                myPlacemark = new ymaps.Placemark(nskMap.getCenter(), {
-                    
-                    iconCaption: 'Державина, 92'
-                }, {
-                    iconColor: '#D81218',
-                    preset: 'islands#greenDotIconWithCaption'
-                });
+    if ($('#map-nsk').length){
+        
+        var nskMap = new ymaps.Map('map-nsk', {
+            center: [55.04040477993472,82.94372249999998],
+            zoom: 17
+        }),
+            myPlacemark = new ymaps.Placemark(nskMap.getCenter(), {
 
-            nskMap.geoObjects.add(myPlacemark);
-        });
+                iconCaption: 'Державина, 92'
+            }, {
+                iconColor: '#D81218',
+                preset: 'islands#greenDotIconWithCaption'
+            });
+
+        nskMap.geoObjects.add(myPlacemark);   
+    }
+    
+    if ($('#map-brn').length){
+        
+        var brnMap = new ymaps.Map('map-brn', {
+            center: [53.37241828561831,83.68607249999997],
+            zoom: 17
+        }),
+            myPlacemark2 = new ymaps.Placemark(brnMap.getCenter(), {
+
+                iconCaption: 'ул.Юрина 204г, 2 этаж, оф.1'
+            }, {
+                iconColor: '#D81218',
+                preset: 'islands#greenDotIconWithCaption'
+            });
+
+        brnMap.geoObjects.add(myPlacemark2);
     }
 	
 /*--- galerea ---*/
@@ -116,9 +132,11 @@ setTimeout( function() {
         });
     });
     
-    $('.big').imagezoomsl({
-        magnifiersize: [700,500],
-    });
+    if ($('.big').length){
+        $('.big').imagezoomsl({
+            magnifiersize: [700,500],
+        });
+    }
 
 
     

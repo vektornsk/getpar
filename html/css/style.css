@@ -39,6 +39,7 @@ body {
   min-width: 960px;
   height: 100%;
   font-size: 14px;
+  line-height: 24px;
   font-family: "NotoSans-Regular", sans-serif;
   color: #1c1d1d;
 }
@@ -151,6 +152,9 @@ input[type="search"]::-webkit-search-decoration {
 }
 .offset_min {
   padding-top: 25px;
+}
+.bold {
+  font-family: "NotoSans-Bold", sans-serif;
 }
 /*--head-text--*/
 h1 {
@@ -1538,6 +1542,9 @@ h2 {
   display: inline-block;
   vertical-align: top;
 }
+.rezhim_oplat {
+  margin-right: 90px;
+}
 .rezhim__head {
   font-family: "NotoSans-Bold", sans-serif;
   font-size: 14px;
@@ -1555,4 +1562,98 @@ h2 {
   margin-top: 25px;
   width: 940px;
   height: 400px;
+}
+/*--- Доставка ---*/
+.delivery-card {
+  /*внутри*/
+}
+.delivery-card__head {
+  font-family: "NotoSans-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.delivery-card__city {
+  font-family: "Exo2-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1c1d1d;
+  margin-bottom: 17px;
+}
+.delivery-card__city span {
+  display: block;
+}
+.delivery-card__district span {
+  display: block;
+}
+.delivery-card__price {
+  font-family: "Exo2-Bold", sans-serif;
+  font-size: 30px;
+  color: #d81218;
+  position: absolute;
+  bottom: 25px;
+  width: 220px;
+}
+.delivery-card-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 30px 0 10px;
+}
+.delivery-card-list__item {
+  border: 2px solid #d81218;
+  width: 220px;
+  margin-right: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 65px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.delivery-card-list__item:nth-child(4n) {
+  margin-right: 0;
+}
+/*--- Транспортная компания ---*/
+.transport-company {
+  zoom: 1;
+}
+.transport-company:before,
+.transport-company:after {
+  content: "";
+  display: table;
+}
+.transport-company:after {
+  clear: both;
+}
+.transport-company__item {
+  width: 313px;
+  display: block;
+  text-align: center;
+  float: left;
+  margin-bottom: 39px;
+}
+.transport-company__img-box {
+  height: 80px;
+  position: relative;
+  margin-bottom: 16px;
+}
+.transport-company__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.transport-company__link {
+  font-family: "NotoSans-Bold", sans-serif;
+  color: #1c1d1d;
+}
+.transport-company__link:hover {
+  text-decoration: underline;
 }
