@@ -1070,6 +1070,66 @@ h2 {
     padding-bottom: 40px;    
 }
 
+
+/*--- 404 ---*/
+
+.s404-wrap {
+    width: 780px;
+    height: 500px;
+    margin: auto;
+    background: url(/images/404.png) no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s404 {
+    position: relative;
+    
+    
+    &__head {
+        font-family: @font-exo-bold;
+        font-size: 30px;
+        color: @color-gray;
+        line-height: 35px;
+        position: absolute;
+        top: 35px;
+        left: 20px;
+    }
+    &__text {
+        font-family: @font-exo-bold;
+        font-size: 30px;
+        color: @color-gray;
+        display: block;
+        position: absolute;
+        line-height: 35px;
+        right: 0;
+        width: 220px;
+        top: 210px;
+    }
+    
+    &__btn {
+        margin-top: 26px;
+        display: block;
+        width: 220px;
+        height: 58px;
+        padding: 12px;
+        background: @color-red;
+        color: #fff;
+        font-family: @font-exo-medium;
+        font-size: 18px;
+        text-align: center;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+   
+}
+
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/
 
 /*--- Выбор производителя ---*/

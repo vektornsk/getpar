@@ -1155,6 +1155,56 @@ h2 {
   color: #1c1d1d;
   padding-bottom: 40px;
 }
+/*--- 404 ---*/
+.s404-wrap {
+  width: 780px;
+  height: 500px;
+  margin: auto;
+  background: url(/images/404.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.s404 {
+  position: relative;
+}
+.s404__head {
+  font-family: "Exo2-Bold", sans-serif;
+  font-size: 30px;
+  color: #1c1d1d;
+  line-height: 35px;
+  position: absolute;
+  top: 35px;
+  left: 20px;
+}
+.s404__text {
+  font-family: "Exo2-Bold", sans-serif;
+  font-size: 30px;
+  color: #1c1d1d;
+  display: block;
+  position: absolute;
+  line-height: 35px;
+  right: 0;
+  width: 220px;
+  top: 210px;
+}
+.s404__btn {
+  margin-top: 26px;
+  display: block;
+  width: 220px;
+  height: 58px;
+  padding: 12px;
+  background: #d81218;
+  color: #fff;
+  font-family: "Exo2-Medium", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+.s404__btn:hover {
+  text-decoration: underline;
+}
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/
 /*--- Выбор производителя ---*/
 .brand {

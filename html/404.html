@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>404</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+<!--
+            <header id="header">
+                 input header.html 
+            </header>
+-->
+
+            <div class="s404-wrap">
+               
+                <div class="s404">
+                    
+                    <h1 class="s404__head">На нашем сайте<br>нет такой страницы.</h1>
+                    <div class="s404__text">Вы можете вернуться на главную и продолжить поиск.
+                    
+                        <a href="#" onclick="history.back();return false;" class="s404__btn">Вернуться на сайт</a>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+<!--
+            <section id="form-call" class="offset">
+                 input form-call.html 
+            </section>
+-->
+
+        </div><!-- end wrapper -->
+
+<!--
+
+        <footer id="footer">
+             input footer 
+        </footer>	
+-->
+
+        <!-- javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
