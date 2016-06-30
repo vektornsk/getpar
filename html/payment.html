@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Оплата заказа</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <header id="header">
+                <!-- input header.html -->
+            </header>
+
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Осторожно, мошенники! -->
+            </div>
+
+            <section id="delivery">
+
+                <div class="delivery-wrap">
+
+                    <div class="container offset offset_min"> 
+                        <h1 class="head-h2"><span>Оплата заказа</span></h1>
+                    </div>
+                    <div class="container"> 
+                        
+                        <div class="text-content offset offset_min">
+                           
+                            <p class="bold payment-head">Уважаемые клиенты</p>
+                            
+                            <div class="payment-box">
+                                    
+                                <div class="payment-box__left">
+                                    
+                                    <ul class="payment-list">
+                                        
+                                        <li class="payment-list__item">Оплатить заказ вы можете тремя способами:</li>
+                                        <li class="payment-list__item">
+                                            <img src="/images/icons/card_red_icon.svg" alt="" class="payment-list__icon payment-list__icon_card">
+                                            Онлайн оплата
+                                        </li>
+                                        <li class="payment-list__item">
+                                            <img src="/images/icons/cash_red_icon.svg" alt="" class="payment-list__icon payment-list__icon_cash">
+                                            Оплата наличными в офисе
+                                        </li>
+                                        <li class="payment-list__item">
+                                            <img src="/images/icons/card_red_icon.svg" alt="" class="payment-list__icon payment-list__icon_bank">
+                                            Оплата по банковскому счету
+                                        </li>
+                                        
+                                    </ul>   
+                                </div>
+                                <div class="payment-box__left  payment-box__left_padding">
+                                    <p>Предупреждаем вас, что при оплате банковской картой<br>через сайт, взымается  комиссия (3%).</p>
+                                    <p>Поддерживаемые платежные системы:</p>
+                                    <img src="/images/visa-mcard-pkeep.png" alt="" class="visa-mcard-pkeep">
+                                </div>
+                                
+                            </div>
+                            
+                            <p class="bold">Oплата по банковским картам VISA:</p>
+                            <p>К оплате принимаются все виды платежных карточек VISA, за исключением Visa Electron. В большинстве случаев карта Visa Electron не применима для оплаты через интернет, за исключением карт, выпущенных отдельными банками. О возможность оплаты картой Visa Electron вам нужно выяснять у банка-эмитента вашей карты.</p>
+                            <div class="payment-img-box">
+                                <img src="/images/visa.png" alt="" class="payment-img payment_visa">
+                            </div>
+                           
+                            <p class="bold">Oплата по банковским картам MasterCard:</p>
+                            <p>На сайте к оплате принимаются все виды MasterCard, за исключением Maestro.</p>
+                            <div class="payment-img-box">
+                                <img src="/images/mcard.png" alt="" class="payment-img payment_mcard">
+                            </div>
+                            
+                            <p class="bold">Что нужно знать:</p>
+                            
+                            <ul class="payment-list">
+                                <div class="payment-list__inner payment-list__inner_first">
+                                    <li>&mdash;&nbsp;номер Вашей  карты;</li>
+                                    <li>&mdash;&nbsp;cрок окончания действия Вашей карты, месяц/год;</li>
+                                </div>
+                                <div class="payment-list__inner">
+                                <li>&mdash;&nbsp;CVV код для карт Visa / CVC код для Master Card:</li>
+                                <li>&mdash;&nbsp;последние цифры на полосе для подписи на обороте карты.</li>
+                                </div>
+                                
+                            </ul>
+                            
+                            <div class="payment-img-box">
+                                <img src="/images/cvc.png" alt="" class="payment-img payment_cvc">
+                            </div>
+                            
+                            <p>Если на вашей карте код CVC / CVV отсутствует, то, возможно, карта не пригодна для CNP транзакций (т.е. таких транзакций, при которых сама карта не присутствует, а используются её реквизиты), и вам следует обратиться в банк для получения подробной информации.</p>
+                            <p>Для оплаты покупки Вы будете перенаправлены на платежный шлюз PayKeeper для ввода реквизитов Вашей карты. Пожалуйста, приготовьте Вашу пластиковую карту заранее. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL.</p>
+                            <p>В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard Secure Code для проведения платежа также может потребоваться ввод специального пароля. Способы и возможность получения паролей для совершения интернет-платежей Вы можете уточнить в банке, выпустившем карту.</p>
+                            <p>Настоящий сайт поддерживает 128-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается PayKeeper. Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем Visa Int. и MasterCard Europe Sprl.</p>
+                            
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
+
+        </div><!-- end wrapper -->
+
+
+        <footer id="footer">
+            <!-- input footer -->
+        </footer>	
+
+        <!-- javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

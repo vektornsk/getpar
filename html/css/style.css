@@ -1743,3 +1743,65 @@ h2 {
 .pacage-img_last {
   margin-right: 0;
 }
+/*--- Оплата заказа ---*/
+.payment-box {
+  zoom: 1;
+}
+.payment-box:before,
+.payment-box:after {
+  content: "";
+  display: table;
+}
+.payment-box:after {
+  clear: both;
+}
+.payment-box__left {
+  float: left;
+  width: 50%;
+}
+.payment-box__left_padding {
+  padding-left: 15px;
+}
+.payment-box__left p {
+  margin-top: 0;
+}
+.payment-list {
+  zoom: 1;
+}
+.payment-list:before,
+.payment-list:after {
+  content: "";
+  display: table;
+}
+.payment-list:after {
+  clear: both;
+}
+.payment-list__inner {
+  float: left;
+}
+.payment-list__inner_first {
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+.payment-list__item {
+  margin-bottom: 36px;
+}
+.payment-list__icon {
+  margin-right: 17px;
+}
+.payment-list__icon_card {
+  width: 46px;
+  height: 32px;
+}
+.payment-list__icon_cash {
+  width: 39px;
+  height: 34px;
+}
+.payment-list__icon_bank {
+  width: 38px;
+  height: 34px;
+}
+.payment-img-box {
+  text-align: center;
+  margin-bottom: 65px;
+}
