@@ -1720,3 +1720,26 @@ h2 {
   position: absolute;
   left: 0;
 }
+/*--- Упаковка ---*/
+.pacage-img-box {
+  zoom: 1;
+}
+.pacage-img-box:before,
+.pacage-img-box:after {
+  content: "";
+  display: table;
+}
+.pacage-img-box:after {
+  clear: both;
+}
+.pacage-img {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: block;
+  float: left;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #1c1d1d;
+}
+.pacage-img_last {
+  margin-right: 0;
+}
