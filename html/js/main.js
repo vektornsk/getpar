@@ -150,4 +150,10 @@ setTimeout( function() {
         });
     }
     
+/* chechked */ 
+    
+    
+    
+   
+    
 }, 3000);

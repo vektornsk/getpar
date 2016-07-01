@@ -1,0 +1,159 @@
+.plat-sistem {
+	margin-bottom: 29px;
+}
+
+.buy-inp-wrap {
+    .cf;
+}
+
+.buy {
+    .cf;
+    
+    &__left {
+        float: left;
+        width: 460px;
+    }
+    
+    &__right {
+        float: right;
+        width: 380px;
+    }
+    
+    &__inp-text {
+        width: 100%;
+        height: 170px;
+        padding-left: 20px;
+        padding-top: 10px;
+        resize: none;
+        border: 2px solid @color-gray;
+        display: block;
+        
+        &::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+        &::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+        &:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+        &:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+
+        &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+    }
+    
+    &__inp {
+        width: 100%;
+        border: 2px solid @color-gray;
+        height: 35px;
+        display: block;
+        float: left;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        
+        &::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+        &::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+        &:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+        &:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+
+        &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+        
+        &_first {
+            margin-right: 20px;
+        }
+        &_50 {
+            width: 47.8%;
+        }
+    }
+    
+    &__inp-radio-label {
+        display: block;
+    }
+    
+    &__inp-radio-hidden {
+        //display: none;
+        padding-left: 40px;
+    }
+}
+
+/* оформление чекбокса*/
+
+.buy__inp-radio {
+    display: none;
+}
+
+.buy__inp-radio:checked + label{
+    &:before {
+        background-position: top right;
+    }
+}
+
+.buy__inp-radio-label {
+    padding-left: 40px;
+    position: relative;
+        
+    &_mb {
+        margin-bottom: 35px;  
+    }
+    
+    &_mb2 {
+        margin-bottom: 20px;
+    }
+    
+    &:before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 17px;
+        height: 27px;
+        background: url(/images/icons/checkbox_sprite.png) no-repeat;
+        left: 0;
+        top: -1px;
+    }
+}
+
+.buy-summary-wrap {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.buy-summary {
+    width: 235px;
+    display: inline-block;
+    vertical-align: top;
+    
+    &__text {
+        font-family: @font-notosans-bold;
+        &_sm {
+            font-family: @font-notosans-reg;
+        }
+    }
+}
+.buy-summary-btn {
+    display: inline-block;
+    vertical-align: top;
+}
+.buy__btn-sub {
+    width: 220px;
+    height: 58px;
+    border: none;
+    background: @color-red;
+    text-align: center;
+    color: #fff;
+    font-family: @font-exo-medium;
+    font-size: 18px;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Появление доп блока */
+
+#tr-vyvoz  {
+    &:checked {
+        .buy__inp-radio-hidden {
+            display: block;
+        }
+    }
+}

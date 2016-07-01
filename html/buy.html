@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Оформление заказа</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <header id="header">
+                <!-- input header.html -->
+            </header>
+
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Доставка товара -->
+            </div>
+
+            <section id="text-block">
+
+                <div class="text-block-wrap offset offset_min">
+
+                    <div class="container"> 
+                        <h1 class="head-h2"><span>Оформление заказа</span></h1>
+                    </div>
+                    <div class="container"> 
+                        
+                        <div class="text-content offset offset_min">
+                            
+                            <div class="buy-wrap">
+                                
+                                <form action="">
+                                    
+                                    <div class="buy">
+                                        <div class="buy__left">
+                                            <p class="bold">Личные данные</p>
+                                            
+                                            <div class="buy-inp-wrap">
+                                                <input type="text" name="fio" class="buy__inp" placeholder="ФИО">
+                                                <input type="text" name="address" class="buy__inp" placeholder="Адрес доставки">
+                                                <input type="email" name="email" class="buy__inp buy__inp_50 buy__inp_first" placeholder="Электронная почта">
+                                                <input type="text" name="mesto" class="buy__inp buy__inp_50" placeholder="Местоположение">
+                                                <input type="tel" name="tel" class="buy__inp buy__inp_50" placeholder="Номер телефона">
+                                            </div>                                            
+                                            
+                                            <p class="bold">Служба доставки:</p>
+                                            
+                                            <input type="radio" name="vyvoz" id="sam-vyvoz" class="buy__inp-radio" checked>
+                                            <label for="sam-vyvoz" class="buy__inp-radio-label buy__inp-radio-label_mb">
+                                                <span class="buy__inp-radio-txt">
+                                                    <span class="bold">Самовывоз</span>&nbsp;&mdash;этот способ следует выбирать, если вы сможете забрать заказ самостоятельно или через доверенное лицо в офисе регистрации.
+                                                </span>
+                                            </label>
+                                            <input type="radio" name="vyvoz" id="tr-vyvoz" class="buy__inp-radio">
+                                            <label for="tr-vyvoz" class="buy__inp-radio-label buy__inp-radio-label_mb2">
+                                                <span class="buy__inp-radio-txt">
+                                                    <span class="bold">Транспортная компания</span>&nbsp;&mdash;срок доставки<br>от 7 до 21 дня с момента осуществления заказа.
+                                                </span>
+                                            </label>
+                                            <div class="buy__inp-radio-hidden">
+                                                
+                                                <input type="radio" name="yp" id="yp-1" class="buy__inp-radio">
+                                                <label for="yp-1" class="buy__inp-radio-label">
+                                                    <span class="buy__inp-radio-txt">
+                                                        Упаковать в обрешетку
+                                                    </span>
+                                                </label>
+                                                
+                                                <input type="radio" name="yp" id="yp-2" class="buy__inp-radio">
+                                                <label for="yp-2" class="buy__inp-radio-label">
+                                                    <span class="buy__inp-radio-txt">
+                                                        Упаковать в палетный борт
+                                                    </span>
+                                                </label>
+                                                
+                                                <input type="radio" name="yp" id="yp-3" class="buy__inp-radio">
+                                                <label for="yp-3" class="buy__inp-radio-label">
+                                                    <span class="buy__inp-radio-txt">
+                                                        Упаковать в стрейч пленку
+                                                    </span>
+                                                </label>
+                                                
+                                            </div>
+                                            
+                                            <div class="buy-summary-wrap">
+                                                
+                                                <div class="buy-summary">
+                                                    <div class="buy-summary__text">Товаров на: <span class="buy-summary__text_sm">63 100 руб.</span></div>
+                                                    <div class="buy-summary__text">Итого: <span class="buy-summary__text_sm">63 100 руб.</span></div>
+                                                </div>
+                                                
+                                                <div class="buy-summary-btn">
+                                                    <input class="buy__btn-sub" type="submit" value="Оформить">
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="buy__right">
+                                            <p class="bold plat-sistem">Платежная система:</p>
+                                            
+                                            <input type="radio" name="oplat" id="oplat-visa" class="buy__inp-radio" checked>
+                                            <label for="oplat-visa" class="buy__inp-radio-label buy__inp-radio-label_mb">
+                                                <span class="buy__inp-radio-txt">
+                                                    <span class="bold">Оплата картами Visa, MasterCard<br>на сайте</span>&nbsp;&mdash;оплата онлайн через платежную систему «PayKeeper». Взымается комиссия в размере 3% от стоимости товара.
+                                                </span>
+                                            </label>
+
+                                            <input type="radio" name="oplat" id="oplat-cash" class="buy__inp-radio">
+                                            <label for="oplat-cash" class="buy__inp-radio-label">
+                                                <span class="buy__inp-radio-txt">
+                                                    <span class="bold">Наличными в офисе</span>&nbsp;&mdash;предполагает внесение денежных средств в размере 100% от стоимости заказа через кассу офиса, в котором вы зарегистрированы.
+                                                </span>
+                                            </label>
+                                            
+                                            <p class="bold">Комментарий к заказу:</p>
+                                            <textarea name="text" class="buy__inp-text" placeholder="Добрый день"></textarea>
+                                        </div>
+                                    </div>
+                                </form>                      
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
+
+        </div><!-- end wrapper -->
+
+
+        <footer id="footer">
+            <!-- input footer -->
+        </footer>	
+
+        <!-- javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
