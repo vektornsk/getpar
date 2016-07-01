@@ -1,0 +1,130 @@
+/*--- Логин ---*/
+.login-error {
+    display: none;
+    color: @color-red;
+    margin-bottom: 20px;
+    font-weight: 600;
+    &.active {
+        display: block;
+    }
+}
+.login-wrap {
+    width: 300px;
+}
+
+.login {
+    
+    &__text {
+        margin-bottom: 7px;
+    }
+    
+    &__inp {
+        width: 100%;
+        border: 2px solid @color-gray;
+        height: 35px;
+        display: block;
+        margin-bottom: 20px;
+        padding-left: 20px;
+
+        &::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+        &::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+        &:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+        &:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+
+        &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+        
+        &_pass {
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__btn {
+        display: block;
+        width: 300px;
+        height: 58px;
+        background: @color-gray;
+        border: none;
+        color: #fff;
+        font-family: @font-exo-medium;
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        
+        &:hover {
+            text-decoration: underline;
+            background: @color-red;
+            transition: all 0.3s;
+        }
+    }
+    
+    &__reg {
+        display: block;
+        text-align: center;
+        width: 300px;
+        height: 58px;
+        background: @color-gray;
+        border: none;
+        color: #fff;
+        font-family: @font-exo-medium;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-top: 16px;
+
+        &:hover {
+            text-decoration: underline;
+            background: @color-red;
+            transition: all 0.3s;
+        }
+    }
+}
+
+/* оформление чекбокса*/
+
+.login__inp-check {
+    display: none;
+}
+
+.login__inp-check:checked + label{
+    &:before {
+        background-position: top right;
+    }
+}
+
+.login__inp-check-label {
+    padding-left: 35px;
+    position: relative;
+
+    &_mb {
+        margin-bottom: 35px;  
+    }
+
+    &_mb2 {
+        margin-bottom: 20px;
+    }
+
+    &:before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 17px;
+        height: 27px;
+        background: url(../images/icons/checkbox_sprite.png) no-repeat;
+        left: 0;
+        top: -3px; 
+    }
+}
+
+
+/*--- Востановление пароля ---*/
+
+.restore-wrap {
+    p {margin-top: 0;}
+}
+
+
+
+
+
