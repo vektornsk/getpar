@@ -2318,3 +2318,27 @@ h2 {
 .restore-wrap p {
   margin-top: 0;
 }
+/*--- регистрация ---*/
+.register {
+  zoom: 1;
+}
+.register:before,
+.register:after {
+  content: "";
+  display: table;
+}
+.register:after {
+  clear: both;
+}
+.register__inner {
+  display: block;
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+.register__text {
+  white-space: nowrap;
+}
+.register-top {
+  border-bottom: 1px solid #bfbfbf;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Регистрация</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <header id="header">
+                <!-- input header.html -->
+            </header>
+
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Доставка товара -->
+            </div>
+
+            <section id="text-block">
+
+                <div class="text-block-wrap offset offset_min">
+
+                    <div class="container"> 
+                        <h1 class="head-h2"><span>Регистрация</span></h1>
+                    </div>
+                    <div class="container"> 
+                        
+                        <div class="text-content offset offset_min">
+                                
+                            <div class="register">
+                                <form action="">
+                                    <div class="register-top">
+                                        <div class="register__inner">
+                                            <div class="register__text">Ваше имя:</div>
+                                            <input type="text" name="firstname" class="register__inp" placeholder="Имя">
+                                            <div class="register__text">Ваша фамилия:</div>
+                                            <input type="text" name="lastname" class="register__inp" placeholder="Фамилия">
+                                            <div class="register__text">Ваше отчество:</div>
+                                            <input type="text" name="xz"  class="register__inp" placeholder="Отчество">
+                                        </div>
+
+                                        <div class="register__inner">
+                                            <div class="register__text">Номер вашего телефона:</div>
+                                            <input type="tel" name="mobil" class="register__inp" placeholder="+7 (383) 383-38-38">
+                                            <div class="register__text">Ваш e-mail:</div>
+                                            <input type="email" name="email" class="register__inp" placeholder="Электронная почта">
+                                            <div class="register__text">Город, в котором вы находитесь:</div>
+                                                                        <!-- Город, которого нет  -->
+                                            <input type="text" name="city" class="register__inp" placeholder="Город">
+                                        </div>
+
+                                        <div class="register__inner">
+                                            <div class="register__text">Придумайте пароль:</div>
+                                            <input type="tel" name="pass" class="register__inp" placeholder="*****">
+                                            <div class="register__text">Подтвердите пароль:</div>
+                                            <input type="email" name="pass-2" class="register__inp" placeholder="*****">
+                                        </div>
+                                    </div>
+
+                                    <div class="login__text">Введите свой номер телефона:</div>
+                                    <input type="text" class="login__inp login__inp_tel" placeholder="+7 (383) 383-38-38">
+
+                                    <div class="login__text">Введите пароль:</div>
+                                    <input type="text" class="login__inp login__inp_pass" placeholder="***">
+                                    <input type="checkbox" name="save" id="save" class="login__inp-check">
+                                    <label for="save" class="login__inp-check-label">
+                                        <span class="login__inp-check-txt">
+                                            Запомнить меня на этом компьютере
+                                        </span>
+                                    </label>
+                                    <input type="submit" class="login__btn" value="Войти">
+                                    <a href="#" class="login__reg">Зарегистрироваться</a>    
+                                </form>
+
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
+
+        </div><!-- end wrapper -->
+
+
+        <footer id="footer">
+            <!-- input footer -->
+        </footer>	
+
+        <!-- javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
