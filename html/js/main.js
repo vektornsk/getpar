@@ -141,12 +141,13 @@ setTimeout( function() {
 
 /*--- popup zajavka ---*/
     
-    
-    $('.js-zajavka-btn').modaal({
-        overlay_opacity: 0.3,
-        overlay_close: false,
-        custom_class: 'zajavka-popup-cont',
-        hide_close: true
-    });
+    if ($('.js-zajavka-btn').length){ 
+        $('.js-zajavka-btn').modaal({
+            overlay_opacity: 0.3,
+            overlay_close: false,
+            custom_class: 'zajavka-popup-cont',
+            hide_close: true
+        });
+    }
     
 }, 3000);

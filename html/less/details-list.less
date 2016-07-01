@@ -1,0 +1,40 @@
+.details-list-wrap {
+    .cf;
+    position: relative;
+}
+
+.details-list {
+    float: left;
+    display: block;
+    width: 290px;
+    margin-right: 35px;
+    
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    &_otd {
+        padding-top: 75px;
+        &:before {
+            content: "";
+            border-top: 1px solid #bfbfbf;
+            width: 100%;
+            display: block;
+            position: absolute;
+            margin-top: -40px;
+        }
+    }
+    
+    &__item {
+        margin-bottom: 15px;
+    }
+    
+    &__link {
+        color: @color-gray;
+        
+        &:hover {
+           font-family: @font-notosans-bold;
+            text-decoration: underline;
+        }
+    }
+}
