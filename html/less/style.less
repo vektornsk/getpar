@@ -33,6 +33,15 @@ h2 {
     margin: 0;
 }
 
+.head-red {
+    font-family: @font-exo-bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: @color-red;
+    margin-bottom: 50px;
+}
+
+
 .head-h2 {
     position: relative;
     color: @color-gray;
@@ -1129,6 +1138,88 @@ h2 {
     }
     
    
+}
+
+
+/*--- PoPup zajavka  ---*/
+.zajavka-popup-cont {
+    .modaal-container {
+        width: 780px;
+        border: 2px solid @color-gray;
+    }
+}
+
+
+.zajavka-popup-wrap {
+    width: 480px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.popup {
+    width: 460px;
+    margin: 0 auto;
+    &__inp {
+        display: block;
+        margin: 0 auto 20px;
+        width: 100%;
+        border: 2px solid @color-gray;
+        height: 35px;
+        padding-left: 20px;
+        
+        &::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+        &::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+        &:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+        &:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+
+        &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+    }
+    
+    &__btn-wrap {
+        .cf;
+        padding-top: 20px;
+    }
+    
+    &__btn {
+        display: block;
+        float: left;
+        width: 220px;
+        height: 58px;
+        background: @color-gray;
+        border: none;
+        color: #fff;
+        
+        
+        &:hover {
+            text-decoration: underline;
+        }
+        
+        &_submit {
+            margin-right: 20px;
+            background: @color-red;
+            
+        }
+        
+        &_close {
+            background: @color-gray !important;
+        }
+    }
+}
+
+.popup__close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+    &:hover {
+        .st0{fill:@color-gray;}
+    }
 }
 
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/

@@ -15,6 +15,7 @@
     <!-- normalize -->
     <link rel="stylesheet" href="css/normalize-4.1.1.css">
 	<!-- style -->
+	<link rel="stylesheet" href="libs/modaal/modaal.css">
 	<link rel="stylesheet" href="css/style.css">
 	
 	
@@ -37,6 +38,7 @@
             $("#news-line").load("template/news-line.html");
             $("#popular-parts").load("template/popular-parts.html");
             $("#form-call").load("template/form-call.html");
+            $("#popup").load("template/modal.html");
 		});
 	</script>
 	
@@ -71,7 +73,9 @@
         <section id="form-call" class="offset">
             <!-- input form-call.html -->
         </section>
-        
+        <section id="popup" class="hidden">
+            <!-- input modal.html -->
+        </section>
 	</div><!-- end wrapper -->
 	
 	
@@ -81,7 +85,9 @@
 	
 	
 	<!-- javascript -->
-    <script defer src="js/main.js"></script>
+    <script src="libs/modaal/modaal.js"></script>
+    <script src="js/main.js"></script>
+    
 	
 </body>
 
