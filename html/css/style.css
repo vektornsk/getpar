@@ -2321,6 +2321,7 @@ h2 {
 /*--- регистрация ---*/
 .register {
   zoom: 1;
+  /*--- inp-register ---*/
 }
 .register:before,
 .register:after {
@@ -2337,8 +2338,108 @@ h2 {
   margin-right: 20px;
 }
 .register__text {
+  margin-bottom: 7px;
   white-space: nowrap;
 }
+.register__inp {
+  width: 100%;
+  border: 2px solid #1c1d1d;
+  height: 35px;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.register__inp::-webkit-input-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.register__inp::-moz-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.register__inp:-moz-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.register__inp:-ms-input-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.register__inp:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.register__inp:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.register__inp:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.register__inp:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.register__inp.error {
+  border: 2px solid #d81218;
+}
+.register__inp_captcha {
+  float: left;
+  width: 220px;
+  height: 40px;
+  margin-right: 20px;
+}
 .register-top {
+  zoom: 1;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
   border-bottom: 1px solid #bfbfbf;
+}
+.register-top:before,
+.register-top:after {
+  content: "";
+  display: table;
+}
+.register-top:after {
+  clear: both;
+}
+.register-captcha {
+  zoom: 1;
+}
+.register-captcha:before,
+.register-captcha:after {
+  content: "";
+  display: table;
+}
+.register-captcha:after {
+  clear: both;
+}
+.register-captcha__img {
+  width: 180px;
+  height: 40px;
+  border: 1px solid #1c1d1d;
+}
+.register-link {
+  color: #1c1d1d;
+  text-decoration: underline;
+  font-weight: 600;
+}
+/*--- register-select ---*/
+.register-select-wrap {
+  margin-left: 20px;
+  display: inline-block;
+}
+.register-select {
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  font-family: "NotoSans-Bold", sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.register-select__item {
+  font-family: "NotoSans-Regular", sans-serif;
 }

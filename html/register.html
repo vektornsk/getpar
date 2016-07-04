@@ -66,6 +66,14 @@
                                 
                             <div class="register">
                                 <form action="">
+                                	<span class="register-city">Ближайший к вам офис:</span>
+                                    <div class="register-select-wrap">
+										<select class="register-select" name="city" id="city">
+											<option class="register-select__item" value="city-nsk" selected>Новосибирск</option>
+											<option class="register-select__item" value="city-brn">Барнаул</option>
+										</select>
+                                    </div>
+                                   
                                     <div class="register-top">
                                         <div class="register__inner">
                                             <div class="register__text">Ваше имя:</div>
@@ -73,7 +81,7 @@
                                             <div class="register__text">Ваша фамилия:</div>
                                             <input type="text" name="lastname" class="register__inp" placeholder="Фамилия">
                                             <div class="register__text">Ваше отчество:</div>
-                                            <input type="text" name="xz"  class="register__inp" placeholder="Отчество">
+                                            <input type="text" name="threename"  class="register__inp" placeholder="Отчество">
                                         </div>
 
                                         <div class="register__inner">
@@ -82,8 +90,7 @@
                                             <div class="register__text">Ваш e-mail:</div>
                                             <input type="email" name="email" class="register__inp" placeholder="Электронная почта">
                                             <div class="register__text">Город, в котором вы находитесь:</div>
-                                                                        <!-- Город, которого нет  -->
-                                            <input type="text" name="city" class="register__inp" placeholder="Город">
+                                            <input type="text" name="cityName" class="register__inp" placeholder="Город">
                                         </div>
 
                                         <div class="register__inner">
@@ -93,20 +100,19 @@
                                             <input type="email" name="pass-2" class="register__inp" placeholder="*****">
                                         </div>
                                     </div>
-
-                                    <div class="login__text">Введите свой номер телефона:</div>
-                                    <input type="text" class="login__inp login__inp_tel" placeholder="+7 (383) 383-38-38">
-
-                                    <div class="login__text">Введите пароль:</div>
-                                    <input type="text" class="login__inp login__inp_pass" placeholder="***">
-                                    <input type="checkbox" name="save" id="save" class="login__inp-check">
-                                    <label for="save" class="login__inp-check-label">
+                                    <div class="register-captcha">
+                                        <div class="login__text">Введите символы с картинки:</div>
+                                        <input type="text" name="captcha-word" class="register__inp register__inp_captcha" placeholder="12345">
+                                        <input type="hidden" name="captcha-sid" value="0afd891211d7ebd14e5ba43c6e26fd28">
+                                        <img src="/bitrix/tools/captcha.php?captcha_sid=0afd891211d7ebd14e5ba43c6e26fd28" class="register-captcha__img"  alt="CAPTCHA">
+                                    </div>
+                                    <input type="checkbox" name="uslovie" id="uslovie" class="login__inp-check">
+                                    <label for="uslovie" class="login__inp-check-label">
                                         <span class="login__inp-check-txt">
-                                            Запомнить меня на этом компьютере
+                                            C <a href="#" class="register-link">условиями соглашения</a> ознакомлен и согласен
                                         </span>
                                     </label>
-                                    <input type="submit" class="login__btn" value="Войти">
-                                    <a href="#" class="login__reg">Зарегистрироваться</a>    
+                                    <input type="submit" class="login__btn" value="Зарегистрироваться">
                                 </form>
 
                             </div>
