@@ -127,6 +127,12 @@
 
 /*--- регистрация ---*/
 
+.reg {
+	display: inline-block;
+	margin-right: 35px;
+	margin-bottom: 45px;
+}
+
 .register {
     .cf;
     
@@ -197,34 +203,102 @@
 .register-link {
     color: @color-gray;
     text-decoration: underline;
-    font-weight: 600;  
+    font-weight: 600; 
+	
 }
 
 /*--- register-select ---*/
 
 .register-select-wrap {
-    margin-left: 20px;
-	display: inline-block;
+   	display: inline-block;
+	margin-left: 20px;
 }
-
 .register-select {
-	border-radius: 0;
-	background: transparent;
-	border: 0;
-	font-family: @font-notosans-bold;
-	
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	
-	&__item {
-		font-family: @font-notosans-reg;
+	width: 130px !important;
+	padding: 0 !important;
+	color: @color-gray !important;
+	text-decoration: none !important;
+	&.opened {
+		.jq-selectbox__trigger-arrow {
+			background-position: 0 -10px;
+		}
 	}
 }
 
+.jq-selectbox__select {
+	cursor: pointer;
+	padding: 0 !important;
+	background: #fff !important;
+}
+.jq-selectbox__select-text {
+	font-family: @font-notosans-bold;
+	width: 100% !important;
+}
 
+.jq-selectbox__trigger {
+	
+}
 
+.jq-selectbox__trigger-arrow {
+	height: 8px;
+	width: 12px;
+	background: url(/images/icons/arrow.png) no-repeat 0 0;
+	position: absolute;
+	top: 8px;
+	right: 0;
+}
 
+.register-select__item {
+	width: 130px;
+	padding: 5px 10px 5px;
+	cursor: pointer;
+	background: @color-red;
+	color: #fff;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:last-child {
+		padding-top: 0;
+	}
+}
+
+/*ur-lica*/
+
+.register-urlic {
+	display: inline-block;
+	font-family: @font-notosans-bold;
+	position: relative;
+	cursor: pointer;
+	
+	&:after {
+		content: " ";
+		height: 8px;
+		width: 12px;
+		background: url(/images/icons/arrow.png) no-repeat 0 -10px;
+		position: absolute;
+		top: 8px;
+		right: -30px;
+	}
+	
+	&.open {
+		&:after {
+			background-position: 0 0;
+		}
+	}
+}
+
+.register-urlic-box {
+	.cf;
+	display: none;
+	
+	
+	&__inner {
+		float: left;
+		display: block;
+		margin-right: 20px;
+		width: 220px;
+	}
+}
 
 
 

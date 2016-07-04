@@ -2319,6 +2319,11 @@ h2 {
   margin-top: 0;
 }
 /*--- регистрация ---*/
+.reg {
+  display: inline-block;
+  margin-right: 35px;
+  margin-bottom: 45px;
+}
 .register {
   zoom: 1;
   /*--- inp-register ---*/
@@ -2428,18 +2433,82 @@ h2 {
 }
 /*--- register-select ---*/
 .register-select-wrap {
-  margin-left: 20px;
   display: inline-block;
+  margin-left: 20px;
 }
 .register-select {
-  border-radius: 0;
-  background: transparent;
-  border: 0;
+  width: 130px !important;
+  padding: 0 !important;
+  color: #1c1d1d !important;
+  text-decoration: none !important;
+}
+.register-select.opened .jq-selectbox__trigger-arrow {
+  background-position: 0 -10px;
+}
+.jq-selectbox__select {
+  cursor: pointer;
+  padding: 0 !important;
+  background: #fff !important;
+}
+.jq-selectbox__select-text {
   font-family: "NotoSans-Bold", sans-serif;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  width: 100% !important;
+}
+.jq-selectbox__trigger-arrow {
+  height: 8px;
+  width: 12px;
+  background: url(/images/icons/arrow.png) no-repeat 0 0;
+  position: absolute;
+  top: 8px;
+  right: 0;
 }
 .register-select__item {
-  font-family: "NotoSans-Regular", sans-serif;
+  width: 130px;
+  padding: 5px 10px 5px;
+  cursor: pointer;
+  background: #d81218;
+  color: #fff;
+}
+.register-select__item:hover {
+  text-decoration: underline;
+}
+.register-select__item:last-child {
+  padding-top: 0;
+}
+/*ur-lica*/
+.register-urlic {
+  display: inline-block;
+  font-family: "NotoSans-Bold", sans-serif;
+  position: relative;
+  cursor: pointer;
+}
+.register-urlic:after {
+  content: " ";
+  height: 8px;
+  width: 12px;
+  background: url(/images/icons/arrow.png) no-repeat 0 -10px;
+  position: absolute;
+  top: 8px;
+  right: -30px;
+}
+.register-urlic.open:after {
+  background-position: 0 0;
+}
+.register-urlic-box {
+  zoom: 1;
+  display: none;
+}
+.register-urlic-box:before,
+.register-urlic-box:after {
+  content: "";
+  display: table;
+}
+.register-urlic-box:after {
+  clear: both;
+}
+.register-urlic-box__inner {
+  float: left;
+  display: block;
+  margin-right: 20px;
+  width: 220px;
 }

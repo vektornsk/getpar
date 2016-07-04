@@ -153,7 +153,21 @@ setTimeout( function() {
 /* chechked */ 
     
     
-    
+/*--- регистрация выбор города ---*/
+	
+	$('.register-select').styler();
+	
+/*urlic block*/	
+	
+	$('.register-urlic').on('click', function(){
+		if( $(this).hasClass('open') ) {
+			$(this).removeClass('open').next().css('display','none');
+		}
+		else {
+			$(this).addClass('open').next().css('display','block');
+		}
+	})
+	
    
     
 }, 3000);

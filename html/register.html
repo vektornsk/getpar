@@ -15,6 +15,7 @@
         <!-- normalize -->
         <link rel="stylesheet" href="css/normalize-4.1.1.css">
         <!-- style -->
+<!--        <link rel="stylesheet" href="libs/jQueryFormStyler/jquery.formstyler.css">-->
         <link rel="stylesheet" href="css/style.css">
 
 
@@ -104,7 +105,7 @@
                                         <div class="login__text">Введите символы с картинки:</div>
                                         <input type="text" name="captcha-word" class="register__inp register__inp_captcha" placeholder="12345">
                                         <input type="hidden" name="captcha-sid" value="0afd891211d7ebd14e5ba43c6e26fd28">
-                                        <img src="/bitrix/tools/captcha.php?captcha_sid=0afd891211d7ebd14e5ba43c6e26fd28" class="register-captcha__img"  alt="CAPTCHA">
+                                        <img src="#" class="register-captcha__img"  alt="CAPTCHA">
                                     </div>
                                     <input type="checkbox" name="uslovie" id="uslovie" class="login__inp-check">
                                     <label for="uslovie" class="login__inp-check-label">
@@ -112,7 +113,33 @@
                                             C <a href="#" class="register-link">условиями соглашения</a> ознакомлен и согласен
                                         </span>
                                     </label>
-                                    <input type="submit" class="login__btn" value="Зарегистрироваться">
+									<div class="register-bottom">
+										<input type="submit" class="login__btn reg" value="Зарегистрироваться">
+
+										<span class="register-urlic">Для юридических лиц</span>
+
+										<div class="register-urlic-box">
+											<div class="register-urlic-box__inner">
+												<input type="text" name="ur-name" class="register__inp register__inp_urlic" placeholder="Наименование лица">
+												<input type="text" name="ur-inn" class="register__inp register__inp_urlic" placeholder="ИНН">
+												<input type="text" name="ur-k-check" class="register__inp register__inp_urlic" placeholder="Корр. счет">
+											</div>
+
+											<div class="register-urlic-box__inner">
+												<input type="text" name="ur-r-check" class="register__inp register__inp_urlic" placeholder="Расчетный счет">
+												<input type="text" name="ur-ur-adress" class="register__inp register__inp_urlic" placeholder="Юридический адрес">
+												<input type="text" name="ur-adress" class="register__inp register__inp_urlic" placeholder="Адрес доставки">
+											</div>
+
+											<div class="register-urlic-box__inner">
+												<input type="text" name="ur-kpp" class="register__inp register__inp_urlic" placeholder="КПП">
+												<input type="text" name="ur-bik" class="register__inp register__inp_urlic" placeholder="БИК">
+												<input type="text" name="ur-bank" class="register__inp register__inp_urlic" placeholder="Наименование банка">
+											</div>	
+
+										</div>
+									</div>
+                                    
                                 </form>
 
                             </div>
@@ -137,6 +164,7 @@
         </footer>	
 
         <!-- javascript -->
+        <script src="libs/jQueryFormStyler/jquery.formstyler.js"></script>
         <script src="js/main.js"></script>
 
     </body>
