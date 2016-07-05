@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Корзина</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+		<link rel="stylesheet" href="libs/modaal/modaal.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <header id="header">
+                <!-- input header.html -->
+            </header>
+
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Доставка товара -->
+            </div>
+			<div class="container container_relativ">
+				<div class="balanse-wrap">				 
+					Ваш баланс: <span class="balanse">1000 руб.</span>
+				</div>
+			</div>
+
+            <section id="cart">
+
+				<div class="offset offset_min">
+
+                    <div class="container"> 
+                        <h1 class="head-h2"><span>Корзина</span></h1>
+                        
+                    </div>
+                    <div class="container"> 
+                        
+						<div class="cart-wrap offset">
+							<div class="ajax-overlay hidden"></div>
+							<form action="#" id="cart-form">
+							
+								<ul class="cart-list cart-list-user">
+									<li class="cart-list__head">
+										<div class="cart-list__elem cart-list__elem_e1">
+											<span>
+												<input type="checkbox" id='check0' class="cart-list__check">
+												<label for="check0" class="cart-list__check-label cart-list__check-label_black"></label>
+											</span>
+										</div>
+										
+										<div class="cart-list__elem cart-list__elem_e2">
+											<span>№</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e3">
+											<span>Производитель</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e4">
+											<span>Артикул</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e5">
+											<span>Фото</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e6">
+											<span>Наименование</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e7">
+											<span>Ожидаемая дата поставки</span>
+										</div>
+										
+										<div class="cart-list__elem cart-list__elem_e8">
+											<span>Кол-во</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e9">
+											<span>Цена (руб.)</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e10">
+											<span>Сумма (руб.)</span>
+										</div>
+									</li>
+									
+									<li class="cart-list__item">
+										<div class="cart-list__elem cart-list__elem_e1">
+											<span>
+												<input type="checkbox" id='check1' class="cart-list__check">
+												<label for="check1" class="cart-list__check-label"></label>
+											</span>
+										</div>
+
+										<div class="cart-list__elem cart-list__elem_e2">
+											<span>1</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e3">
+											<span>Seat / Alhambra 2001-2010</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e4">
+											<span>gp-04-2534442</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e5">
+											<span>
+												<a href="/images/parts/pic-1.jpg" class="cart-list__link">
+													<img src="/images/parts/pic-1.jpg" alt="" class="cart-list__img">
+												</a>											
+											</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e6">
+											<span>Двигатель</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e7">
+											<span>												
+												12.07.2016
+											</span>
+										</div>
+										
+										<div class="cart-list__elem cart-list__elem_e8">
+											<span>10</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e9">
+											<span>2 000</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e10">
+											<span>100 000</span>
+										</div>
+									</li>
+									
+									<li class="cart-list__item">
+										<div class="cart-list__elem cart-list__elem_e1">
+											<span>
+												<input type="checkbox" id='check2' class="cart-list__check">
+												<label for="check2" class="cart-list__check-label"></label>
+											</span>
+										</div>
+
+										<div class="cart-list__elem cart-list__elem_e2">
+											<span>2</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e3">
+											<span>Seat / Alhambra 2001-2010 Seat / Alhambra 2001-2010</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e4">
+											<span>gp-04-2534442</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e5">
+											<span>
+												<a href="/images/parts/pic-3.jpg" class="cart-list__link">
+													<img src="/images/parts/pic-3.jpg" alt="" class="cart-list__img">
+												</a>	
+											</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e6">
+											<span>Колесо</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e7">
+											<span>
+												12.07.2016
+											</span>
+										</div>
+										
+										<div class="cart-list__elem cart-list__elem_e8">
+											<span>1</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e9">
+											<span>45 000</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e10">
+											<span>60 000</span>
+										</div>
+									</li>
+									
+									
+								</ul>
+								
+								<div class="cart-sum-wrap">
+									<span class="cart-sum-text">Если вы хотите удалить товар, то отметьте галочкой необходимые.</span>
+									<span class="cart-sum">Итого: <span class="cart-sum_num">77 200 руб.</span></span>
+								</div>
+								<div class="cart-btn-wrap">
+									
+									<a href="#" class="cart-btn">Удалить</a>
+									<a href="#" class="cart-btn">Добавить позицию</a>
+									
+									<a href="#condition" class="cart-btn cart-btn_sbm condition-popup">Оформить заказ</a>
+									<input type="submit" value="Оформить заказ" class="hidden">
+									
+								</div>
+
+							</form>							
+						</div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
+
+        </div><!-- end wrapper -->
+
+
+        <footer id="footer">
+            <!-- input footer -->
+        </footer>	
+        
+<!--        <!-- соглашение -->
+       
+		<div id="condition" >
+			<div class="condition">
+				<h2 class="head-red">Условия заказа контактных запчастей</h2>
+
+				<div class="condition-text">
+					<ol class="list-num">
+						<li>Заказ вступает в силу с момента поступления 100% оплаты</li>
+						<li>Срок поставки на отрезные запчасти или запчасти из комплектов автоматически увеличивается на 1–2 дня</li>
+						<li>Гарантия:</li>
+						<li class="li-none">&mdash;&nbsp;На электронные запчасти, подушки безопасности и пиропатроны гарантия не распространяется и претензии не принимаются;</li>
+						<li class="li-none">&mdash;&nbsp;На агрегатные узлы (моторы, коробки передач, мосты и т.д.) даётся 14 календарных дней с момента прихода детали на наш склад. При вскрытии узлов гарантия аннулируется автоматически;</li>
+						<li class="li-none">&mdash;&nbsp;На оптические элементы (основные фары, фонари, поворотники, катафоты,  дополнительную оптику) гарантия распространяется только на целостность стёкол, оптических элементов и отражателей.</li>
+					</ol>
+
+					<p>При заказе кузовных деталей характер их целостности определяется только фотографиями детали и описанием детали, которые присутствуют на нашем сайте. За повреждения детали, которые не определены на фотографии, мы ответственности не несём.</p>	
+					<p>За применяемость детали к автомобилю клиента ответственность несет заказчик детали. Претензии по несовместимости не принимаются. Возврат деталей по вине клиента осуществляется с удержанием 30% от стоимости заказанных деталей. Уважаемые клиенты, не забывайте, что вы заказываете б/у детали, а не новые.</p>	
+				</div>       	
+
+				<div class="condition-bnt-wrap">				
+					<a href="#" class="condition__btn">Принять</a>
+					<a href="#" class="condition__btn modaal-close">Отктонить</a>
+
+				</div>
+			</div>
+    	</div>
+        
+        
+        
+
+        <!-- javascript -->
+		<script src="libs/modaal/modaal.js"></script>		
+       
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

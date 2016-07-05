@@ -2770,3 +2770,37 @@ h2 {
 .zajavka-popup-condration .modaal-content-container {
   padding: 0;
 }
+/*Корзина пользователя */
+.cart-list-user .cart-list__elem_e1 {
+  width: 50px;
+}
+.cart-list-user .cart-list__elem_e2 {
+  width: 30px;
+}
+.cart-list-user .cart-list__elem_e3 {
+  width: 140px;
+}
+.cart-list-user .cart-list__elem_e4 {
+  width: 100px;
+}
+.cart-list-user .cart-list__elem_e5 {
+  width: 55px;
+}
+.cart-list-user .cart-list__elem_e6 {
+  width: 160px;
+}
+.cart-list-user .cart-list__elem_e7 {
+  width: 115px;
+}
+.cart-list-user .cart-list__elem_e8 {
+  width: 75px;
+}
+.cart-list-user .cart-list__elem_e9 {
+  width: 100px;
+}
+.cart-list-user .cart-list__elem_e10 {
+  width: 110px;
+}
+.cart-list-user .condition-popup {
+  float: right;
+}
