@@ -35,6 +35,7 @@
 		background: @color-red;
 		width: 100%;
 		color: #fff;
+		font-size: 12px;
 		overflow: hidden;
 		text-align: center;
 	}
@@ -43,6 +44,7 @@
 		.cf;
 		border: 2px solid @color-gray;
 		width: 100%;
+		font-size: 12px;
 		color: @color-gray;
 		overflow: hidden;
 		text-align: center;
@@ -181,7 +183,6 @@
 	&_sbm {
 		border: none;
 		margin-right: 0;
-		padding: 0;
 	}
 	
 	&:hover {
@@ -193,6 +194,57 @@
 }
 
 
+/* соглашение */
+
+#condition {
+	display: none;
+}
+
+.condition {
+	width: 780px;
+	background: #fff;
+	border: 2px solid @color-gray;
+	text-align: center !important;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	
+	&__btn {
+		display: inline-block;
+		width: 220px;
+		height: 58px;
+		background: @color-gray !important;
+		color: #fff;
+		font-family: @font-exo-medium;
+		font-size: 18px;
+		vertical-align: top;
+		text-align: center;
+		margin-right: 56px;
+		padding-top: 16px !important;
+		margin-bottom: 20px;
+		
+		&.modaal-close {
+			margin-right: 0;
+		}
+		
+		&:hover {
+			background: @color-red !important;
+			text-decoration: underline;
+			transition: all 0.3s;
+		}
+	}
+}
+
+.condition-text {
+	text-align: left;
+	width: 660px;
+	margin: 50px auto ;
+}
+
+.zajavka-popup-condration {
+	.modaal-content-container {
+		padding: 0;
+	}
+}
 
 
 

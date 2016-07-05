@@ -179,6 +179,22 @@ setTimeout( function() {
 			type: 'image'
 		});
 	}
+
+/* условие заказа */
+	if ($('.condition-popup').length){
+		
+		$('.cart-btn_sbm').on('click', function(e){
+			e.preventDefault();
+			
+		});
+		
+		$('.condition-popup').modaal({
+			overlay_opacity: 0.3,
+			overlay_close: false,
+			custom_class: 'zajavka-popup-condration',
+			hide_close: true
+		});
+	}
 	
     
 }, 3000);
