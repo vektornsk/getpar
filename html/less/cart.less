@@ -1,0 +1,217 @@
+/*--- Баланс ---*/
+.balanse-wrap {
+	font-family: @font-notosans-bold;
+	position: absolute;
+	top: -24px;
+	right:10px;
+	span {
+		font-family: @font-notosans-reg;
+	}
+}
+
+/*--- Перезагрузка ---*/
+.ajax-overlay {
+	position: absolute;
+	top: 0%;
+	left: -1%;
+	width: 102%;
+	height: 91%;
+	background: url(../images/ajax_preloader_new.GIF) no-repeat 50% 50% #fff;
+	opacity: 0.7;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	z-index: 10000;
+}
+/*--- Корзина ---*/
+
+.cart-list {
+	.cf;
+
+	&__head {
+		.cf;
+		height: 58px;
+		background: @color-red;
+		width: 100%;
+		color: #fff;
+		overflow: hidden;
+		text-align: center;
+	}
+		
+	&__item {
+		.cf;
+		border: 2px solid @color-gray;
+		width: 100%;
+		color: @color-gray;
+		overflow: hidden;
+		text-align: center;
+	}
+	
+	&__elem {
+		float: left;
+		display: table;		
+		min-height: 58px;
+		text-align: center;
+		
+		&_e1{ width: 46px;}
+		&_e2{ width: 30px;}
+		&_e3{ width: 120px;}
+		&_e4{ width: 80px;}
+		&_e5{ width: 55px;}
+		&_e6{ width: 125px;}
+		&_e7{ width: 110px;}
+		&_e8{ width: 95px;}
+		&_e9{ width: 65px;}
+		&_e10{ width: 90px;}
+		&_e11{ width: 120px;}
+
+		span {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+	}
+	
+	/* img */
+	
+	&__img {
+		width: 54px;
+		height: 54px;		
+	}
+	
+	/* check */
+	
+	&__check {
+		display: none;
+	}
+	
+	&__check-label {
+		width: 1px;
+		height: 1px;
+		position: relative;
+		
+		&:before {
+			position: absolute;
+			content: "";
+			display: inline-block;
+			width: 17px;
+			height: 27px;
+			//todo
+			background: url(/images/icons/checkbox_sprite.png) no-repeat;
+			left: 20px;
+			top: 17px;
+		}
+		
+		&_black {
+
+			&:before {
+				background: url(/images/icons/checkbox_sprite_bw.png) no-repeat;
+			}
+			
+		}
+	}
+}
+
+.cart-list__check:checked + label{
+	&:before {
+		background-position: top right;
+	}
+}
+
+.cart-list__item + .cart-list__item {
+	border-top: none;
+}
+
+
+/* Календарь */
+
+.is-datepick {
+	width: 80px;
+}
+
+.datepick-trigger {
+	width: 14px;
+	height: 16px;
+	vertical-align: top;
+	margin-top: 3px;
+	margin-left: 4px;
+	cursor: pointer;
+}
+
+/* - */
+
+.cart-sum-wrap {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.cf;
+}
+
+.cart-sum-text {
+	font-size: 14px;
+	color: rgba(46, 46, 46, 0.6);
+}
+
+.cart-sum {
+	float: right;
+	font-size: 14px;
+	font-family: @font-notosans-bold;
+	
+	&_num {
+		font-family: @font-notosans-reg;
+	}
+}
+
+/* Кнопки корзины */
+
+.cart-btn {
+	display: inline-block;
+	width: 220px;
+	height: 58px;
+	background: @color-gray;
+	color: #fff;
+	font-family: @font-exo-medium;
+	font-size: 18px;
+	vertical-align: top;
+	text-align: center;
+	margin-right: 16px;
+	padding-top: 16px;
+	margin-bottom: 20px;
+	
+	&_sbm {
+		border: none;
+		margin-right: 0;
+		padding: 0;
+	}
+	
+	&:hover {
+		background: @color-red;
+		text-decoration: underline;
+		transition: all 0.3s;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

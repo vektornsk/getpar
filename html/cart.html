@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Соглашение</title>
+        <title>Корзина</title>
         <meta name="description" content="">
         <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
@@ -15,6 +15,7 @@
         <!-- normalize -->
         <link rel="stylesheet" href="css/normalize-4.1.1.css">
         <!-- style -->
+		<link rel="stylesheet" href="libs/modaal/modaal.css">
         <link rel="stylesheet" href="css/style.css">
 
 
@@ -52,20 +53,181 @@
                 <!-- input bread-crumbs.html -->
                 <!-- Главная > Доставка товара -->
             </div>
+			<div class="container container_relativ">
+				<div class="balanse-wrap">				 
+					Ваш баланс: <span class="balanse">1000 руб.</span>
+				</div>
+			</div>
 
             <section id="cart">
 
-                <div class="cart-wrap offset offset_min">
+				<div class="offset offset_min">
 
                     <div class="container"> 
                         <h1 class="head-h2"><span>Корзина</span></h1>
-                        <div class="balanse-wrap">
-							Ваш баланс: <span class="balanse"></span>
-                        </div>
+                        
                     </div>
                     <div class="container"> 
                         
-                      
+						<div class="cart-wrap offset">
+							<div class="ajax-overlay hidden"></div>
+							<form action="#" id="cart-form">
+							
+								<ul class="cart-list">
+									<li class="cart-list__head">
+										<div class="cart-list__elem cart-list__elem_e1">
+											<span>
+												<input type="checkbox" id='check0' class="cart-list__check">
+												<label for="check0" class="cart-list__check-label cart-list__check-label_black"></label>
+											</span>
+										</div>
+										
+										<div class="cart-list__elem cart-list__elem_e2">
+											<span>№</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e3">
+											<span>Производитель</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e4">
+											<span>Артикул</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e5">
+											<span>Фото</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e6">
+											<span>Наименование</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e7">
+											<span>Ожидаемая дата поставки</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e8">
+											<span>Поставщик</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e9">
+											<span>Кол-во</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e10">
+											<span>Цена (руб.)</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e11">
+											<span>Сумма (руб.)</span>
+										</div>
+									</li>
+									
+									<li class="cart-list__item">
+										<div class="cart-list__elem cart-list__elem_e1">
+											<span>
+												<input type="checkbox" id='check1' class="cart-list__check">
+												<label for="check1" class="cart-list__check-label"></label>
+											</span>
+										</div>
+
+										<div class="cart-list__elem cart-list__elem_e2">
+											<span>1</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e3">
+											<span>Seat / Alhambra 2001-2010</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e4">
+											<span>gp-04-2534442</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e5">
+											<span>
+												<a href="/images/parts/pic-1.jpg" class="cart-list__link">
+													<img src="/images/parts/pic-1.jpg" alt="" class="cart-list__img">
+												</a>											
+											</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e6">
+											<span>Двигатель</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e7">
+											<span>
+												
+												<input type="text" class="is-datepick">
+												<img src="/images/icons/contacts/calendar.svg" class="datepick-trigger">
+												
+											</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e8">
+											<span>BurgerKing</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e9">
+											<span>10</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e10">
+											<span>2 000</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e11">
+											<span>100 000</span>
+										</div>
+									</li>
+									
+									<li class="cart-list__item">
+										<div class="cart-list__elem cart-list__elem_e1">
+											<span>
+												<input type="checkbox" id='check2' class="cart-list__check">
+												<label for="check2" class="cart-list__check-label"></label>
+											</span>
+										</div>
+
+										<div class="cart-list__elem cart-list__elem_e2">
+											<span>2</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e3">
+											<span>Seat / Alhambra 2001-2010 Seat / Alhambra 2001-2010</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e4">
+											<span>gp-04-2534442</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e5">
+											<span>
+												<a href="/images/parts/pic-3.jpg" class="cart-list__link">
+													<img src="/images/parts/pic-3.jpg" alt="" class="cart-list__img">
+												</a>	
+											</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e6">
+											<span>Колесо</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e7">
+											<span>
+												<input type="text" class="is-datepick">
+												<img src="/images/icons/contacts/calendar.svg" class="datepick-trigger">
+											</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e8">
+											<span>Motorland</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e9">
+											<span>1</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e10">
+											<span>45 000</span>
+										</div>
+										<div class="cart-list__elem cart-list__elem_e11">
+											<span>60 000</span>
+										</div>
+									</li>
+									
+									
+								</ul>
+								
+								<div class="cart-sum-wrap">
+									<span class="cart-sum-text">Если вы хотите удалить товар, то отметьте галочкой необходимые.</span>
+									<span class="cart-sum">Итого: <span class="cart-sum_num">77 200 руб.</span></span>
+								</div>
+								<div class="cart-btn-wrap">
+									
+									<a href="#" class="cart-btn">Удалить</a>
+									<a href="#" class="cart-btn">Добавить з/ч</a>
+									<a href="#" class="cart-btn">Добавить позицию</a>
+									<input type="submit" value="Оформить заказ" class="cart-btn cart-btn_sbm">
+									
+								</div>
+
+							</form>							
+						</div>
                         
                     </div>
                     
@@ -85,6 +247,8 @@
         </footer>	
 
         <!-- javascript -->
+		<script src="libs/modaal/modaal.js"></script>		
+       
         <script src="js/main.js"></script>
 
     </body>

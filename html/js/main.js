@@ -154,8 +154,9 @@ setTimeout( function() {
     
     
 /*--- регистрация выбор города ---*/
-	
-	$('.register-select').styler();
+	if ($('.register-select').length){
+		$('.register-select').styler();
+	}
 	
 /*urlic block*/	
 	
@@ -168,6 +169,16 @@ setTimeout( function() {
 		}
 	})
 	
-   
+/* Корзина изображение попап*/ 
+	if ($('.cart-list__link').length){
+		$('.cart-list__link').modaal({
+			overlay_opacity: 0.3,
+			overlay_close: true,
+			custom_class: 'zajavka-popup-img',
+			hide_close: true,
+			type: 'image'
+		});
+	}
+	
     
 }, 3000);
