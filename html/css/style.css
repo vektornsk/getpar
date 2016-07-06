@@ -643,18 +643,19 @@ h2 {
   margin-bottom: 10px;
   text-align: center;
   color: #fff;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 .statistics__num {
   display: block;
   font-family: "Exo2-Bold", sans-serif;
   font-size: 30px;
+  line-height: 30px;
 }
 .statistics__text {
   display: block;
   font-family: "NotoSans-Regular", sans-serif;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 /*--- Быстрая заявка ---*/
 .zajavka {
