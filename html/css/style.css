@@ -962,6 +962,7 @@ h2 {
 /*--- Форма index ---*/
 .form-call {
   zoom: 1;
+  padding-top: 15px;
   padding-bottom: 83px;
   /* части формы */
 }
