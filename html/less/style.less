@@ -101,6 +101,7 @@ h2 {
             float: right;
             margin-right: 0;
             margin-left: 0;
+			padding-top: 3.5px;
         }
     }
 }
@@ -238,6 +239,8 @@ h2 {
 
 /*--- Логин ---*/
 
+
+
 .login {
     width: 60px;
     height: 57px;
@@ -262,24 +265,23 @@ h2 {
         top: 0;
         left: 0;
         width: 220px;
-        height: 114px;
         background: @color-red;
         z-index: 1;
-        padding: 10px;
+        padding: 10px 10px 6px;
         text-align: center;
         cursor: auto;
-        display: none;
+        display: block;
         
         &__img {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             overflow: hidden;
-            display: inline-block;
-            vertical-align: middle;
+			display: inline-block;
+			vertical-align: top;
             background: @color-gray;
-            margin-left: 10px;
             margin-right: 10px;
+			
         }
         
         &__icon {
@@ -288,17 +290,27 @@ h2 {
         }
         
         &__inner {
+			display: block;
             border-bottom: 1px solid #fff;
-            text-align: left;
-            margin-bottom: 5px;
-            padding-bottom: 10px;
+            text-align: center;
+            margin-bottom: 17px;
+            
         }
+		
+		&__aut {
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+			
+		}
         
         &__text {
             font-family: @font-notosans-reg;
             font-size: 12px;
             line-height: 18px;
             color: #fff;
+			margin-bottom: 10px;
+			display: block;
         }
         
         &__link {
@@ -306,7 +318,16 @@ h2 {
             font-size: 14px;
             line-height: 20px;
             color: #fff;
-            
+			display: block;
+			margin-bottom: 17px;
+			text-align: center;
+			&_login {
+				margin-top: 6px;
+			}
+			&_exit {
+				margin-bottom: 17px;
+			}
+			
             &:hover {
                 text-decoration: underline;
             }
@@ -314,6 +335,50 @@ h2 {
         }
     }
     
+}
+
+/* авторизованный */
+
+.authorization {
+	//display: block;
+	margin-top: 170px;
+	
+	.login-hiddin__img {
+		margin-top: 15px;
+	}
+}
+
+.login-hiddin {
+	&__name {
+		margin-top: 4px;
+		margin-bottom: 8px;
+		color: #fff;
+		font-family: @font-notosans-bold;
+		display: block;
+	}
+	
+	&__ico {
+		display: inline-block;
+		margin-right: 13px;
+		vertical-align: middle;
+		
+		&_hist {
+			width: 19px;
+			height: 16px;
+		}
+		&_cart {
+			width: 16px;
+			height: 16px;
+		}
+		&_car {
+			width: 18px;
+			height: 16px;
+		}
+		&_sett {
+			width: 16px;
+			height: 16px;
+		}
+	}
 }
 
 

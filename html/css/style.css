@@ -228,6 +228,7 @@ h2 {
   float: right;
   margin-right: 0;
   margin-left: 0;
+  padding-top: 3.5px;
 }
 .logo {
   float: left;
@@ -380,23 +381,21 @@ h2 {
   top: 0;
   left: 0;
   width: 220px;
-  height: 114px;
   background: #d81218;
   z-index: 1;
-  padding: 10px;
+  padding: 10px 10px 6px;
   text-align: center;
   cursor: auto;
-  display: none;
+  display: block;
 }
 .login-hiddin__img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   overflow: hidden;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   background: #1c1d1d;
-  margin-left: 10px;
   margin-right: 10px;
 }
 .login-hiddin__icon {
@@ -404,25 +403,76 @@ h2 {
   height: auto;
 }
 .login-hiddin__inner {
+  display: block;
   border-bottom: 1px solid #fff;
-  text-align: left;
-  margin-bottom: 5px;
-  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.login-hiddin__aut {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
 }
 .login-hiddin__text {
   font-family: "NotoSans-Regular", sans-serif;
   font-size: 12px;
   line-height: 18px;
   color: #fff;
+  margin-bottom: 10px;
+  display: block;
 }
 .login-hiddin__link {
   font-family: "NotoSans-Regular", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #fff;
+  display: block;
+  margin-bottom: 17px;
+  text-align: center;
+}
+.login-hiddin__link_login {
+  margin-top: 6px;
+}
+.login-hiddin__link_exit {
+  margin-bottom: 17px;
 }
 .login-hiddin__link:hover {
   text-decoration: underline;
+}
+/* авторизованный */
+.authorization {
+  margin-top: 170px;
+}
+.authorization .login-hiddin__img {
+  margin-top: 15px;
+}
+.login-hiddin__name {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-family: "NotoSans-Bold", sans-serif;
+  display: block;
+}
+.login-hiddin__ico {
+  display: inline-block;
+  margin-right: 13px;
+  vertical-align: middle;
+}
+.login-hiddin__ico_hist {
+  width: 19px;
+  height: 16px;
+}
+.login-hiddin__ico_cart {
+  width: 16px;
+  height: 16px;
+}
+.login-hiddin__ico_car {
+  width: 18px;
+  height: 16px;
+}
+.login-hiddin__ico_sett {
+  width: 16px;
+  height: 16px;
 }
 /*--- корзина ---*/
 .cart {
