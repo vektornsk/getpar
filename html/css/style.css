@@ -243,18 +243,18 @@ h2 {
 .drop__name {
   font-family: "Exo2-Medium", sans-serif;
   font-size: 14px;
+  line-height: 14px;
   color: #fff;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .drop__arrow {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-top;
   height: 8px;
   width: 12px;
   margin-left: 10px;
   position: relative;
-  top: -1px;
   z-index: 6;
 }
 .drop-hidden {
