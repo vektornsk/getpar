@@ -481,7 +481,7 @@ h2 {
   height: 57px;
   background: #d81218;
   overflow: hidden;
-  padding-top: 8px;
+  padding-top: 6px;
   padding-left: 12px;
   position: relative;
   display: inline-block;
@@ -504,7 +504,7 @@ h2 {
   width: 30px;
   height: 30px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-top;
   margin-right: 7px;
 }
 .cart__inner {
@@ -514,8 +514,12 @@ h2 {
   color: #fff;
   font-size: 14px;
 }
+.cart__text {
+  line-height: 14px;
+}
 .cart__num {
   display: block;
+  line-height: 14px;
 }
 /*--MENU--*/
 .nav {
