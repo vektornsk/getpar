@@ -2700,6 +2700,178 @@ h2 {
 .setting-uredich-box:after {
   clear: both;
 }
+/*-- Мои автомобили --*/
+.my-car-wrap {
+  zoom: 1;
+}
+.my-car-wrap:before,
+.my-car-wrap:after {
+  content: "";
+  display: table;
+}
+.my-car-wrap:after {
+  clear: both;
+}
+.my-car {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+}
+.my-car__head {
+  font-family: "NotoSans-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 30px;
+}
+.my-car__inp {
+  width: 100%;
+  border: 2px solid #1c1d1d;
+  height: 35px;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.my-car__inp::-webkit-input-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.my-car__inp::-moz-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.my-car__inp:-moz-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.my-car__inp:-ms-input-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.my-car__inp:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.my-car__inp:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.my-car__inp:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.my-car__inp:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.my-car__inp.error {
+  border: 2px solid #d81218;
+}
+.my-car__text {
+  width: 100%;
+  border: 2px solid #1c1d1d;
+  height: 140px;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  resize: none;
+}
+.my-car__text::-webkit-input-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.my-car__text::-moz-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.my-car__text:-moz-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.my-car__text:-ms-input-placeholder {
+  opacity: .5;
+  transition: opacity 0.3s ease;
+}
+.my-car__text:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.my-car__text:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.my-car__text:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.my-car__text:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.my-car__text.error {
+  border: 2px solid #d81218;
+}
+.my-car__sbm {
+  display: block;
+  width: 220px;
+  height: 58px;
+  background: #1c1d1d;
+  border: none;
+  color: #fff;
+  font-family: "Exo2-Medium", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.my-car__sbm:hover {
+  text-decoration: underline;
+  background: #d81218;
+  transition: all 0.3s;
+}
+.my-car-item {
+  width: 220px;
+  height: 383px;
+  border: 2px solid #d81218;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 30px;
+  padding: 30px 5px 40px;
+  position: relative;
+}
+.my-car-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+.my-car-item__el {
+  margin-bottom: 10px;
+}
+.my-car-item__name {
+  font-family: "NotoSans-Bold", sans-serif;
+}
+.my-car-item__link {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: #d81218;
+  font-family: "NotoSans-Bold", sans-serif;
+}
+.my-car-item__link:hover {
+  text-decoration: underline;
+}
+.my-car-item-close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.my-car-item-close:hover .st0 {
+  fill: #D81218;
+}
 /*--- Корзина ---*/
 /*--- Баланс ---*/
 .balanse-wrap {

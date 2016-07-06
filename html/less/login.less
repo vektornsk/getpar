@@ -409,6 +409,144 @@
 }
 
 
+/*-- Мои автомобили --*/
+
+.my-car-wrap {
+	.cf;
+}
+
+.my-car {
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+	
+	&__head {
+		font-family: @font-notosans-bold;
+		font-size: 14px;
+		line-height: 14px;
+		margin-bottom: 30px;
+	}
+	
+	&__inp {
+		width: 100%;
+		border: 2px solid @color-gray;
+		height: 35px;
+		display: block;
+		margin-bottom: 20px;
+		padding-left: 20px;
+
+		&::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+		&::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+		&:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+		&:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+
+		&:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+		&:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+		&:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+		&:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+		&.error {
+			border: 2px solid @color-red;
+		}
+	}
+	
+	&__text {
+		width: 100%;
+		border: 2px solid @color-gray;
+		height: 140px;
+		display: block;
+		margin-bottom: 20px;
+		padding-left: 20px;
+		padding-top: 10px;
+		resize: none;
+
+		&::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+		&::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+		&:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+		&:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+
+		&:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+		&:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+		&:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+		&:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+		&.error {
+			border: 2px solid @color-red;
+		}
+	}
+}
+
+.my-car__sbm {
+	display: block;
+	width: 220px;
+	height: 58px;
+	background: @color-gray;
+	border: none;
+	color: #fff;
+	font-family: @font-exo-medium;
+	font-size: 18px;
+	margin-bottom: 20px;
+	
+	&:hover {
+		text-decoration: underline;
+		background: @color-red;
+		transition: all 0.3s;
+	}
+}
+
+.my-car-item {
+	width: 220px;
+	height: 383px;
+	border: 2px solid @color-red;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 30px;
+	padding: 30px 5px 40px;
+	position: relative;
+	
+	&:nth-of-type(4n) {
+		margin-right: 0;
+	}
+	
+	&__el {
+		margin-bottom: 10px;
+	}
+	
+	&__name {
+		font-family: @font-notosans-bold;
+	}
+	
+	&__link {
+		position: absolute;
+		bottom: 25px;
+		left: 0;
+		right: 0;
+		font-size: 14px;
+		line-height: 14px;
+		color: @color-red;
+		font-family: @font-notosans-bold;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+}
+
+.my-car-item-close {
+	width:  16px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+		
+	&:hover {
+		.st0{fill:#D81218;}
+	}
+	
+}
 
 
 
