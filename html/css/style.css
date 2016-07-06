@@ -3160,3 +3160,64 @@ h2 {
 .cart-user-wrap .condition-popup {
   float: right;
 }
+/*--- Корзина ---*/
+.history-search {
+  zoom: 1;
+  padding-top: 25px;
+}
+.history-search:before,
+.history-search:after {
+  content: "";
+  display: table;
+}
+.history-search:after {
+  clear: both;
+}
+.history-search__inner {
+  float: left;
+  margin-right: 20px;
+}
+.history-search__text {
+  font-family: "NotoSans-Bold", sans-serif;
+}
+.history-search__inp {
+  margin: 0 10px;
+  width: 140px;
+  height: 35px;
+  border: 2px solid #1c1d1d;
+}
+.history-search__filter {
+  width: 140px;
+  height: 35px;
+  background: #1c1d1d;
+  border: none;
+  color: #fff;
+  font-family: "Exo2-Medium", sans-serif;
+  font-size: 18px;
+}
+.history-search__filter_del {
+  margin-left: 20px;
+}
+.history-search__filter:hover {
+  text-decoration: underline;
+  background: #d81218;
+  transition: all 0.3s;
+}
+/* select */
+.history-search .jq-selectbox__select {
+  width: 140px;
+  height: 35px;
+  border: 2px solid #1c1d1d;
+}
+.history-search .jq-selectbox__select-text {
+  height: 31px;
+  line-height: 31px;
+  padding-left: 10px;
+}
+.history-search .jq-selectbox__trigger-arrow {
+  top: 12px;
+  right: 10px;
+}
+.history-search__option.opened .jq-selectbox__trigger-arrow {
+  background-position: 0 -10px;
+}

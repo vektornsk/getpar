@@ -206,6 +206,9 @@ setTimeout( function() {
 			hide_close: true
 		});
 	}
-	
+/* history */
+	if ($('.history-search__select').length){
+		$('.history-search__select').styler();
+	}
     
 }, 3000);
