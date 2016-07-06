@@ -2653,6 +2653,8 @@ h2 {
   font-family: "Exo2-Medium", sans-serif;
   font-size: 18px;
   margin-top: 10px;
+  position: relative;
+  z-index: 1;
 }
 .setting-sbm:hover {
   text-decoration: underline;
