@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Настройки</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <header id="header">
+                <!-- input header.html -->
+            </header>
+
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Доставка товара -->
+            </div>
+
+            <section id="text-block">
+
+                <div class="text-block-wrap offset offset_min">
+
+                    <div class="container"> 
+                        <h1 class="head-h2"><span>Настройки</span></h1>
+                    </div>
+                    <div class="container"> 
+                        
+                        <div class="text-content offset offset_min">
+                            
+                            <div class="setting-wrap">                            
+								<form action="" id="form-setting">
+									
+									<div class="setting-box">
+										<div class="setting__inner">
+											<input type="text" name="fistname" class="setting__inp" placeholder="Имя">
+											<input type="text" name="lastname" class="setting__inp" placeholder="Фамилия">
+											<input type="text" name="threename" class="setting__inp" placeholder="Отчество">
+										</div>
+										<div class="setting__inner">
+											<input type="text" name="birthday" class="setting__inp" placeholder="Дата рождения">
+											<input type="tel" name="mobil" class="setting__inp" placeholder="Номер телефона">
+											<input type="text" name="cityName" class="setting__inp" placeholder="Адрес">
+										</div>
+										<div class="setting__inner setting__inner_last">
+											<input type="email" name="email" class="setting__inp" placeholder="Электронная почта">
+											<input type="text" name="pass" class="setting__inp" placeholder="Пароль">
+											<input type="text" name="pass-2" class="setting__inp" placeholder="Подтверждение пароля">
+										</div>
+									</div>
+									
+									<div class="setting-uredich">
+										<span class="setting-uredich__text">Для юридических лиц</span>
+									</div>
+									
+									<div class="setting-uredich-box" >										
+										<div class="setting__inner">
+											<input type="text" name="ur-name" class="setting__inp" placeholder="Наименование лица">
+											<input type="text" name="ur-inn" class="setting__inp" placeholder="ИНН">
+											<input type="text" name="ur-ur-adress" class="setting__inp" placeholder="Юридичемкий адрес">
+										</div>
+										<div class="setting__inner">
+											<input type="text" name="ur-adress" class="setting__inp" placeholder="Адрес доставки">
+											<input type="text" name="ur-k-check" class="setting__inp" placeholder="Корр. счет">
+											<input type="text" name="ur-r-check" class="setting__inp" placeholder="Расчетный счет">
+										</div>
+										<div class="setting__inner setting__inner_last">
+											<input type="text" name="ur-bank" class="setting__inp" placeholder="Наименование банка">
+											<input type="text" name="ur-kpp" class="setting__inp" placeholder="КПП">
+											<input type="text" name="ur-bik" class="setting__inp" placeholder="БИК">
+										</div>										
+									</div>
+									
+									<input type="submit" class="setting-sbm" value="Сохранить изменения">
+									
+								</form>    
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
+
+        </div><!-- end wrapper -->
+
+
+        <footer id="footer">
+            <!-- input footer -->
+        </footer>	
+
+        <!-- javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

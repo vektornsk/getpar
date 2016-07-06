@@ -301,7 +301,110 @@
 }
 
 
+/*--- Настройки ---*/
 
+.setting-wrap {
+	
+	position: relative;
+}
+
+.setting-box {
+	.cf;
+}
+.setting {
+	
+	&__inner {
+		display: block;
+		float: left;
+		width: 299px;
+		margin-right: 20px;
+		&_last {
+			margin-right: 0;
+		}
+	}
+	
+	&__inp {
+		width: 100%;
+		border: 2px solid @color-gray;
+		height: 35px;
+		display: block;
+		margin-bottom: 20px;
+		padding-left: 20px;
+		
+		&::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+		&::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+		&:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+		&:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+
+		&:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+		&:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+		&:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+		&:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+		&.error {
+			border: 2px solid @color-red;
+		}
+		
+	}
+	
+}
+
+.setting-sbm {
+	display: block;
+	width: 300px;
+	height: 58px;
+	background: @color-gray;
+	border: none;
+	color: #fff;
+	font-family: @font-exo-medium;
+	font-size: 18px;
+	margin-top: 10px;
+	
+	&:hover {
+		text-decoration: underline;
+		background: @color-red;
+		transition: all 0.3s;
+	}
+}
+
+.setting-uredich {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin-top: 30px;
+	margin-left: -37px;
+	
+	&__text {
+		cursor: pointer;
+		position: relative;
+		font-size: 14px;
+		line-height: 14px;
+		font-family: @font-notosans-bold;
+		
+		&:after {
+			content: " ";
+			height: 8px;
+			width: 12px;
+			background: url(/images/icons/arrow.png) no-repeat 0 -10px;
+			position: absolute;
+			top: 6px;
+			right: -30px;
+		}
+
+		&.open {
+			&:after {
+				background-position: 0 0;
+			}
+		}
+	}
+	
+}
+
+.setting-uredich-box {
+	.cf;
+	margin-top: 105px; 
+	display: none;
+}
 
 
 

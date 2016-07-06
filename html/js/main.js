@@ -167,7 +167,18 @@ setTimeout( function() {
 		else {
 			$(this).addClass('open').next().css('display','block');
 		}
-	})
+	});
+	
+/*urlic block setting*/	
+	
+	$('.setting-uredich__text').on('click', function(){
+		if( $(this).hasClass('open') ) {
+			$(this).removeClass('open').parent().next().css('display','none');
+		}
+		else {
+			$(this).addClass('open').parent().next().css('display','block');
+		}
+	});
 	
 /* Корзина изображение попап*/ 
 	if ($('.cart-list__link').length){
