@@ -151,8 +151,10 @@ setTimeout( function() {
     }
     
 /* chechked */ 
-    
-    
+
+	$('.buy__left').on('click','.buy__inp-radio:not(:checked)+[for=sam-vyvoz],.buy__inp-radio:not(:checked)+[for=tr-vyvoz]',function(e){$('.buy__inp-radio-hidden').toggle($('.buy__inp-radio-hidden').is(':not(:visible)'));});
+		
+	    
 /*--- регистрация выбор города ---*/
 	if ($('.register-select').length){
 		$('.register-select').styler();

@@ -2194,6 +2194,7 @@ h2 {
   display: block;
 }
 .buy__inp-radio-hidden {
+  display: none;
   padding-left: 40px;
 }
 /* оформление чекбокса*/
