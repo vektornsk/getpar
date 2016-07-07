@@ -5,6 +5,13 @@
 	&__inner {
 		float: left;
 		margin-right: 20px;
+		&_right {
+			float: right;
+		}
+	}
+	
+	&__box {
+		margin-bottom: 20px;
 	}
 	
 	&__text {
@@ -16,6 +23,23 @@
 		width: 140px;
 		height: 35px;
 		border: 2px solid @color-gray;
+		padding-left: 10px;
+		padding-right: 30px;
+	}
+	
+	&-inp-wrap {
+		position: relative;
+		width: 160px;
+		display: inline-block;
+	}
+	
+	&__icon {
+		width: 18px;
+		height: 20px;
+		position: absolute;
+		right: 20px;
+		top: 7px;
+		cursor: pointer;
 	}
 	
 	&__filter {
@@ -42,7 +66,8 @@
 
 .history-search {
 	.jq-selectbox__select {
-		width: 140px;
+		margin-left: 10px;
+		width: 235px;
 		height: 35px;
 		border: 2px solid @color-gray;
 	}
@@ -55,7 +80,25 @@
 		top: 12px;
 		right: 10px;
 	}
+	.jq-selectbox__dropdown {
+		width: 235px;
+		margin-left: 10px;
+	
+		.history-search__option {
+			background: @color-red;
+			color: #fff;
+			
+			padding: 5px 10px 5px;
+			cursor: pointer;
+			
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }
+
+
 
 .history-search__option {
 	&.opened {

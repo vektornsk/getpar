@@ -70,7 +70,8 @@
 					<div class="container">
 						<form action="" id="history-search">
 							<div class="history-search">
-								<div class="history-search__inner">
+								<div class="history-search__box">
+									<span class="history-search__text">Статус:</span>
 									<select class="history-search__select">
 										<option class="history-search__option" value="">Все</option>
 										<option class="history-search__option" value="N">Принят</option>
@@ -84,11 +85,19 @@
 								</div>
 								<div class="history-search__inner">
 									<span class="history-search__text">Период: c</span>
-									<input class="history-search__inp" type="text">
+									<span class="history-search-inp-wrap">
+										<input class="history-search__inp" type="text">
+										<img src="/images/icons/contacts/calendar.svg" alt="" class="history-search__icon">
+									</span>
+									
 									<span class="history-search__text">до</span>
-									<input class="history-search__inp" type="text">
+									<span class="history-search-inp-wrap">
+										<input class="history-search__inp" type="text">
+										<img src="/images/icons/contacts/calendar.svg" alt="" class="history-search__icon">
+									</span>
+									
 								</div>
-								<div class="history-search__inner">
+								<div class="history-search__inner history-search__inner_right">
 									<input type="submit" name="filter" value="Показать" class="history-search__filter">
 									<input type="submit" name="del_filter" value="Сбросить" class="history-search__filter history-search__filter_del">
 								</div>
