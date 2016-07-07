@@ -55,4 +55,47 @@
         display: block;
         padding-top: 20px;
     }
+		
 }
+
+/*tab*/
+
+.brand-choose-link {
+	.cf;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	
+	&__item {
+		cursor: pointer;
+		display: block;
+		float: left;
+		width: 300px;
+		height: 58px;
+		background: @color-gray;
+		text-align: center;
+		line-height: 58px;
+		font-family: @font-exo-medium;
+		color: #fff;
+		font-size: 16px;
+
+		&:hover {
+			background: @color-red;
+			transition: all .3s;
+		}
+
+		&.active {
+			background: @color-red;
+		}   
+	}
+}
+
+.brand-tabs {
+	display: none;
+	
+	&.active {
+		display: block;
+	}
+}
+
+
+

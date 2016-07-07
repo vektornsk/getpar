@@ -96,6 +96,9 @@ h2 {
         &__top {
             margin-bottom: 6px;
         }
+		&__bottom {
+			position: relative;
+		}
         
         &_right {
             float: right;
@@ -206,15 +209,17 @@ h2 {
 /*--- Поиск ---*/
 .search-line {
     display: inline-block;
-    margin-left: 28px;
-    position: relative;
+    margin-left: 47px;
+    position: absolute;
+	width: 378px;
 	
 	&__img {
-	position: absolute;
+		position: absolute;
 		width: 20px;
 		height: 20px;
 		top: 5px;
 		left: 10px;
+		z-index: 1;
 	}
 	
     &__input {
@@ -224,6 +229,11 @@ h2 {
         border: 1px solid #fff;
         color: #fff;
 		padding-left: 40px;
+		padding-right: 85px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
 		&::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
 		&::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
 		&:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
@@ -235,6 +245,23 @@ h2 {
 		&:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
     }
+	
+	&__sbm {
+		width: 80px;
+		height: 30px;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		border: 1px solid #fff;
+		background: @color-red;
+		color: #fff;
+		font-size: 14px;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
     
 }
 
@@ -917,7 +944,7 @@ h2 {
         &:hover {
             text-decoration: underline;
         }
-        
+      
     }
 }
 

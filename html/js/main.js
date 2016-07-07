@@ -8,6 +8,14 @@ setTimeout( function() {
             .addClass('active').siblings().removeClass('active')
             .closest('div.popular-parts-tabs').find('div.popular-parts-tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     });
+
+/*--- tabs brand-choose ---*/
+	
+	$('ul.brand-choose-link').on('click', 'li:not(.active)', function(){
+		$(this)
+			.addClass('active').siblings().removeClass('active')
+			.closest('div.container').find('div.brand-tabs').removeClass('active').eq($(this).index()).addClass('active');
+	});
 	
 /*--- login open ---*/
 	var openLogin = 0;
