@@ -3074,12 +3074,12 @@ h2 {
   display: inline-block;
   width: 17px;
   height: 27px;
-  background: url(/images/icons/checkbox_sprite.png) no-repeat;
+  background: url(../images/icons/checkbox_sprite.png) no-repeat;
   left: 20px;
   top: 17px;
 }
 .cart-list__check-label_black:before {
-  background: url(/images/icons/checkbox_sprite_bw.png) no-repeat;
+  background: url(../images/icons/checkbox_sprite_bw.png) no-repeat;
 }
 .cart-list__check:checked + label:before {
   background-position: top right;
@@ -3320,4 +3320,95 @@ h2 {
 }
 .history-search__option.opened .jq-selectbox__trigger-arrow {
   background-position: 0 -10px;
+}
+/* Мои заказы */
+.order {
+  zoom: 1;
+  /* текст лев*/
+  /* текст прав*/
+}
+.order:before,
+.order:after {
+  content: "";
+  display: table;
+}
+.order:after {
+  clear: both;
+}
+.order__left {
+  float: left;
+  width: 470px;
+  margin-right: 90px;
+}
+.order__right {
+  float: left;
+  width: 280px;
+}
+.order__zakaz {
+  margin-bottom: 26px;
+}
+.order__head {
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+.order__text {
+  margin-top: 57px;
+}
+.order-form__inner {
+  margin-top: 27px;
+}
+.order-form__check {
+  display: none;
+}
+.order-form__label {
+  width: 1px;
+  height: 1px;
+  position: relative;
+}
+.order-form__label:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 27px;
+  background: url(../images/icons/checkbox_sprite.png) no-repeat;
+  left: 0px;
+  top: -3px;
+}
+.order-form__info {
+  display: inline-block;
+  vertical-align: middle;
+}
+.order-form__img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+.order-form__text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 251px;
+  margin-left: 25px;
+}
+.order-form__pay {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.order-form__sbm {
+  width: 220px;
+  height: 58px;
+  border: none;
+  background: #1c1d1d;
+  text-align: center;
+  color: #fff;
+  font-family: "Exo2-Medium", sans-serif;
+  font-size: 18px;
+}
+.order-form__sbm:hover {
+  text-decoration: underline;
+  background: #d81218;
+  transition: all 0.3s;
+}
+.order-form__check:checked + label:before {
+  background-position: top right;
 }

@@ -1,0 +1,107 @@
+.order {
+	.cf;
+	&__left {
+		float: left;
+		width: 470px;
+		margin-right: 90px;
+	}
+	&__right {
+		float: left;
+		width: 280px;
+	}
+	
+	/* текст лев*/
+	
+	&__zakaz {
+		margin-bottom: 26px;
+	}
+	
+	/* текст прав*/
+	
+	&__head {
+		margin-top: 18px;
+		margin-bottom: 20px;
+	}
+	
+	&__text {
+		margin-top: 57px;
+	}
+	
+}
+
+.order-form {
+	
+	&__inner {
+		margin-top: 27px;
+	}
+	
+	&__check {
+		display: none;
+	}
+	
+	&__label {
+		width: 1px;
+		height: 1px;
+		position: relative;
+		
+
+		&:before {
+			position: absolute;
+			content: "";
+			display: inline-block;
+			width: 17px;
+			height: 27px;			
+			//todo
+			background: url(../images/icons/checkbox_sprite.png) no-repeat;
+			left: 0px;
+			top: -3px;
+		}
+		
+	}
+	
+	&__info {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	&__img {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 40px;
+	}
+	
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+		width: 251px;
+		margin-left: 25px;
+	}
+	
+	&__pay {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	
+	&__sbm {
+		width: 220px;
+		height: 58px;
+		border: none;
+		background: @color-gray;
+		text-align: center;
+		color: #fff;
+		font-family: @font-exo-medium;
+		font-size: 18px;
+		
+		&:hover {
+			text-decoration: underline;
+			background: @color-red;
+			transition: all 0.3s;
+		}
+	}
+}
+
+.order-form__check:checked + label{
+	&:before {
+		background-position: top right;
+	}
+}
