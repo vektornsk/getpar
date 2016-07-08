@@ -220,5 +220,18 @@ setTimeout( function() {
 	if ($('.history-search__select').length){
 		$('.history-search__select').styler();
 	}
+	
+/* history-order */	
+	
+	$('.histiry-order').on('click', function(e){
+		$(this).next().show();
+	});
+	
+	$('.history-btn_close').on('click', function(e){
+		$(this).parent().parent().hide();
+	});
+	
+	
+	
     
 }, 3000);

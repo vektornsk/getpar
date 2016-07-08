@@ -70,7 +70,7 @@
 					<div class="container">
 						<form action="" id="history-search">
 							<div class="history-search">
-								<div class="history-search__box">
+								<div class="history-search__inner">
 									<span class="history-search__text">Статус:</span>
 									<select class="history-search__select">
 										<option class="history-search__option" value="">Все</option>
@@ -98,163 +98,319 @@
 									
 								</div>
 								<div class="history-search__inner history-search__inner_right">
+									<div class="bold">Ваш менеджер</div>
+									<div>Смирнов Роман</div>
+									<div>+7 (983) 000-20-70</div>
+									<div><a href="mailto:manager2@getpar.ru">manager2@getpar.ru</a></div>
+								</div>
+								<div class="history-search__inner history-search__box">
 									<input type="submit" name="filter" value="Показать" class="history-search__filter">
 									<input type="submit" name="del_filter" value="Сбросить" class="history-search__filter history-search__filter_del">
 								</div>
+								
 							</div>
 						</form>
 					</div>
                     <div class="container"> 
                         
-						<div class="cart-wrap cart-user-wrap offset">
+						<div class="history-wrap offset offset_min">
 							<div class="ajax-overlay hidden"></div>
-							<form action="#" id="cart-form">
-							
-								<ul class="cart-list">
-									<li class="cart-list__head">
-										<div class="cart-list__elem cart-list__elem_e1">
-											<span>
-												<input type="checkbox" id="check0" class="cart-list__check">
-												<label for="check0" class="cart-list__check-label cart-list__check-label_black"></label>
-											</span>
-										</div>
-										
-										<div class="cart-list__elem cart-list__elem_e2">
-											<span>№</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e3">
-											<span>Производитель</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e4">
-											<span>Артикул</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e5">
-											<span>Фото</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e6">
-											<span>Наименование</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e7">
-											<span>Ожидаемая дата поставки</span>
-										</div>
-										
-										<div class="cart-list__elem cart-list__elem_e8">
-											<span>Кол-во</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e9">
-											<span>Цена (руб.)</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e10">
-											<span>Сумма (руб.)</span>
-										</div>
-									</li>
-									
-									<li class="cart-list__item">
-										<div class="cart-list__elem cart-list__elem_e1">
-											<span>
-												<input type="checkbox" id='check1' class="cart-list__check">
-												<label for="check1" class="cart-list__check-label"></label>
-											</span>
-										</div>
+							<div class="history">
+<!--								<form action="#" id="cart-form">-->
+									<div class="histiry-order">
+										<ul class="cart-list">
+											<li class="cart-list__head">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>Дата и время создания</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Дата и время обработки</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>Номер</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>Тип упаковки</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Способы оплаты</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span>Оплачен</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<span>Цена доставки</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>Сумма заказа (руб.)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<span>Итого (руб.)</span>
+												</div>
+											</li>
+											<li class="cart-list__item">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>28.06.2016 16:00:40</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>28.06.2016 16:00:41</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>127438</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>Самовывоз</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Наличными в офисе</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span>Оплачен</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<span>Цену уточняйте у менеджера</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>40 000</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<span>40 000</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="history-order__item">
+										<ul class="cart-list">
+											<li class="cart-list__head">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>№</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Производитель</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>Артикул</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>Фото</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Наименование</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span>Кол-во</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<span>Цена (руб.)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>Сумма (руб.)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<span>Ожидаемая дата поставки</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e10">
+													<span>Статус</span>
+												</div>
+											</li>
 
-										<div class="cart-list__elem cart-list__elem_e2">
-											<span>1</span>
+											<li class="cart-list__item">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>1</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Seat / Alhambra 2001-2010</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>gp-04-2534442</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>
+														<a href="/images/parts/pic-1.jpg" class="cart-list__link">
+															<img src="/images/parts/pic-1.jpg" alt="" class="cart-list__img">
+														</a>											
+													</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Двигатель</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span>1</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<span>38 600</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>38 600</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<span>07.07.2016</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e10">
+													<span>Принят</span>
+												</div>
+											</li>
+										</ul>
+										<div class="history-more">
+											<div class="history-more__comment">Комментарий к заказу: <span>test Упаковать в Стрейч пленку/</span></div>
+											<div class="history-more__city">Город: <span>Россия, Новосибирская обл, Новосибирск</span></div>
 										</div>
-										<div class="cart-list__elem cart-list__elem_e3">
-											<span>Seat / Alhambra 2001-2010</span>
+										<div class="history-btn-wrap">
+											<a href="#" class="history-btn history-btn_close">Свернуть</a>
+											<a href="#" class="history-btn">Оплатить</a>
+											<a href="#" class="history-btn">Респечатать чек</a>
 										</div>
-										<div class="cart-list__elem cart-list__elem_e4">
-											<span>gp-04-2534442</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e5">
-											<span>
-												<a href="/images/parts/pic-1.jpg" class="cart-list__link">
-													<img src="/images/parts/pic-1.jpg" alt="" class="cart-list__img">
-												</a>											
-											</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e6">
-											<span>Двигатель</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e7">
-											<span>												
-												12.07.2016
-											</span>
-										</div>
-										
-										<div class="cart-list__elem cart-list__elem_e8">
-											<span>10</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e9">
-											<span>2 000</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e10">
-											<span>100 000</span>
-										</div>
-									</li>
-									
-									<li class="cart-list__item">
-										<div class="cart-list__elem cart-list__elem_e1">
-											<span>
-												<input type="checkbox" id='check2' class="cart-list__check">
-												<label for="check2" class="cart-list__check-label"></label>
-											</span>
-										</div>
-
-										<div class="cart-list__elem cart-list__elem_e2">
-											<span>2</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e3">
-											<span>Seat / Alhambra 2001-2010 Seat / Alhambra 2001-2010</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e4">
-											<span>gp-04-2534442</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e5">
-											<span>
-												<a href="/images/parts/pic-3.jpg" class="cart-list__link">
-													<img src="/images/parts/pic-3.jpg" alt="" class="cart-list__img">
-												</a>	
-											</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e6">
-											<span>Колесо</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e7">
-											<span>
-												12.07.2016
-											</span>
-										</div>
-										
-										<div class="cart-list__elem cart-list__elem_e8">
-											<span>1</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e9">
-											<span>45 000</span>
-										</div>
-										<div class="cart-list__elem cart-list__elem_e10">
-											<span>60 000</span>
-										</div>
-									</li>
-									
-									
-								</ul>
-								
-								<div class="cart-sum-wrap">
-									<span class="cart-sum-text">Если вы хотите удалить товар, то отметьте галочкой необходимые.</span>
-									<span class="cart-sum">Итого: <span class="cart-sum_num">77 200 руб.</span></span>
+									</div>
+<!--								</form>	-->
+							</div>
+							<div class="history">
+								<!--								<form action="#" id="cart-form">-->
+								<div class="histiry-order">
+									<ul class="cart-list">
+										<li class="cart-list__head">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>Дата и время создания</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>Дата и время обработки</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>Номер</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span>Тип упаковки</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e5">
+												<span>Способы оплаты</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e6">
+												<span>Оплачен</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e7">
+												<span>Цена доставки</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e8">
+												<span>Сумма заказа (руб.)</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e9">
+												<span>Итого (руб.)</span>
+											</div>
+										</li>
+										<li class="cart-list__item">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>28.06.2016 16:00:40</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>28.06.2016 16:00:41</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>127438</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span>Самовывоз</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e5">
+												<span>Наличными в офисе</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e6">
+												<span>Оплачен</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e7">
+												<span>Цену уточняйте у менеджера</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e8">
+												<span>40 000</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e9">
+												<span>40 000</span>
+											</div>
+										</li>
+									</ul>
 								</div>
-								<div class="cart-btn-wrap">
-									
-									<a href="#" class="cart-btn">Удалить</a>
-									<a href="#" class="cart-btn">Добавить позицию</a>
-									
-									<a href="#condition" class="cart-btn cart-btn_sbm condition-popup">Оформить заказ</a>
-									<input type="submit" value="Оформить заказ" class="hidden">
-									
-								</div>
+								<div class="history-order__item">
+									<ul class="cart-list">
+										<li class="cart-list__head">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>№</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>Производитель</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>Артикул</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span>Фото</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e5">
+												<span>Наименование</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e6">
+												<span>Кол-во</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e7">
+												<span>Цена (руб.)</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e8">
+												<span>Сумма (руб.)</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e9">
+												<span>Ожидаемая дата поставки</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e10">
+												<span>Статус</span>
+											</div>
+										</li>
 
-							</form>							
+										<li class="cart-list__item">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>1</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>Seat / Alhambra 2001-2010</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>gp-04-2534442</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span>
+													<a href="/images/parts/pic-1.jpg" class="cart-list__link">
+														<img src="/images/parts/pic-1.jpg" alt="" class="cart-list__img">
+													</a>											
+												</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e5">
+												<span>Двигатель</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e6">
+												<span>1</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e7">
+												<span>38 600</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e8">
+												<span>38 600</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e9">
+												<span>07.07.2016</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e10">
+												<span>Принят</span>
+											</div>
+										</li>
+									</ul>
+									<div class="history-more">
+										<div class="history-more__comment">Комментарий к заказу: <span>test Упаковать в Стрейч пленку/</span></div>
+										<div class="history-more__city">Город: <span>Россия, Новосибирская обл, Новосибирск</span></div>
+									</div>
+									<div class="history-btn-wrap">
+										<a href="#" class="history-btn history-btn_close">Свернуть</a>
+										<a href="#" class="history-btn">Оплатить</a>
+										<a href="#" class="history-btn">Респечатать чек</a>
+									</div>
+								</div>
+								<!--								</form>	-->
+							</div>								
 						</div>
                         
                     </div>
