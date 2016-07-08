@@ -228,6 +228,7 @@ setTimeout( function() {
 	});
 	
 	$('.history-btn_close').on('click', function(e){
+		e.preventDefault();
 		$(this).parent().parent().hide();
 	});
 	
