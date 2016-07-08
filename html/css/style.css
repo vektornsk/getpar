@@ -3394,6 +3394,36 @@ h2 {
 .history .history-order__item .cart-list__head {
   background: #1c1d1d;
 }
+.history .history-order__item .cart-list__elem_e1 {
+  width: 20px;
+}
+.history .history-order__item .cart-list__elem_e2 {
+  width: 120px;
+}
+.history .history-order__item .cart-list__elem_e3 {
+  width: 100px;
+}
+.history .history-order__item .cart-list__elem_e4 {
+  width: 65px;
+}
+.history .history-order__item .cart-list__elem_e5 {
+  width: 130px;
+}
+.history .history-order__item .cart-list__elem_e6 {
+  width: 60px;
+}
+.history .history-order__item .cart-list__elem_e7 {
+  width: 90px;
+}
+.history .history-order__item .cart-list__elem_e8 {
+  width: 100px;
+}
+.history .history-order__item .cart-list__elem_e9 {
+  width: 130px;
+}
+.history .history-order__item .cart-list__elem_e10 {
+  width: 90px;
+}
 /* Больше инфа*/
 .history-more {
   padding-left: 10px;
