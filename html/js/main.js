@@ -224,12 +224,20 @@ setTimeout( function() {
 /* history-order */	
 	
 	$('.histiry-order').on('click', function(e){
-		$(this).next().show();
+		if(!$(this).hasClass('open')){
+			$(this).addClass('open');
+			$(this).next().show();
+		}
+		else {
+			$(this).removeClass('open');
+			$(this).next().hide();
+		}
+		
 	});
 	
 	$('.history-btn_close').on('click', function(e){
 		e.preventDefault();
-		$(this).parent().parent().hide();
+		$(this).parent().parent().hide().prev().removeClass('open');
 	});
 	
 	

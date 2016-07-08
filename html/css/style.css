@@ -3449,7 +3449,8 @@ h2 {
 }
 .history-btn {
   display: inline-block;
-  margin-left: 16px;
+  margin-left: 6px;
+  margin-right: 10px;
   width: 220px;
   height: 58px;
   margin-top: 30px;
@@ -3460,6 +3461,10 @@ h2 {
   font-family: "Exo2-Medium", sans-serif;
   text-align: center;
   background: #1c1d1d;
+}
+.history-btn_close {
+  float: left;
+  margin-left: 10px;
 }
 .history-btn:hover {
   background: #d81218;
