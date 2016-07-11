@@ -925,12 +925,6 @@ h2 {
   position: relative;
   margin-bottom: 80px;
 }
-.popular-parts__item:hover .popular-parts__price {
-  text-decoration: underline;
-}
-.popular-parts__item:hover .popular-parts__name {
-  text-decoration: underline;
-}
 .popular-parts__link {
   position: absolute;
   width: 100%;
@@ -938,6 +932,12 @@ h2 {
   top: 0;
   left: 0;
   z-index: 1;
+}
+.popular-parts__link:hover ~ .popular-parts__price {
+  text-decoration: underline;
+}
+.popular-parts__link:hover ~ .popular-parts__name {
+  text-decoration: underline;
 }
 .popular-parts__box-img {
   overflow: hidden;
