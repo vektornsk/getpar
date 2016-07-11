@@ -1,0 +1,77 @@
+.lk {
+	.cf;
+	
+	&__left {
+		width: 300px;
+		float: left;
+		margin-right: 100px;
+	}
+	&__right {
+		float: left;
+		width: 485px;
+	}
+	
+	&__link {
+		display: block;
+		width: 300px;
+		height: 58px;
+		position: relative;
+		text-align: center;
+		background: @color-gray;
+		margin-bottom: 20px;
+		color: #fff;
+		font-family: @font-exo-medium;
+		font-size: 18px;
+		padding-top: 15px;
+		vertical-align: top;
+		
+		&:hover {
+			background: @color-red;
+			text-decoration: underline;
+			transition: all 0.3s;
+		}
+	}
+	
+	&__icon {
+		display: inline-block;
+		margin-right: 13px;
+		vertical-align: top;
+		position: relative;
+		top: 5px;
+		
+		&_history {
+			width: 19px;
+			height: 16px;
+		}
+		&_cart {
+			width: 16px;
+			height: 16px;
+		}
+		&_car {
+			width: 18px;
+			height: 16px;
+		}
+		&_setting {
+			width: 16px;
+			height: 16px;
+		}
+	}
+	
+	&__head {
+		font-size: 18px;
+		font-family: @font-notosans-bold
+	}
+}
+
+.lk-history, .lk-cart, .lk-car, .lk-sett{
+	display: none;
+	
+}
+
+
+
+
+
+
+
+

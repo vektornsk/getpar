@@ -3562,3 +3562,76 @@ h2 {
 .order-form__check:checked + label:before {
   background-position: top right;
 }
+/* Личный кабинет */
+.lk {
+  zoom: 1;
+}
+.lk:before,
+.lk:after {
+  content: "";
+  display: table;
+}
+.lk:after {
+  clear: both;
+}
+.lk__left {
+  width: 300px;
+  float: left;
+  margin-right: 100px;
+}
+.lk__right {
+  float: left;
+  width: 485px;
+}
+.lk__link {
+  display: block;
+  width: 300px;
+  height: 58px;
+  position: relative;
+  text-align: center;
+  background: #1c1d1d;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Exo2-Medium", sans-serif;
+  font-size: 18px;
+  padding-top: 15px;
+  vertical-align: top;
+}
+.lk__link:hover {
+  background: #d81218;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.lk__icon {
+  display: inline-block;
+  margin-right: 13px;
+  vertical-align: top;
+  position: relative;
+  top: 5px;
+}
+.lk__icon_history {
+  width: 19px;
+  height: 16px;
+}
+.lk__icon_cart {
+  width: 16px;
+  height: 16px;
+}
+.lk__icon_car {
+  width: 18px;
+  height: 16px;
+}
+.lk__icon_setting {
+  width: 16px;
+  height: 16px;
+}
+.lk__head {
+  font-size: 18px;
+  font-family: "NotoSans-Bold", sans-serif;
+}
+.lk-history,
+.lk-cart,
+.lk-car,
+.lk-sett {
+  display: none;
+}

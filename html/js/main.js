@@ -240,6 +240,38 @@ setTimeout( function() {
 		$(this).parent().parent().hide().prev().removeClass('open');
 	});
 	
+/*lk -hover*/	
+	
+	$('.lk__link_h').hover(
+		function() {
+			$('.lk-history').show(300);
+		}, function() {
+			$('.lk-history').hide();
+		}
+	);
+	
+	$('.lk__link_ct').hover(
+		function() {
+			$('.lk-cart').show(300);
+		}, function() {
+			$('.lk-cart').hide();
+		}
+	);
+	$('.lk__link_c').hover(
+		function() {
+			$('.lk-car').show(300);
+		}, function() {
+			$('.lk-car').hide();
+		}
+	);
+	$('.lk__link_s').hover(
+		function() {
+			$('.lk-sett').show(300);
+		}, function() {
+			$('.lk-sett').hide();
+		}
+	);
+	
 	
 	
     
