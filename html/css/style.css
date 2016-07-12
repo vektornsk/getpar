@@ -1396,6 +1396,34 @@ h2 {
 .modaal-container {
   width: auto;
 }
+/* Навигация */
+.pagination-wrap {
+  width: 100%;
+  text-align: center;
+}
+.pagination {
+  display: inline-block;
+}
+.pagination li {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 12px;
+  text-align: center;
+}
+.pagination li span {
+  color: #1c1d1d;
+  font-family: "NotoSans-Regular", sans-serif;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.pagination li a {
+  color: #1c1d1d;
+  font-family: "NotoSans-Bold", sans-serif;
+}
+.pagination li a:hover {
+  text-decoration: underline;
+}
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/
 /*--- Выбор производителя ---*/
 .brand {
