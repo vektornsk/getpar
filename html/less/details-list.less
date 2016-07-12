@@ -3,38 +3,78 @@
     position: relative;
 }
 
-.details-list {
-    float: left;
-    display: block;
-    width: 290px;
-    margin-right: 35px;
-    
-    &:nth-child(3n) {
-        margin-right: 0;
-    }
-    
-    &_otd {
-        padding-top: 75px;
-        &:before {
-            content: "";
-            border-top: 1px solid #bfbfbf;
-            width: 100%;
-            display: block;
-            position: absolute;
-            margin-top: -40px;
-        }
-    }
-    
-    &__item {
-        margin-bottom: 15px;
-    }
-    
-    &__link {
-        color: @color-gray;
-        
-        &:hover {
-           font-family: @font-notosans-bold;
-            text-decoration: underline;
-        }
-    }
+.group_list {
+	display: block;
+	font-family: @font-notosans-reg;
+	font-size: 14px;
+	color: @color-gray;
+	margin-bottom: 12px;
+	
+	&:hover {
+		font-family: @font-notosans-bold;
+		text-decoration: underline;
+	}
+	&.active_group {
+		color: @color-red;
+		font-family: @font-notosans-bold;
+		//todo
+		& + .group {
+			display: block;
+		}
+	}
 }
+
+.group {
+	//todo
+	display: none;
+	padding-left: 40px;
+	li {
+		margin-bottom: 12px;
+	}
+	a {
+		font-family: @font-notosans-reg;
+		font-size: 14px;
+		color: @color-gray;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+//.details-list {
+//    float: left;
+//    display: block;
+//    width: 290px;
+//    margin-right: 35px;
+//    
+//    &:nth-child(3n) {
+//        margin-right: 0;
+//    }
+//    
+//    &_otd {
+//        padding-top: 75px;
+//        &:before {
+//            content: "";
+//            border-top: 1px solid #bfbfbf;
+//            width: 100%;
+//            display: block;
+//            position: absolute;
+//            margin-top: -40px;
+//        }
+//    }
+//    
+//    &__item {
+//        margin-bottom: 15px;
+//    }
+//    
+//    &__link {
+//        color: @color-gray;
+//        
+//        &:hover {
+//           font-family: @font-notosans-bold;
+//            text-decoration: underline;
+//        }
+//    }
+//}

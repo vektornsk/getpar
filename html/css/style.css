@@ -2102,34 +2102,37 @@ h2 {
 .details-list-wrap:after {
   clear: both;
 }
-.details-list {
-  float: left;
+.group_list {
   display: block;
-  width: 290px;
-  margin-right: 35px;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  color: #1c1d1d;
+  margin-bottom: 12px;
 }
-.details-list:nth-child(3n) {
-  margin-right: 0;
+.group_list:hover {
+  font-family: "NotoSans-Bold", sans-serif;
+  text-decoration: underline;
 }
-.details-list_otd {
-  padding-top: 75px;
+.group_list.active_group {
+  color: #d81218;
+  font-family: "NotoSans-Bold", sans-serif;
 }
-.details-list_otd:before {
-  content: "";
-  border-top: 1px solid #bfbfbf;
-  width: 100%;
+.group_list.active_group + .group {
   display: block;
-  position: absolute;
-  margin-top: -40px;
 }
-.details-list__item {
-  margin-bottom: 15px;
+.group {
+  display: none;
+  padding-left: 40px;
 }
-.details-list__link {
+.group li {
+  margin-bottom: 12px;
+}
+.group a {
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
   color: #1c1d1d;
 }
-.details-list__link:hover {
-  font-family: "NotoSans-Bold", sans-serif;
+.group a:hover {
   text-decoration: underline;
 }
 /*--- Оформление заказа ---*/
