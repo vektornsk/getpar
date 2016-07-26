@@ -174,6 +174,11 @@ h2 {
   color: #d81218;
   margin-bottom: 50px;
 }
+.title {
+  font-family: "Exo2-Bold", sans-serif;
+  font-size: 30px;
+  color: #1c1d1d;
+}
 .head-h2 {
   position: relative;
   color: #1c1d1d;
@@ -3665,4 +3670,31 @@ h2 {
 .lk-car,
 .lk-sett {
   display: none;
+}
+/* Новости */
+.news {
+  zoom: 1;
+}
+.news:before,
+.news:after {
+  content: "";
+  display: table;
+}
+.news:after {
+  clear: both;
+}
+.news__date {
+  font-family: "NotoSans-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2e2e2e;
+  margin-bottom: 5px;
+}
+.news__title {
+  margin-bottom: 60px;
+}
+.news-img {
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 30px;
 }
