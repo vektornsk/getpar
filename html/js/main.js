@@ -167,7 +167,7 @@ setTimeout( function() {
 	if ($('.register-select').length){
 		$('.register-select').styler();
 	}
-	
+		
 /*urlic block*/	
 	
 	$('.register-urlic').on('click', function(){

@@ -1432,6 +1432,19 @@ h2 {
 .pagination li a:hover {
   text-decoration: underline;
 }
+/*---Геополитика---*/
+.save_geo {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: none;
+  background: #d81218;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+}
+.save_geo:hover {
+  text-decoration: underline;
+}
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/
 /*--- Выбор производителя ---*/
 .brand {
@@ -2642,9 +2655,6 @@ h2 {
 }
 .register-select__item:hover {
   text-decoration: underline;
-}
-.register-select__item:last-child {
-  padding-top: 0;
 }
 /*ur-lica*/
 .register-urlic {
