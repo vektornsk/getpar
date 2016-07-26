@@ -272,7 +272,15 @@ setTimeout( function() {
 		}
 	);
 	
+/*news-link*/
 	
+	$('.news-card__link').hover(
+		function(){
+			$(this).closest('.news-card-content').css('text-decoration', 'underline');
+		}, function() {
+			$(this).closest('.news-card-content').css('text-decoration', 'none');
+		}
+	);
 	
     
 }, 3000);
