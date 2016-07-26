@@ -224,6 +224,10 @@ setTimeout( function() {
 /* history-order */	
 	
 	$('.histiry-order').on('click', function(e){
+		if($(this).hasClass('order-adm')){
+			return;
+		}
+		   
 		if(!$(this).hasClass('open')){
 			$(this).addClass('open');
 			$(this).next().show();
@@ -234,6 +238,20 @@ setTimeout( function() {
 		}
 		
 	});
+	
+	$('.open-list').on('click', function(e){
+		
+
+		if(!$(this).parent().parent().parent().parent().hasClass('open')){
+			$(this).parent().parent().parent().parent().addClass('open');
+			$(this).parent().parent().parent().parent().next().show();
+		}
+		else {
+			$(this).parent().parent().parent().parent().removeClass('open');
+			$(this).parent().parent().parent().parent().next().hide();
+		}
+
+	}); 
 	
 	$('.history-btn_close').on('click', function(e){
 		e.preventDefault();

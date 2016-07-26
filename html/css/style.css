@@ -3051,7 +3051,6 @@ h2 {
   width: 100%;
   font-size: 12px;
   color: #1c1d1d;
-  overflow: hidden;
   text-align: center;
 }
 .cart-list__item:before,
@@ -3325,6 +3324,15 @@ h2 {
   padding-left: 10px;
   padding-right: 30px;
 }
+.history-search__inp_m0 {
+  margin: 0;
+}
+.history-search__inp_wmid {
+  width: 235px;
+}
+.history-search__inp_wbig {
+  width: 235px;
+}
 .history-search-inp-wrap {
   position: relative;
   width: 160px;
@@ -3355,34 +3363,59 @@ h2 {
   background: #d81218;
   transition: all 0.3s;
 }
+div.history-search__text {
+  margin-bottom: 12px;
+}
 /* select */
-.history-search .jq-selectbox__select {
+.history-search .jq-selectbox__select,
+.order-adm .jq-selectbox__select {
   margin-left: 10px;
   width: 235px;
   height: 35px;
   border: 2px solid #1c1d1d;
 }
-.history-search .jq-selectbox__select-text {
+.history-search .jq-selectbox__select-text,
+.order-adm .jq-selectbox__select-text {
   height: 31px;
   line-height: 31px;
   padding-left: 10px;
 }
-.history-search .jq-selectbox__trigger-arrow {
+.history-search .jq-selectbox__trigger-arrow,
+.order-adm .jq-selectbox__trigger-arrow {
   top: 12px;
   right: 10px;
 }
-.history-search .jq-selectbox__dropdown {
+.history-search .jq-selectbox__dropdown,
+.order-adm .jq-selectbox__dropdown {
   width: 235px;
   margin-left: 10px;
 }
-.history-search .jq-selectbox__dropdown .history-search__option {
+.history-search .jq-selectbox__dropdown .history-search__option,
+.order-adm .jq-selectbox__dropdown .history-search__option {
   background: #d81218;
   color: #fff;
   padding: 5px 10px 5px;
   cursor: pointer;
 }
-.history-search .jq-selectbox__dropdown .history-search__option:hover {
+.history-search .jq-selectbox__dropdown .history-search__option:hover,
+.order-adm .jq-selectbox__dropdown .history-search__option:hover {
   text-decoration: underline;
+}
+.history-search__select.m0 + .jq-selectbox__select {
+  margin-left: 0;
+}
+.history-search__select.m0 ~ .jq-selectbox__dropdown {
+  margin-left: 0;
+}
+.history-search__select.w60 {
+  position: relative !important;
+}
+.history-search__select.w60 + .jq-selectbox__select {
+  width: 60px;
+  overflow: hidden;
+}
+.history-search__select.w60 ~ .jq-selectbox__dropdown {
+  text-align: left;
 }
 .history-search__option.opened .jq-selectbox__trigger-arrow {
   background-position: 0 -10px;
@@ -3400,6 +3433,9 @@ h2 {
   font-size: 12px;
   line-height: 14px;
   cursor: pointer;
+}
+.history .histiry-order.order-adm:hover {
+  opacity: 1;
 }
 .history .histiry-order:hover {
   opacity: 0.9;
@@ -3519,6 +3555,50 @@ h2 {
   background: #d81218;
   text-decoration: underline;
   transition: all 0.3s;
+}
+/*--- Заказ понели администратора ---*/
+.histiry-order.order-adm .cart-list__elem_e1 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e2 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e3 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e4 {
+  width: 83px;
+}
+.histiry-order.order-adm .cart-list__elem_e5 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e6 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e7 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e8 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e9 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e10 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e11 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e12 {
+  width: 70px;
+}
+.histiry-order.order-adm .cart-list__elem_e13 {
+  width: 70px;
+}
+.open-list {
+  font-family: "NotoSans-Bold", sans-serif;
+  display: table-row !important;
 }
 /* Мои заказы */
 .order {

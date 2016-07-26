@@ -34,6 +34,11 @@
 		border: 2px solid @color-gray;
 		padding-left: 10px;
 		padding-right: 30px;
+		&_m0 {
+			margin: 0;
+		}
+		&_wmid{ width: 235px;}
+		&_wbig{ width: 235px;}
 	}
 	
 	&-inp-wrap {
@@ -71,9 +76,14 @@
 	}
 }
 
+
+div.history-search__text {
+	margin-bottom: 12px;
+}
+
 /* select */
 
-.history-search {
+.history-search, .order-adm {
 	.jq-selectbox__select {
 		margin-left: 10px;
 		width: 235px;
@@ -107,6 +117,31 @@
 	}
 }
 
+.history-search__select {
+	&.m0 {
+		& + .jq-selectbox__select {
+			margin-left: 0;
+		}
+		
+		& ~ .jq-selectbox__dropdown {
+			margin-left: 0;
+		}
+	}
+	&.w60 {
+		position: relative !important;
+		& + .jq-selectbox__select {
+			width: 60px;
+			overflow: hidden;
+			
+			
+		}
+		& ~ .jq-selectbox__dropdown {
+			text-align: left;
+		}
+	}
+}
+
+
 
 
 .history-search__option {
@@ -129,6 +164,11 @@
 		font-size: 12px;
 		line-height: 14px;
 		cursor: pointer;
+		&.order-adm {
+			&:hover {
+				opacity: 1;
+			}
+		}
 		
 		&:hover {
 			opacity: 0.9;
@@ -234,9 +274,30 @@
 }
 
 
+/*--- Заказ понели администратора ---*/
 
+.histiry-order.order-adm {
+	.cart-list {
 
+		&__elem_e1 { width: 70px; }
+		&__elem_e2 { width: 70px; } 
+		&__elem_e3 { width: 70px;} 
+		&__elem_e4 { width: 83px; } 
+		&__elem_e5 { width: 70px; }
+		&__elem_e6 { width: 70px; }
+		&__elem_e7 { width: 70px; } 
+		&__elem_e8 { width: 70px; }
+		&__elem_e9 { width: 70px; }
+		&__elem_e10 { width: 70px; }
+		&__elem_e11 { width: 70px; }
+		&__elem_e12 { width: 70px; }
+		&__elem_e13 { width: 70px; }
+	}
+}
 
-
+.open-list {
+	font-family: @font-notosans-bold;
+	display: table-row !important;
+}
 
 

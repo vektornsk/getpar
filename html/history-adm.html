@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Заказы</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+		<link rel="stylesheet" href="libs/modaal/modaal.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <header id="header">
+                <!-- input header.html -->
+            </header>
+
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Доставка товара -->
+            </div>
+			<div class="container container_relativ">
+				<div class="balanse-wrap">				 
+					Ваш баланс: <span class="balanse">1000 руб.</span>
+				</div>
+			</div>
+
+            <section id="cart">
+
+				<div class="offset offset_min">
+
+                    <div class="container"> 
+                        <h1 class="head-h2"><span>Заказы</span></h1>
+                        
+                    </div>
+					<div class="container">
+						<form action="" id="history-search">
+							<div class="history-search">
+							
+								<div class="history-search__inner">
+									<div class="history-search__text">Номер заказа:</div>
+									<input class="history-search__inp history-search__inp_m0 history-search__inp_wmid" type="text" placeholder="Номер">
+								</div>
+								<div class="history-search__inner">
+									<div class="history-search__text">Поиск:</div>
+									<input class="history-search__inp history-search__inp_m0 history-search__inp_wbig" type="text" placeholder="ФИО, Телефон, Город">
+								</div>
+							
+								<div class="history-search__inner">
+									<div class="history-search__text">Статус:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="N">Принят</option>
+										<option class="history-search__option" value="Z">Получен ТК</option>
+										<option class="history-search__option" value="G">Отправлен в заказ</option>
+										<option class="history-search__option" value="P">В доставке</option>
+										<option class="history-search__option" value="F">Получен представителем</option>
+										<option class="history-search__option" value="H">Выдан</option>
+										<option class="history-search__option" value="J">Отказ</option>
+									</select>
+								</div>
+								<div class="cf"></div>
+								<div class="history-search__inner">
+									<div class="history-search__text">Организационная форма:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="N">Физ. лица</option>
+										<option class="history-search__option" value="Z">Юр. лица</option>
+									</select>
+								</div>
+								<div class="history-search__inner">
+									<div class="history-search__text">Оплата:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="N">Оплачен</option>
+										<option class="history-search__option" value="Z">Не оплачен</option>
+									</select>
+								</div>
+								<div class="history-search__inner">
+									<div class="history-search__text">Способы оплаты:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="N">PayKeeper</option>
+										<option class="history-search__option" value="Z">Наличными в офисе</option>
+									</select>
+								</div>
+								<div class="cf"></div>
+								
+								<div class="history-search__inner">
+									<span class="history-search__text">Период: c</span>
+									<span class="history-search-inp-wrap">
+										<input class="history-search__inp" type="text">
+										<img src="/images/icons/contacts/calendar.svg" alt="" class="history-search__icon">
+									</span>
+									
+									<span class="history-search__text">до</span>
+									<span class="history-search-inp-wrap">
+										<input class="history-search__inp" type="text">
+										<img src="/images/icons/contacts/calendar.svg" alt="" class="history-search__icon">
+									</span>
+									
+								</div>								
+								<div class="history-search__inner history-search__box">
+									<input type="submit" name="filter" value="Показать" class="history-search__filter">
+									<input type="submit" name="del_filter" value="Сбросить" class="history-search__filter history-search__filter_del">
+								</div>
+								
+							</div>
+						</form>
+					</div>
+                    <div class="container"> 
+                        
+						<div class="history-wrap offset offset_min">
+							<div class="ajax-overlay hidden"></div>
+							<div class="history">
+<!--								<form action="#" id="cart-form">-->
+									<div class="histiry-order order-adm">
+										<ul class="cart-list">
+											<li class="cart-list__head">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>Дата и&nbsp;время создания</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Дата и&nbsp;время обработки</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>Номер</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>Клиент</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Менеджер</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span>Тип Доставки</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<span>Способы оплаты</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>Оплачен</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<span>Статус</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e10">
+													<span>Цена доставки (руб.)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e11">
+													<span>Сумма заказа (руб.)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e12">
+													<span>Сумма предоплаты (руб.)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e13">
+													<span>Итого<br>(руб.)</span>
+												</div>
+											</li>
+											<li class="cart-list__item">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>28.06.2016 16:00:40</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>28.06.2016 16:00:41</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>127438</span>
+													<span class="open-list">Подробнее</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>Леоненко Александр Иванович +7(982) 911-46-58</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Смирнов Роман</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<select class="history-search__select m0 w60">
+														<option class="history-search__option" value="">Самовывоз</option>
+														<option class="history-search__option" value="N">Транспортная Компания</option>
+													</select>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<select class="history-search__select m0 w60">
+														<option class="history-search__option" value="">PayKeeper</option>
+														<option class="history-search__option" value="N">Наличными в офисе</option>
+													</select>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>
+														<input type="checkbox" id="check1" class="cart-list__check">
+														<label for="check1" class="cart-list__check-label"></label>
+													</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<select class="history-search__select m0 w60">
+														<option class="history-search__option" value="">Принят</option>
+														<option class="history-search__option" value="N">Получен ТК</option>
+														<option class="history-search__option" value="N">В доставке</option>
+														<option class="history-search__option" value="N">Получен представителем</option>
+														<option class="history-search__option" value="N">Выдан</option>
+														<option class="history-search__option" value="N">Отказ</option>
+													</select>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e10">
+													<span>0</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e11">
+													<span>100 000</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e12">
+													<span>0</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e13">
+													<span>100 000</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="history-order__item">
+										<ul class="cart-list">
+											<li class="cart-list__head">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>№</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Производитель</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>Артикул</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>Фото</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Наименование</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span>Кол-во</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<span>Цена (руб.)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>Сумма (руб.)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<span>Ожидаемая дата поставки</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e10">
+													<span>Статус</span>
+												</div>
+											</li>
+
+											<li class="cart-list__item">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>1</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Seat / Alhambra 2001-2010</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>gp-04-2534442</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>
+														<a href="/images/parts/pic-1.jpg" class="cart-list__link">
+															<img src="/images/parts/pic-1.jpg" alt="" class="cart-list__img">
+														</a>											
+													</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Двигатель</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span>1</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<span>38 600</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>38 600</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<span>07.07.2016</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e10">
+													<span>Принят</span>
+												</div>
+											</li>
+										</ul>
+										<div class="history-more">
+											<div class="history-more__comment">Комментарий к заказу: <span>test Упаковать в Стрейч пленку/</span></div>
+											<div class="history-more__city">Город: <span>Россия, Новосибирская обл, Новосибирск</span></div>
+										</div>
+										<div class="history-btn-wrap">
+											<a href="#" class="history-btn history-btn_close">Свернуть</a>
+											<a href="#" class="history-btn">Оплатить</a>
+											<a href="#" class="history-btn">Респечатать чек</a>
+										</div>
+									</div>
+<!--								</form>	-->
+							</div>
+							<div class="history">
+								<!--								<form action="#" id="cart-form">-->
+								<div class="histiry-order">
+									<ul class="cart-list">
+										<li class="cart-list__head">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>Дата и время создания</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>Дата и время обработки</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>Номер</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span>Тип упаковки</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e5">
+												<span>Способы оплаты</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e6">
+												<span>Оплачен</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e7">
+												<span>Цена доставки</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e8">
+												<span>Сумма заказа (руб.)</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e9">
+												<span>Итого (руб.)</span>
+											</div>
+										</li>
+										<li class="cart-list__item">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>28.06.2016 16:00:40</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>28.06.2016 16:00:41</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>127438</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span>Самовывоз</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e5">
+												<span>Наличными в офисе</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e6">
+												<span>Оплачен</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e7">
+												<span>Цену уточняйте у менеджера</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e8">
+												<span>40 000</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e9">
+												<span>40 000</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="history-order__item">
+									<ul class="cart-list">
+										<li class="cart-list__head">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>№</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>Производитель</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>Артикул</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span>Фото</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e5">
+												<span>Наименование</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e6">
+												<span>Кол-во</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e7">
+												<span>Цена (руб.)</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e8">
+												<span>Сумма (руб.)</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e9">
+												<span>Ожидаемая дата поставки</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e10">
+												<span>Статус</span>
+											</div>
+										</li>
+
+										<li class="cart-list__item">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>1</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>Seat / Alhambra 2001-2010</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>gp-04-2534442</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span>
+													<a href="/images/parts/pic-1.jpg" class="cart-list__link">
+														<img src="/images/parts/pic-1.jpg" alt="" class="cart-list__img">
+													</a>											
+												</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e5">
+												<span>Двигатель</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e6">
+												<span>1</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e7">
+												<span>38 600</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e8">
+												<span>38 600</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e9">
+												<span>07.07.2016</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e10">
+												<span>Принят</span>
+											</div>
+										</li>
+									</ul>
+									<div class="history-more">
+										<div class="history-more__comment">Комментарий к заказу: <span>test Упаковать в Стрейч пленку/</span></div>
+										<div class="history-more__city">Город: <span>Россия, Новосибирская обл, Новосибирск</span></div>
+									</div>
+									<div class="history-btn-wrap">
+										<a href="#" class="history-btn history-btn_close">Свернуть</a>
+										<a href="#" class="history-btn">Оплатить</a>
+										<a href="#" class="history-btn">Респечатать чек</a>
+									</div>
+								</div>
+								<!--								</form>	-->
+							</div>	
+							
+							<div class="pagination-wrap pagination-wrap_offset">
+								<ul class="pagination">
+									<li class="prev">
+										<a class="ieb" href="#">&lt;</a>
+									</li>
+									<li><span>1</span></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li class="next">
+										<a class="ieb" href="#">&gt;</a>
+									</li>
+								</ul>
+							</div>							
+						</div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
+
+        </div><!-- end wrapper -->
+
+
+        <footer id="footer">
+            <!-- input footer -->
+        </footer>	
+        
+<!--        <!-- соглашение -->
+       
+		<div id="condition" >
+			<div class="condition">
+				<h2 class="head-red">Условия заказа контактных запчастей</h2>
+
+				<div class="condition-text">
+					<ol class="list-num">
+						<li>Заказ вступает в силу с момента поступления 100% оплаты</li>
+						<li>Срок поставки на отрезные запчасти или запчасти из комплектов автоматически увеличивается на 1–2 дня</li>
+						<li>Гарантия:</li>
+						<li class="li-none">&mdash;&nbsp;На электронные запчасти, подушки безопасности и пиропатроны гарантия не распространяется и претензии не принимаются;</li>
+						<li class="li-none">&mdash;&nbsp;На агрегатные узлы (моторы, коробки передач, мосты и т.д.) даётся 14 календарных дней с момента прихода детали на наш склад. При вскрытии узлов гарантия аннулируется автоматически;</li>
+						<li class="li-none">&mdash;&nbsp;На оптические элементы (основные фары, фонари, поворотники, катафоты,  дополнительную оптику) гарантия распространяется только на целостность стёкол, оптических элементов и отражателей.</li>
+					</ol>
+
+					<p>При заказе кузовных деталей характер их целостности определяется только фотографиями детали и описанием детали, которые присутствуют на нашем сайте. За повреждения детали, которые не определены на фотографии, мы ответственности не несём.</p>	
+					<p>За применяемость детали к автомобилю клиента ответственность несет заказчик детали. Претензии по несовместимости не принимаются. Возврат деталей по вине клиента осуществляется с удержанием 30% от стоимости заказанных деталей. Уважаемые клиенты, не забывайте, что вы заказываете б/у детали, а не новые.</p>	
+				</div>       	
+
+				<div class="condition-bnt-wrap">				
+					<a href="#" class="condition__btn">Принять</a>
+					<a href="#" class="condition__btn modaal-close">Отктонить</a>
+
+				</div>
+			</div>
+    	</div>
+        
+        
+        
+
+        <!-- javascript -->
+		<script src="libs/modaal/modaal.js"></script>		
+		<script src="libs/jQueryFormStyler/jquery.formstyler.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
