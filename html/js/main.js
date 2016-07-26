@@ -242,6 +242,15 @@ setTimeout( function() {
 	
 /*lk -hover*/	
 	
+	$('.lk__link_adm').hover(
+		function() {
+			$('.lk-adm').show(300);
+		}, function() {
+			$('.lk-adm').hide();
+		}
+	);
+	
+	
 	$('.lk__link_h').hover(
 		function() {
 			$('.lk-history').show(300);

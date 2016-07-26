@@ -3648,6 +3648,10 @@ h2 {
   position: relative;
   top: 5px;
 }
+.lk__icon_adm {
+  width: 19px;
+  height: 18px;
+}
 .lk__icon_history {
   width: 19px;
   height: 16px;
@@ -3671,7 +3675,8 @@ h2 {
 .lk-history,
 .lk-cart,
 .lk-car,
-.lk-sett {
+.lk-sett,
+.lk-adm {
   display: none;
 }
 /* Новости */
