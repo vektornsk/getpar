@@ -1454,6 +1454,26 @@ h2 {
 .save_geo:hover {
   text-decoration: underline;
 }
+/* Результат поиска new
+------------------------------*/
+.search_get {
+  display: inline-block;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  color: #1c1d1d;
+  margin-bottom: 10px;
+}
+.search_get:hover {
+  text-decoration: underline;
+}
+.search_get.active_group {
+  color: #d81218;
+  font-family: "NotoSans-Bold", sans-serif;
+  text-decoration: underline;
+}
+.get_search_parts {
+  display: none;
+}
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/
 /*--- Выбор производителя ---*/
 .brand {

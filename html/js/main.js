@@ -353,6 +353,28 @@ setTimeout( function() {
 		$('#overlay').hide();
 		$('.client-info').removeClass('open').fadeOut(300);
 		flagClientInfo = 0
-	});  
+	});
+	
+/* Результат поиска new
+------------------------------*/
+	
+	var flagSearch = 0;
+	
+	$('.search_get').on('click', function(e){
+		e.preventDefault();
+		
+		//flagSearch = 0;
+		
+		if (!$(this).hasClass('active_group')) {
+			$(this).addClass('active_group').next().show(300);
+			
+		}
+		else {
+			$(this).removeClass('active_group').next().hide(300);
+			
+		}
+		
+		
+	});
 	
 }, 3000);
