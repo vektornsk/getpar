@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>История заказов</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+		<link rel="stylesheet" href="libs/modaal/modaal.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <header id="header">
+                <!-- input header.html -->
+            </header>
+
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Администрирование > Заказы -->
+            </div>
+			<div class="container container_relativ">
+				<div class="balanse-wrap">				 
+					Ваш баланс: <span class="balanse">1000 руб.</span>
+				</div>
+			</div>
+
+            <section id="cart">
+
+				<div class="offset offset_min">
+
+                    <div class="container"> 
+                        <h1 class="head-h2"><span>Клиенты</span></h1>
+                        
+                    </div>
+					<div class="container">
+						<form action="" id="history-search">
+							<div class="history-search">
+								<div class="history-search__inner">
+									<div class="history-search__text">Поиск:</div>
+									<input class="history-search__inp history-search__inp_m0 history-search__inp_wbig" type="text" placeholder="ФИО, Телефон, Город">
+								</div>
+								<div class="history-search__inner">
+									<div class="history-search__text">Организационная форма:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="N">Физ. лица</option>
+										<option class="history-search__option" value="Z">Юр. лица</option>
+									</select>
+								</div>								
+								<div class="history-search__inner history-search__box history-search__box_mt">
+									<input type="submit" name="filter" value="Показать" class="history-search__filter">
+									<input type="submit" name="del_filter" value="Сбросить" class="history-search__filter history-search__filter_del">
+								</div>
+								
+							</div>
+						</form>
+					</div>
+                    <div class="container"> 
+                        
+						<div class="history-wrap offset offset_min">
+							<div class="ajax-overlay hidden"></div>
+							<div class="history">
+<!--								<form action="#" id="cart-form">-->
+									<div class="histiry-order history-client">
+										<ul class="cart-list">
+											<li class="cart-list__head">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>Клиент (ФИО)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Орг.форма</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>Email</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>Телефон</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Офис</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span></span>
+												</div>
+											</li>
+											<li class="cart-list__item">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>Безупречный Святослав Владимирович</span>
+													<div class="client-info">
+														<div class="client-info__city">
+															Город: <span>Новосибирск, Россия</span>
+														</div>
+														<div class="client-info__reg">
+															Дата регистрации: <span>14.05.2016 12:23:13</span>
+														</div>
+														<div class="client-info__aut">
+															Последняя авторизация: <span>03.08.2016 11:37:00</span>
+														</div>
+														<div class="client-info-btns">
+															<a class="client-info-btns__btn" href="#">Изменить</a> 
+														</div>
+													</div>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Юр.лицо</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>naprimer@mail.com</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>+7(383) 383-38-38</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Новосибирск</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<a class="history-client__add-order" href="#">Создать заказ</a>
+												</div>
+											</li>
+											<li class="cart-list__item">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>Безупречный Святослав Владимирович</span>
+													<div class="client-info">
+														<div class="client-info__city">
+															Город: <span>Новосибирск, Россия</span>
+														</div>
+														<div class="client-info__reg">
+															Дата регистрации: <span>14.05.2016 12:23:13</span>
+														</div>
+														<div class="client-info__aut">
+															Последняя авторизация: <span>03.08.2016 11:37:00</span>
+														</div>
+														<div class="client-info-btns">
+															<a class="client-info-btns__btn" href="#">Изменить</a> 
+														</div>
+													</div>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Юр.лицо</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>naprimer@mail.com</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>+7(383) 383-38-38</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Новосибирск</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<a class="history-client__add-order" href="#">Создать заказ</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<button class="history-client__add-client">Добавить клиента</button>
+									
+<!--								</form>	-->
+							</div>
+							
+						</div>
+                        
+                    </div>
+                    
+                </div>
+				<div class="pagination-wrap pagination-wrap_offset">
+					<ul class="pagination">
+						<li class="prev">
+							<a class="ieb" href="#">&lt;</a>
+						</li>
+						<li><span>1</span></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li class="next">
+							<a class="ieb" href="#">&gt;</a>
+						</li>
+					</ul>
+				</div>		
+                
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
+
+        </div><!-- end wrapper -->
+
+
+        <footer id="footer">
+            <!-- input footer -->
+        </footer>	
+        
+<!--        <!-- соглашение -->
+       
+		<div id="condition" >
+			<div class="condition">
+				<h2 class="head-red">Условия заказа контактных запчастей</h2>
+
+				<div class="condition-text">
+					<ol class="list-num">
+						<li>Заказ вступает в силу с момента поступления 100% оплаты</li>
+						<li>Срок поставки на отрезные запчасти или запчасти из комплектов автоматически увеличивается на 1–2 дня</li>
+						<li>Гарантия:</li>
+						<li class="li-none">&mdash;&nbsp;На электронные запчасти, подушки безопасности и пиропатроны гарантия не распространяется и претензии не принимаются;</li>
+						<li class="li-none">&mdash;&nbsp;На агрегатные узлы (моторы, коробки передач, мосты и т.д.) даётся 14 календарных дней с момента прихода детали на наш склад. При вскрытии узлов гарантия аннулируется автоматически;</li>
+						<li class="li-none">&mdash;&nbsp;На оптические элементы (основные фары, фонари, поворотники, катафоты,  дополнительную оптику) гарантия распространяется только на целостность стёкол, оптических элементов и отражателей.</li>
+					</ol>
+
+					<p>При заказе кузовных деталей характер их целостности определяется только фотографиями детали и описанием детали, которые присутствуют на нашем сайте. За повреждения детали, которые не определены на фотографии, мы ответственности не несём.</p>	
+					<p>За применяемость детали к автомобилю клиента ответственность несет заказчик детали. Претензии по несовместимости не принимаются. Возврат деталей по вине клиента осуществляется с удержанием 30% от стоимости заказанных деталей. Уважаемые клиенты, не забывайте, что вы заказываете б/у детали, а не новые.</p>	
+				</div>       	
+
+				<div class="condition-bnt-wrap">				
+					<a href="#" class="condition__btn">Принять</a>
+					<a href="#" class="condition__btn modaal-close">Отктонить</a>
+
+				</div>
+			</div>
+    	</div>
+		<div id="overlay"></div>
+        
+        
+
+        <!-- javascript -->
+		<script src="libs/modaal/modaal.js"></script>		
+		<script src="libs/jQueryFormStyler/jquery.formstyler.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

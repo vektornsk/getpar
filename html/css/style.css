@@ -145,6 +145,15 @@ input[type="search"]::-webkit-search-decoration {
 #footer {
   height: 260px;
 }
+#overlay {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
 .container {
   width: 960px !important;
 }
@@ -3313,6 +3322,9 @@ h2 {
 .history-search__box:after {
   clear: both;
 }
+.history-search__box_mt {
+  margin-top: 35px;
+}
 .history-search__text {
   font-family: "NotoSans-Bold", sans-serif;
 }
@@ -3435,6 +3447,9 @@ div.history-search__text {
   cursor: pointer;
 }
 .history .histiry-order.order-adm:hover {
+  opacity: 1;
+}
+.history .histiry-order.history-client:hover {
   opacity: 1;
 }
 .history .histiry-order:hover {
@@ -3599,6 +3614,94 @@ div.history-search__text {
 .open-list {
   font-family: "NotoSans-Bold", sans-serif;
   display: table-row !important;
+}
+/* History-Client
+-----------------------------------*/
+.histiry-order.history-client .cart-list__elem_e1 {
+  width: 290px;
+  position: relative;
+}
+.histiry-order.history-client .cart-list__elem_e1 > span:hover {
+  text-decoration: underline;
+}
+.histiry-order.history-client .cart-list__elem_e2 {
+  width: 100px;
+}
+.histiry-order.history-client .cart-list__elem_e3 {
+  width: 150px;
+}
+.histiry-order.history-client .cart-list__elem_e4 {
+  width: 130px;
+}
+.histiry-order.history-client .cart-list__elem_e5 {
+  width: 130px;
+}
+.histiry-order.history-client .cart-list__elem_e6 {
+  width: 125px;
+}
+.history-client__add-order {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "NotoSans-Bold", sans-serif;
+  color: #1c1d1d;
+}
+.history-client__add-order:hover {
+  text-decoration: underline;
+}
+.history-client__add-client {
+  float: right;
+  width: 220px;
+  height: 58px;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  font-family: "Exo2-Medium", sans-serif;
+  text-align: center;
+  background: #1c1d1d;
+  border: none;
+}
+.history-client__add-client:hover {
+  background: #d81218;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.client-info {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  background: #fff;
+  border: 2px solid #1c1d1d;
+  z-index: 1001;
+  width: 300px;
+  text-align: left;
+  padding: 10px;
+  line-height: 24px;
+}
+.client-info span {
+  display: inline-block;
+  font-family: "NotoSans-Bold", sans-serif;
+}
+.client-info-btns {
+  padding-top: 10px;
+}
+.client-info-btns__btn {
+  display: block;
+  width: 100%;
+  height: 35px;
+  background: #1c1d1d;
+  border: none;
+  color: #fff;
+  font-family: "Exo2-Medium", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 5px;
+}
+.client-info-btns__btn:hover {
+  background: #d81218;
+  text-decoration: underline;
+  transition: all 0.3s;
 }
 /* Мои заказы */
 .order {
