@@ -376,5 +376,17 @@ setTimeout( function() {
 		
 		
 	});
+/* Комментарий Заказы
+----------------------*/
+	
+	$('.js-btn-add-comment-order').on('click', function(){
+		$(this).closest('span').next().show(300);
+	});
+	
+	$('.history-form-comment__link').on('click', function(e){
+		e.preventDefault();
+		$(document).find($('.history-form-comment-wrap')).hide(300);
+	});
+	
 	
 }, 3000);

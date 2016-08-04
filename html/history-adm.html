@@ -87,7 +87,7 @@
 										<option class="history-search__option" value="N">Принят</option>
 										<option class="history-search__option" value="Z">Получен ТК</option>
 										<option class="history-search__option" value="G">Отправлен в заказ</option>
-										<option class="history-search__option" value="P">В доставке</option>
+										<option class="history-search__option" value="P">В&nbsp;доставке</option>
 										<option class="history-search__option" value="F">Получен представителем</option>
 										<option class="history-search__option" value="H">Выдан</option>
 										<option class="history-search__option" value="J">Отказ</option>
@@ -230,7 +230,7 @@
 													<select class="history-search__select m0 w60">
 														<option class="history-search__option" value="">Принят</option>
 														<option class="history-search__option" value="N">Получен ТК</option>
-														<option class="history-search__option" value="N">В доставке</option>
+														<option class="history-search__option" value="N">В&nbsp;доставке</option>
 														<option class="history-search__option" value="N">Получен представителем</option>
 														<option class="history-search__option" value="N">Выдан</option>
 														<option class="history-search__option" value="N">Отказ</option>
@@ -251,7 +251,7 @@
 											</li>
 										</ul>
 									</div>
-									<div class="history-order__item">
+								<div class="history-order__item order-adm-item">
 										<ul class="cart-list">
 											<li class="cart-list__head">
 												<div class="cart-list__elem cart-list__elem_e1">
@@ -273,16 +273,25 @@
 													<span>Кол-во</span>
 												</div>
 												<div class="cart-list__elem cart-list__elem_e7">
-													<span>Цена (руб.)</span>
+													<span>Цена закупа (руб.)</span>
 												</div>
 												<div class="cart-list__elem cart-list__elem_e8">
-													<span>Сумма (руб.)</span>
+													<span>Цена продажи (руб.)</span>
 												</div>
 												<div class="cart-list__elem cart-list__elem_e9">
-													<span>Ожидаемая дата поставки</span>
+													<span>Сумма (руб.)</span>
 												</div>
 												<div class="cart-list__elem cart-list__elem_e10">
+													<span>Ожидаемая дата поставки</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e11">
+													<span>Поставщик</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e12">
 													<span>Статус</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e13">
+													<span>Написать</span>
 												</div>
 											</li>
 
@@ -316,58 +325,78 @@
 													<span>38 600</span>
 												</div>
 												<div class="cart-list__elem cart-list__elem_e9">
-													<span>07.07.2016</span>
+													<span>38 600</span>
 												</div>
 												<div class="cart-list__elem cart-list__elem_e10">
-													<span>Принят</span>
+													<input class="history-search__inp" type="text">
+													<img src="/images/icons/contacts/calendar.svg" alt="" class="history-search__icon">
+												</div>
+												<div class="cart-list__elem cart-list__elem_e11">
+													<span>ЕвроАвто</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e12">
+													<select class="history-search__select m0 w60">
+														<option class="history-search__option" value="">Принят</option>
+														<option class="history-search__option" value="">Ожидает оплаты</option>
+														<option class="history-search__option" value="">Оплачен</option>
+														<option class="history-search__option" value="">Закуплено</option>
+														<option class="history-search__option" value="">Отправлен на склад</option>
+														<option class="history-search__option" value="">В&nbsp;офисе</option>
+														<option class="history-search__option" value="">Выдано</option>
+														<option class="history-search__option" value="">Отказ</option>
+													</select>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e13">
+													<span><img src="#" alt="" class="js-btn-add-comment-order"></span>
+													<div class="history-form-comment-wrap">
+														<form action="">
+															<textarea class="history-form-comment__text" placeholder="Комментарий"></textarea>
+															<a class="history-form-comment__link" href="#">Отменить</a>
+															<input type="submit" class="history-form-comment__link history-form-comment__link_right" value="Сохранить">
+														</form>
+													</div>
 												</div>
 											</li>
 										</ul>
+										
 										<div class="history-more">
 											<div class="history-more__comment">Комментарий к заказу: <span>test Упаковать в Стрейч пленку/</span></div>
 											<div class="history-more__city">Город: <span>Россия, Новосибирская обл, Новосибирск</span></div>
-										</div>
+											<span class="history-search__text"><span>Адрес доставки:</span></span>
+											<textarea class="history-more__textarea"></textarea>
+											<span class="history-search__text">Транспортнаяя компания:</span>
+											<select class="history-search__select">
+												<option class="history-search__option" value="">-</option>
+												<option class="history-search__option" value="">Деловые линии</option>
+												<option class="history-search__option" value="">Ратек</option>
+												<option class="history-search__option" value="">Пэк</option>
+												<option class="history-search__option" value="">КиТ</option>
+												<option class="history-search__option" value="">Энергия</option>
+												<option class="history-search__option" value="">Байкал Сервис</option>
+												<option class="history-search__option" value="">Азимут</option>
+												<option class="history-search__option" value="">Экспресс Авто</option>
+												<option class="history-search__option" value="">АТА</option>
+												<option class="history-search__option" value="">Прочие</option>
+											</select>
+											<span class="history-search__text">№ накладной:</span>
+											<input class="history-search__inp" type="text" placeholder="">
+										</div>										
 										<div class="history-btn-wrap">
 											<a href="#" class="history-btn history-btn_close">Свернуть</a>
-											<a href="#" class="history-btn">Оплатить</a>
+											<a href="#" class="history-btn">Распечатать бланк</a>
 											<a href="#" class="history-btn">Респечатать чек</a>
+										</div>
+										<div class="history-btn-wrap">
+											<a href="#" class="history-btn history-btn_save">Сохранить</a>
 										</div>
 									</div>
 <!--								</form>	-->
 							</div>
 							<div class="history">
 								<!--								<form action="#" id="cart-form">-->
-								<div class="histiry-order">
+								<div class="histiry-order order-adm">
 									<ul class="cart-list">
-										<li class="cart-list__head">
-											<div class="cart-list__elem cart-list__elem_e1">
-												<span>Дата и время создания</span>
-											</div>
-											<div class="cart-list__elem cart-list__elem_e2">
-												<span>Дата и время обработки</span>
-											</div>
-											<div class="cart-list__elem cart-list__elem_e3">
-												<span>Номер</span>
-											</div>
-											<div class="cart-list__elem cart-list__elem_e4">
-												<span>Тип упаковки</span>
-											</div>
-											<div class="cart-list__elem cart-list__elem_e5">
-												<span>Способы оплаты</span>
-											</div>
-											<div class="cart-list__elem cart-list__elem_e6">
-												<span>Оплачен</span>
-											</div>
-											<div class="cart-list__elem cart-list__elem_e7">
-												<span>Цена доставки</span>
-											</div>
-											<div class="cart-list__elem cart-list__elem_e8">
-												<span>Сумма заказа (руб.)</span>
-											</div>
-											<div class="cart-list__elem cart-list__elem_e9">
-												<span>Итого (руб.)</span>
-											</div>
-										</li>
+										
 										<li class="cart-list__item">
 											<div class="cart-list__elem cart-list__elem_e1">
 												<span>28.06.2016 16:00:40</span>
@@ -377,29 +406,58 @@
 											</div>
 											<div class="cart-list__elem cart-list__elem_e3">
 												<span>127438</span>
+												<span class="open-list">Подробнее</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e4">
-												<span>Самовывоз</span>
+												<span>Леоненко Александр Иванович +7(982) 911-46-58</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e5">
-												<span>Наличными в офисе</span>
+												<span>Смирнов Роман</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e6">
-												<span>Оплачен</span>
+												<select class="history-search__select m0 w60">
+													<option class="history-search__option" value="">Самовывоз</option>
+													<option class="history-search__option" value="N">Транспортная Компания</option>
+												</select>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e7">
-												<span>Цену уточняйте у менеджера</span>
+												<select class="history-search__select m0 w60">
+													<option class="history-search__option" value="">PayKeeper</option>
+													<option class="history-search__option" value="N">Наличными в офисе</option>
+												</select>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e8">
-												<span>40 000</span>
+												<span>
+													<input type="checkbox" id="check1" class="cart-list__check">
+													<label for="check1" class="cart-list__check-label"></label>
+												</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e9">
-												<span>40 000</span>
+												<select class="history-search__select m0 w60">
+													<option class="history-search__option" value="">Принят</option>
+													<option class="history-search__option" value="N">Получен ТК</option>
+													<option class="history-search__option" value="N">В&nbsp;доставке</option>
+													<option class="history-search__option" value="N">Получен представителем</option>
+													<option class="history-search__option" value="N">Выдан</option>
+													<option class="history-search__option" value="N">Отказ</option>
+												</select>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e10">
+												<span>0</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e11">
+												<span>100 000</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e12">
+												<span>0</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e13">
+												<span>100 000</span>
 											</div>
 										</li>
 									</ul>
 								</div>
-								<div class="history-order__item">
+								<div class="history-order__item order-adm-item">
 									<ul class="cart-list">
 										<li class="cart-list__head">
 											<div class="cart-list__elem cart-list__elem_e1">
@@ -421,16 +479,25 @@
 												<span>Кол-во</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e7">
-												<span>Цена (руб.)</span>
+												<span>Цена закупа (руб.)</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e8">
-												<span>Сумма (руб.)</span>
+												<span>Цена продажи (руб.)</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e9">
-												<span>Ожидаемая дата поставки</span>
+												<span>Сумма (руб.)</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e10">
+												<span>Ожидаемая дата поставки</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e11">
+												<span>Поставщик</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e12">
 												<span>Статус</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e13">
+												<span>Написать</span>
 											</div>
 										</li>
 
@@ -464,25 +531,76 @@
 												<span>38 600</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e9">
-												<span>07.07.2016</span>
+												<span>38 600</span>
 											</div>
 											<div class="cart-list__elem cart-list__elem_e10">
-												<span>Принят</span>
+												<input class="history-search__inp" type="text">
+												<img src="/images/icons/contacts/calendar.svg" alt="" class="history-search__icon">
+											</div>
+											<div class="cart-list__elem cart-list__elem_e11">
+												<span>ЕвроАвто</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e12">
+												<select class="history-search__select m0 w60">
+													<option class="history-search__option" value="">Принят</option>
+													<option class="history-search__option" value="">Ожидает оплаты</option>
+													<option class="history-search__option" value="">Оплачен</option>
+													<option class="history-search__option" value="">Закуплено</option>
+													<option class="history-search__option" value="">Отправлен на склад</option>
+													<option class="history-search__option" value="">В&nbsp;офисе</option>
+													<option class="history-search__option" value="">Выдано</option>
+													<option class="history-search__option" value="">Отказ</option>
+												</select>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e13">
+												<span><img src="#" alt="" class="js-btn-add-comment-order"></span>
+												<div class="history-form-comment-wrap">
+													<form action="">
+														<textarea class="history-form-comment__text" placeholder="Комментарий"></textarea>
+														<a class="history-form-comment__link" href="#">Отменить</a>
+														<input type="submit" class="history-form-comment__link history-form-comment__link_right" value="Сохранить">
+													</form>
+												</div>
 											</div>
 										</li>
 									</ul>
+
 									<div class="history-more">
 										<div class="history-more__comment">Комментарий к заказу: <span>test Упаковать в Стрейч пленку/</span></div>
 										<div class="history-more__city">Город: <span>Россия, Новосибирская обл, Новосибирск</span></div>
-									</div>
+										<span class="history-search__text"><span>Адрес доставки:</span></span>
+										<textarea class="history-more__textarea"></textarea>
+										<span class="history-search__text">Транспортнаяя компания:</span>
+										<select class="history-search__select">
+											<option class="history-search__option" value="">-</option>
+											<option class="history-search__option" value="">Деловые линии</option>
+											<option class="history-search__option" value="">Ратек</option>
+											<option class="history-search__option" value="">Пэк</option>
+											<option class="history-search__option" value="">КиТ</option>
+											<option class="history-search__option" value="">Энергия</option>
+											<option class="history-search__option" value="">Байкал Сервис</option>
+											<option class="history-search__option" value="">Азимут</option>
+											<option class="history-search__option" value="">Экспресс Авто</option>
+											<option class="history-search__option" value="">АТА</option>
+											<option class="history-search__option" value="">Прочие</option>
+										</select>
+										<span class="history-search__text">№ накладной:</span>
+										<input class="history-search__inp" type="text" placeholder="">
+									</div>										
 									<div class="history-btn-wrap">
 										<a href="#" class="history-btn history-btn_close">Свернуть</a>
-										<a href="#" class="history-btn">Оплатить</a>
+										<a href="#" class="history-btn">Распечатать бланк</a>
 										<a href="#" class="history-btn">Респечатать чек</a>
+									</div>
+									<div class="history-btn-wrap">
+										<a href="#" class="history-btn history-btn_save">Сохранить</a>
 									</div>
 								</div>
 								<!--								</form>	-->
-							</div>	
+							</div>
+
+					
+							
 							
 							<div class="pagination-wrap pagination-wrap_offset">
 								<ul class="pagination">
