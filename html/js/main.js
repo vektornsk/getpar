@@ -298,6 +298,27 @@ setTimeout( function() {
 			$('.lk-sett').hide();
 		}
 	);
+	$('.lk__link_vgr').hover(
+		function() {
+			$('.lk-vgr').show(300);
+		}, function() {
+			$('.lk-vgr').hide();
+		}
+	);
+	$('.lk__link_vgr2').hover(
+		function() {
+			$('.lk-vgr2').show(300);
+		}, function() {
+			$('.lk-vgr2').hide();
+		}
+	);
+	$('.lk__link_otpr').hover(
+		function() {
+			$('.lk-otpr').show(300);
+		}, function() {
+			$('.lk-otpr').hide();
+		}
+	);
 	
 /*news-link*/
 	

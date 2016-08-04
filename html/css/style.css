@@ -4059,6 +4059,16 @@ div.history-search__text {
   width: 16px;
   height: 18px;
 }
+.lk__icon_vgr {
+  width: 18px;
+  height: 18px;
+  top: 4px;
+}
+.lk__icon_otpr {
+  width: 18px;
+  height: 18px;
+  top: 4px;
+}
 .lk__head {
   font-size: 18px;
   font-family: "NotoSans-Bold", sans-serif;
@@ -4067,7 +4077,10 @@ div.history-search__text {
 .lk-cart,
 .lk-car,
 .lk-sett,
-.lk-adm {
+.lk-adm,
+.lk-vgr,
+.lk-vgr2,
+.lk-otpr {
   display: none;
 }
 /* Новости */
