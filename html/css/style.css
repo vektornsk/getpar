@@ -3404,7 +3404,8 @@ div.history-search__text {
 /* select */
 .history-search .jq-selectbox__select,
 .order-adm .jq-selectbox__select,
-.order-adm-item .jq-selectbox__select {
+.order-adm-item .jq-selectbox__select,
+.contract-parts .jq-selectbox__select {
   margin-left: 10px;
   width: 235px;
   height: 35px;
@@ -3412,27 +3413,31 @@ div.history-search__text {
 }
 .history-search .jq-selectbox__select-text,
 .order-adm .jq-selectbox__select-text,
-.order-adm-item .jq-selectbox__select-text {
+.order-adm-item .jq-selectbox__select-text,
+.contract-parts .jq-selectbox__select-text {
   height: 31px;
   line-height: 31px;
   padding-left: 10px;
 }
 .history-search .jq-selectbox__trigger-arrow,
 .order-adm .jq-selectbox__trigger-arrow,
-.order-adm-item .jq-selectbox__trigger-arrow {
+.order-adm-item .jq-selectbox__trigger-arrow,
+.contract-parts .jq-selectbox__trigger-arrow {
   top: 12px;
   right: 10px;
   z-index: 1;
 }
 .history-search .jq-selectbox__dropdown,
 .order-adm .jq-selectbox__dropdown,
-.order-adm-item .jq-selectbox__dropdown {
+.order-adm-item .jq-selectbox__dropdown,
+.contract-parts .jq-selectbox__dropdown {
   width: 235px;
   margin-left: 10px;
 }
 .history-search .jq-selectbox__dropdown .history-search__option,
 .order-adm .jq-selectbox__dropdown .history-search__option,
-.order-adm-item .jq-selectbox__dropdown .history-search__option {
+.order-adm-item .jq-selectbox__dropdown .history-search__option,
+.contract-parts .jq-selectbox__dropdown .history-search__option {
   background: #d81218;
   color: #fff;
   padding: 5px 10px 5px;
@@ -3440,7 +3445,8 @@ div.history-search__text {
 }
 .history-search .jq-selectbox__dropdown .history-search__option:hover,
 .order-adm .jq-selectbox__dropdown .history-search__option:hover,
-.order-adm-item .jq-selectbox__dropdown .history-search__option:hover {
+.order-adm-item .jq-selectbox__dropdown .history-search__option:hover,
+.contract-parts .jq-selectbox__dropdown .history-search__option:hover {
   text-decoration: underline;
 }
 .history-search__select.m0 + .jq-selectbox__select {
@@ -3475,45 +3481,45 @@ div.history-search__text {
 .history .cart-list__item {
   padding: 5px;
 }
-.history .histiry-order {
+.history .history-order {
   font-size: 12px;
   line-height: 14px;
   cursor: pointer;
 }
-.history .histiry-order.order-adm:hover {
+.history .history-order.order-adm:hover {
   opacity: 1;
 }
-.history .histiry-order.history-client:hover {
+.history .history-order.history-client:hover {
   opacity: 1;
 }
-.history .histiry-order:hover {
+.history .history-order:hover {
   opacity: 0.9;
 }
-.history .histiry-order .cart-list__elem_e1 {
+.history .history-order .cart-list__elem_e1 {
   width: 100px;
 }
-.history .histiry-order .cart-list__elem_e2 {
+.history .history-order .cart-list__elem_e2 {
   width: 100px;
 }
-.history .histiry-order .cart-list__elem_e3 {
+.history .history-order .cart-list__elem_e3 {
   width: 80px;
 }
-.history .histiry-order .cart-list__elem_e4 {
+.history .history-order .cart-list__elem_e4 {
   width: 110px;
 }
-.history .histiry-order .cart-list__elem_e5 {
+.history .history-order .cart-list__elem_e5 {
   width: 120px;
 }
-.history .histiry-order .cart-list__elem_e6 {
+.history .history-order .cart-list__elem_e6 {
   width: 90px;
 }
-.history .histiry-order .cart-list__elem_e7 {
+.history .history-order .cart-list__elem_e7 {
   width: 120px;
 }
-.history .histiry-order .cart-list__elem_e8 {
+.history .history-order .cart-list__elem_e8 {
   width: 110px;
 }
-.history .histiry-order .cart-list__elem_e9 {
+.history .history-order .cart-list__elem_e9 {
   width: 90px;
 }
 .history .history-order__item {
@@ -3609,43 +3615,43 @@ div.history-search__text {
   transition: all 0.3s;
 }
 /*--- Заказ понели администратора ---*/
-.histiry-order.order-adm .cart-list__elem_e1 {
+.history-order.order-adm .cart-list__elem_e1 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e2 {
+.history-order.order-adm .cart-list__elem_e2 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e3 {
+.history-order.order-adm .cart-list__elem_e3 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e4 {
+.history-order.order-adm .cart-list__elem_e4 {
   width: 83px;
 }
-.histiry-order.order-adm .cart-list__elem_e5 {
+.history-order.order-adm .cart-list__elem_e5 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e6 {
+.history-order.order-adm .cart-list__elem_e6 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e7 {
+.history-order.order-adm .cart-list__elem_e7 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e8 {
+.history-order.order-adm .cart-list__elem_e8 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e9 {
+.history-order.order-adm .cart-list__elem_e9 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e10 {
+.history-order.order-adm .cart-list__elem_e10 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e11 {
+.history-order.order-adm .cart-list__elem_e11 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e12 {
+.history-order.order-adm .cart-list__elem_e12 {
   width: 70px;
 }
-.histiry-order.order-adm .cart-list__elem_e13 {
+.history-order.order-adm .cart-list__elem_e13 {
   width: 70px;
 }
 .history .history-order__item.order-adm-item .cart-list__elem_e1 {
@@ -3731,7 +3737,8 @@ div.history-search__text {
   top: 35px;
 }
 .order-adm .jq-selectbox:after,
-.order-adm-item .jq-selectbox:after {
+.order-adm-item .jq-selectbox:after,
+.contract-parts .jq-selectbox:after {
   content: '';
   height: 30px;
   width: 26px;
@@ -3798,26 +3805,26 @@ div.history-search__text {
 }
 /* History-Client
 -----------------------------------*/
-.histiry-order.history-client .cart-list__elem_e1 {
+.history-order.history-client .cart-list__elem_e1 {
   width: 290px;
   position: relative;
 }
-.histiry-order.history-client .cart-list__elem_e1 > span:hover {
+.history-order.history-client .cart-list__elem_e1 > span:hover {
   text-decoration: underline;
 }
-.histiry-order.history-client .cart-list__elem_e2 {
+.history-order.history-client .cart-list__elem_e2 {
   width: 100px;
 }
-.histiry-order.history-client .cart-list__elem_e3 {
+.history-order.history-client .cart-list__elem_e3 {
   width: 150px;
 }
-.histiry-order.history-client .cart-list__elem_e4 {
+.history-order.history-client .cart-list__elem_e4 {
   width: 130px;
 }
-.histiry-order.history-client .cart-list__elem_e5 {
+.history-order.history-client .cart-list__elem_e5 {
   width: 130px;
 }
-.histiry-order.history-client .cart-list__elem_e6 {
+.history-order.history-client .cart-list__elem_e6 {
   width: 125px;
 }
 .history-client__add-order {
@@ -3883,6 +3890,66 @@ div.history-search__text {
   background: #d81218;
   text-decoration: underline;
   transition: all 0.3s;
+}
+/* Контрактные запчасти
+===================================*/
+.history-order.contract-parts .cart-list__elem_e1 {
+  width: 70px;
+}
+.history-order.contract-parts .cart-list__elem_e2 {
+  width: 130px;
+}
+.history-order.contract-parts .cart-list__elem_e3 {
+  width: 80px;
+}
+.history-order.contract-parts .cart-list__elem_e4 {
+  width: 120px;
+}
+.history-order.contract-parts .cart-list__elem_e5 {
+  width: 90px;
+}
+.history-order.contract-parts .cart-list__elem_e6 {
+  width: 80px;
+}
+.history-order.contract-parts .cart-list__elem_e7 {
+  width: 70px;
+}
+.history-order.contract-parts .cart-list__elem_e8 {
+  width: 80px;
+}
+.history-order.contract-parts .cart-list__elem_e9 {
+  width: 80px;
+  padding-top: 10px;
+}
+.history-order.contract-parts .cart-list__elem_e10 {
+  width: 60px;
+}
+.history-order.contract-parts .cart-list__elem_e11 {
+  width: 60px;
+}
+.coneract-parts .jq-selectbox__dropdown {
+  top: 35px;
+}
+.delete,
+.stop,
+.write {
+  display: block;
+  margin-bottom: 10px;
+}
+.write {
+  margin-bottom: 0;
+}
+.delete > img {
+  width: 14px;
+  height: 14px;
+}
+.stop > img {
+  width: 10px;
+  height: 12px;
+}
+.write > img {
+  width: 14px;
+  height: 14px;
 }
 /* Мои заказы */
 .order {

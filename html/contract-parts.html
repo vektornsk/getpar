@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Контрактные запчасти</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+		<link rel="stylesheet" href="libs/modaal/modaal.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <header id="header">
+                <!-- input header.html -->
+            </header>
+
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Администрирование > Контрактные запчасти -->
+            </div>
+			<div class="container container_relativ">
+				<div class="balanse-wrap">				 
+					Ваш баланс: <span class="balanse">1000 руб.</span>
+				</div>
+			</div>
+
+            <section id="cart">
+
+				<div class="offset offset_min">
+
+                    <div class="container"> 
+                        <h1 class="head-h2"><span>Контрактные запчасти</span></h1>
+                        
+                    </div>
+                    
+                    <div class="container">
+						<form action="" id="history-search">
+							<div class="history-search">
+
+								<div class="history-search__inner">
+									<div class="history-search__text">Наименование:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="">Аккумулятор</option>
+										<option class="history-search__option" value="">Эмблема</option>
+									</select>
+								</div>
+								
+								<div class="history-search__inner">
+									<div class="history-search__text">Поставщик:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="">3139393</option>
+										<option class="history-search__option" value="">Автоклуб</option>
+									</select>
+								</div>
+
+								<div class="history-search__inner">
+									<div class="history-search__text">Категория наценки:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="">Двигатель</option>
+										<option class="history-search__option" value="">КПП</option>
+										<option class="history-search__option" value="">Кузовщина</option>
+										<option class="history-search__option" value="">Оптика</option>
+										<option class="history-search__option" value="">Подсветка</option>
+										<option class="history-search__option" value="">Рулевое управление</option>
+										<option class="history-search__option" value="">Система</option>
+									</select>
+								</div>
+								<div class="cf"></div>
+								<div class="history-search__inner">
+									<div class="history-search__text">Марка:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="">Honda</option>
+										<option class="history-search__option" value="">Mercedes-Benz</option>
+									</select>
+								</div>
+								<div class="history-search__inner">
+									<div class="history-search__text">Модель:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="">CR-v</option>
+										<option class="history-search__option" value="">C</option>
+									</select>
+								</div>
+								<div class="history-search__inner">
+									<div class="history-search__text">Офис:</div>
+									<select class="history-search__select m0">
+										<option class="history-search__option" value="">Все</option>
+										<option class="history-search__option" value="">Барнаул</option>
+										<option class="history-search__option" value="">Новосибирск</option>
+									</select>
+								</div>
+								<div class="cf"></div>
+
+								<div class="history-search__inner">
+									<span class="history-search__text">Цена: от</span>
+									<span class="history-search-inp-wrap">
+										<input class="history-search__inp" type="text" placeholder="руб.">
+									</span>
+
+									<span class="history-search__text">до</span>
+									<span class="history-search-inp-wrap">
+										<input class="history-search__inp" type="text" placeholder="руб.">
+									</span>
+
+								</div>								
+								<div class="history-search__inner history-search__box">
+									<input type="submit" name="filter" value="Показать" class="history-search__filter">
+									<input type="submit" name="del_filter" value="Сбросить" class="history-search__filter history-search__filter_del">
+								</div>
+
+							</div>
+						</form>
+                    	
+                    </div>
+                    
+                    
+                    <div class="container"> 
+                        
+						<div class="cart-wrap cart-user-wrap offset">
+							<div class="ajax-overlay hidden"></div>
+							<form action="#" id="cart-form">
+							
+								<!---->
+								
+								<div class="history">
+									<!--								<form action="#" id="cart-form">-->
+									<div class="history-order history-client contract-parts ">
+										<ul class="cart-list">
+											<li class="cart-list__head">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>Дата изменения</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Наименование Запчасти / Код</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>Марка</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>Модель</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>Примечание</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span>Наличие (склад)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<span>Фото</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>Цена (руб.)</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<span>Категория наценки</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e10">
+													<span>Действия</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e11">
+													<span>Прошел модерацию</span>
+												</div>
+											</li>
+											<li class="cart-list__item">
+												<div class="cart-list__elem cart-list__elem_e1">
+													<span>16.11.2015 16:01:19</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e2">
+													<span>Ручка двери передней наружная правая / GP-2032-1780558</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e3">
+													<span>Mazda</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e4">
+													<span>Forester (S12) 2008-2012</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e5">
+													<span>дверь голая</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e6">
+													<span>Новосибирск</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e7">
+													<span>
+														<a href="/images/parts/pic-1.jpg" class="cart-list__link" data-modaal-scope="modaal_14703736664199ae6a973aadc5">
+															<img src="/images/parts/pic-1.jpg" alt="" class="cart-list__img">
+														</a>											
+													</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e8">
+													<span>125 000</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e9">
+													<select class="history-search__select m0 w60">
+														<option class="history-search__option" value="">Двигатель</option>
+														<option class="history-search__option" value="">КПП</option>
+														<option class="history-search__option" value="">Кузовщина</option>
+														<option class="history-search__option" value="">Оптика</option>
+														<option class="history-search__option" value="">Подвеска</option>
+														<option class="history-search__option" value="">Рулевое управление</option>
+														<option class="history-search__option" value="">Система</option>
+														<option class="history-search__option" value="">Система</option>
+													</select>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e10">
+													<span>
+														<a pid="1553485" title="Удалить" href="#" class="delete"><img src="/images/icons/close.svg" alt=""></a>
+														<a pid="1553485" title="Приостановить показ в каталоге" href="#" class="stop"><img src="/images/icons/pause.svg" alt=""></a>
+														<a link="/personal/cparts/left/edit/" pid="1553485" title="Редактировать" href="#" class="write"><img src="/images/icons/pen.svg" alt=""></a>
+													</span>
+												</div>
+												<div class="cart-list__elem cart-list__elem_e11">
+													<span>
+														<input type="checkbox" id="check0" class="cart-list__check">
+														<label for="check0" class="cart-list__check-label cart-list__check-label_black"></label>
+													</span>
+												</div>
+											</li>
+											
+										</ul>
+									</div>
+									
+									<!--								</form>	-->
+								</div>
+								
+								<!---->
+								
+								<div class="pagination-wrap pagination-wrap_offset">
+									<ul class="pagination">
+										<li class="prev">
+											<a class="ieb" href="#">&lt;</a>
+										</li>
+										<li><span>1</span></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li class="next">
+											<a class="ieb" href="#">&gt;</a>
+										</li>
+									</ul>
+								</div>			
+
+							</form>							
+						</div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
+
+        </div><!-- end wrapper -->
+
+
+        <footer id="footer">
+            <!-- input footer -->
+        </footer>	
+         
+        
+        
+
+        <!-- javascript -->
+		<script src="libs/modaal/modaal.js"></script>
+		<script src="libs/jQueryFormStyler/jquery.formstyler.js"></script>		
+       
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
