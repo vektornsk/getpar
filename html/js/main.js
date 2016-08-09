@@ -223,7 +223,7 @@ setTimeout( function() {
 	
 /* history-order */	
 	
-	$('.histiry-order').on('click', function(e){
+	$('.history-order').on('click', function(e){
 		if($(this).hasClass('order-adm') || $(this).hasClass('history-client')){
 			return;
 		}

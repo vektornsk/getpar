@@ -2527,6 +2527,18 @@ h2 {
   left: 0;
   top: -3px;
 }
+/* Кнопка восстановить пароль
+=============================*/
+.login__restart {
+  text-align: center;
+}
+.login__restart-pass {
+  font-family: "NotoSans-Bold", sans-serif;
+  color: #1c1d1d;
+}
+.login__restart-pass:hover {
+  text-decoration: underline;
+}
 /*--- Востановление пароля ---*/
 .restore-wrap p {
   margin-top: 0;
