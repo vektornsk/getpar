@@ -1474,6 +1474,28 @@ h2 {
 .get_search_parts {
   display: none;
 }
+/* Лендинг
+-----------------------*/
+.tabl_lending {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabl_lending thead {
+  font-family: "NotoSans-Bold", sans-serif;
+}
+.tabl_lending tr {
+  border-bottom: 1px solid #1c1d1d;
+}
+.tabl_lending td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tabl_lending a {
+  color: #1c1d1d;
+}
+.tabl_lending a:hover {
+  text-decoration: underline;
+}
 /*---------------------------------------------- END_INDEX--------------------------------------------------*/
 /*--- Выбор производителя ---*/
 .brand {
