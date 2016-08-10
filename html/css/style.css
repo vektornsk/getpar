@@ -3985,6 +3985,36 @@ div.history-search__text {
   width: 14px;
   height: 14px;
 }
+/* Заказы обработка
+===============================*/
+.zakaz .brand-choose-link {
+  padding-bottom: 40px;
+}
+.zakaz .brand-choose-link__item {
+  width: 220px;
+}
+.zakaz .brand-choose-link__item a {
+  color: #fff;
+}
+.zakaz a {
+  font-family: "NotoSans-Bold", sans-serif;
+  color: #1c1d1d;
+}
+.zakaz a:hover {
+  text-decoration: underline;
+}
+.history-order.history-zakaz .cart-list__elem_e1 {
+  width: 250px;
+}
+.history-order.history-zakaz .cart-list__elem_e2 {
+  width: 200px;
+}
+.history-order.history-zakaz .cart-list__elem_e3 {
+  width: 300px;
+}
+.history-order.history-zakaz .cart-list__elem_e4 {
+  width: 150px;
+}
 /* Мои заказы */
 .order {
   zoom: 1;

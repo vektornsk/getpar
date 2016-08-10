@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Личный кабинет</title>
+        <title>Заказы</title>
         <meta name="description" content="">
         <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
@@ -58,45 +58,55 @@
 				</div>
 			</div>
 
-            <section id="text-block">
+            <section>
 
                 <div class="lk-wrap offset offset_min">
 
                     <div class="container"> 
-                        <h1 class="head-h2"><span>Личный кабинет</span></h1>
+                        <h1 class="head-h2"><span>Заказы</span></h1>
                     </div>
                     <div class="container"> 
                         
-                        <div class="text-content offset ">
+						<div class="text-content ">
                             
-                            <div class="lk">
-                                
-                                <div class="lk__left">
-									<a href="#" class="lk__link lk__link_h"><img class="lk__icon lk__icon_history" src="/images/icons/aytorization/history.svg" alt="">Мои заказы</a>
-									<a href="#" class="lk__link lk__link_ct"><img class="lk__icon lk__icon_cart" src="/images/icons/aytorization/cart.svg" alt="">Корзина</a>
-									<a href="#" class="lk__link lk__link_c"><img class="lk__icon lk__icon_car" src="/images/icons/aytorization/car.svg" alt="">Мои автомобили</a>
-									<a href="#" class="lk__link lk__link_s"><img class="lk__icon lk__icon_setting" src="/images/icons/aytorization/settings.svg" alt="">Настройки</a>
-                                </div>
-                                <div class="lk__right">
-									<div class="lk-history">
-										<div class="lk__head">Мои заказы</div>
-										<p class="lk__text">Настоящий раздел содержит информацию о вашей истории заказов, а также текущих заказах и заказах, находящихся в обработке.</p>
-									</div>
-									<div class="lk-cart">
-										<div class="lk__head">Моя корзина</div>
-										<p class="lk__text">Настоящий раздел содержит информацию о вашей истории заказов, а также текущих заказах и заказах, находящихся в обработке.</p>
-									</div>
-									<div class="lk-car">
-										<div class="lk__head">Мои автомобили</div>
-										<p class="lk__text">Настоящий раздел содержит информацию о вашей истории заказов, а также текущих заказах и заказах, находящихся в обработке.</p>
-									</div>
-									<div class="lk-sett">
-										<div class="lk__head">Мои настройки</div>
-										<p class="lk__text">Настоящий раздел содержит информацию о вашей истории заказов, а также текущих заказах и заказах, находящихся в обработке. Настоящий раздел содержит информацию о вашей истории заказов, а также текущих заказах и заказах, находящихся в обработке.</p>
-									</div>
-                                	
-                                </div>
-                                
+                            <div class="zakaz">
+								<ul class="brand-choose-link">
+									<li class="brand-choose-link__item">Все заказы</li>
+									<li class="brand-choose-link__item">Заказы в обработке</li>
+								</ul>
+								
+								<div class="history-order history-zakaz">
+									<ul class="cart-list">
+										<li class="cart-list__head">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>Дата и время создания</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>Номер заказа</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>Клиент</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span>Принять заказ</span>
+											</div>
+										</li>
+										<li class="cart-list__item">
+											<div class="cart-list__elem cart-list__elem_e1">
+												<span>21.09.2016</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e2">
+												<span>21098842</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e3">
+												<span>Смирнов Иван Олегович</span>
+											</div>
+											<div class="cart-list__elem cart-list__elem_e4">
+												<span><a href="#">Принять</a></span>
+											</div>
+										</li>
+									</ul>
+								</div>
                                 
                             </div>
                             
@@ -105,6 +115,20 @@
                     </div>
                     
                 </div>
+                
+				<div class="pagination-wrap pagination-wrap_offset">
+					<ul class="pagination">
+						<li class="prev">
+							<a class="ieb" href="#">&lt;</a>
+						</li>
+						<li><span>1</span></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li class="next">
+							<a class="ieb" href="#">&gt;</a>
+						</li>
+					</ul>
+				</div>
                 
             </section>
 
