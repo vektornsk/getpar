@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Личный кабинет</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- grid -->
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize-4.1.1.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv.js"></script>
+<script src="libs/respond-1.4.2.min.js"></script>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+
+        <!-- jquery -->
+        <script src="libs/jquery-2.1.3.min.js"></script>
+
+        <!-- input -->	
+        <script>
+            $(function(){
+                $("#header").load("template/header.html");
+                $("#footer").load("template/footer.html");
+                $("#bread-crumbs").load("template/bread-crumbs.html");
+                $("#form-call").load("template/form-call.html");
+            });
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <header id="header">
+                <!-- input header.html -->
+            </header>
+
+            <div id="bread-crumbs">
+                <!-- input bread-crumbs.html -->
+                <!-- Главная > Личный кабинет -->
+            </div>
+			<div class="container container_relativ">
+				<div class="balanse-wrap">				 
+					Ваш баланс: <span class="balanse">1000 руб.</span>
+				</div>
+			</div>
+
+            <section id="text-block">
+
+                <div class="lk-wrap offset offset_min">
+
+                    <div class="container"> 
+                        <h1 class="head-h2"><span>Админимтрирование</span></h1>
+                    </div>
+                    <div class="container"> 
+                        
+                        <div class="text-content offset ">
+                            
+                            <div class="lk">
+                                
+                                <div class="lk__left">
+									<a href="#" class="lk__link lk__link_h">Добавить накладную</a>
+									<a href="#" class="lk__link lk__link_ct">Посмотреть накладные</a>
+                                </div>
+                                <div class="lk__right">
+									<div class="lk-history">
+										<div class="lk__head">Добавить накладную</div>
+										<p class="lk__text">Добавления накладных для курьера</p>
+									</div>
+									<div class="lk-cart">
+										<div class="lk__head">Посмотреть накладные</div>
+										<p class="lk__text">Просмотреть состояние отправки запчастей</p>
+									</div>
+                                	
+                                </div>
+                                
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section id="form-call" class="offset">
+                <!-- input form-call.html -->
+            </section>
+
+        </div><!-- end wrapper -->
+
+
+        <footer id="footer">
+            <!-- input footer -->
+        </footer>	
+
+        <!-- javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
