@@ -1425,7 +1425,7 @@ h2 {
   display: inline-block;
   margin-left: 3px;
   margin-right: 3px;
-  width: 12px;
+  width: auto;
   text-align: center;
 }
 .pagination li span {
@@ -3818,7 +3818,7 @@ div.history-search__text {
 /* History-Client
 -----------------------------------*/
 .history-order.history-client .cart-list__elem_e1 {
-  width: 290px;
+  width: 280px;
   position: relative;
 }
 .history-order.history-client .cart-list__elem_e1 > span:hover {
@@ -3828,7 +3828,7 @@ div.history-search__text {
   width: 100px;
 }
 .history-order.history-client .cart-list__elem_e3 {
-  width: 150px;
+  width: 160px;
 }
 .history-order.history-client .cart-list__elem_e4 {
   width: 130px;
@@ -4221,4 +4221,86 @@ div.history-search__text {
 .news-card-content {
   padding-left: 270px;
   margin-bottom: 30px;
+}
+/* Добавление деталей */
+.add-parts .jq-selectbox__select {
+  width: 215px;
+}
+.add-parts__left {
+  float: left;
+  width: 460px;
+  margin-right: 20px;
+}
+.add-parts__left .input_text {
+  width: 100%;
+  height: 125px;
+  border: 2px solid #1c1d1d;
+  resize: none;
+  padding: 10px;
+  margin-bottom: 13px;
+}
+.add-parts__left .history-search__filter {
+  float: right;
+}
+.add-parts__right {
+  float: left;
+  width: 300px;
+}
+.add-parts__right .input_price {
+  width: 100%;
+  height: 35px;
+  border: 2px solid #1c1d1d;
+  padding-left: 10px;
+}
+.add-parts__btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.add-parts__btn a {
+  font-family: "NotoSans-Bold", sans-serif;
+  color: #1c1d1d;
+}
+.add-parts__btn a:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url(/images/icons/plus.svg);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.add-parts__btn a:hover {
+  text-decoration: underline;
+}
+.filewrap {
+  position: relative;
+  display: inline-block;
+  background: #d81218;
+  width: 140px;
+  height: 140px;
+  margin-right: 20px;
+  float: left;
+}
+.filewrap:after {
+  content: '';
+  width: 46px;
+  height: 42px;
+  position: absolute;
+  background: url(/images/icons/white_photo.svg) no-repeat;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.filewrap__add {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 140px;
+  height: 140px;
+  z-index: 2;
+  opacity: 0;
+  cursor: cell;
 }
