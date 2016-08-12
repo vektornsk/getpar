@@ -3650,10 +3650,10 @@ div.history-search__text {
 }
 /*--- Заказ понели администратора ---*/
 .history-order.order-adm .cart-list__elem_e1 {
-  width: 65px;
+  width: 62px;
 }
 .history-order.order-adm .cart-list__elem_e2 {
-  width: 65px;
+  width: 62px;
 }
 .history-order.order-adm .cart-list__elem_e3 {
   width: 70px;
@@ -3662,31 +3662,31 @@ div.history-search__text {
   width: 125px;
 }
 .history-order.order-adm .cart-list__elem_e5 {
-  width: 70px;
+  width: 112px;
 }
 .history-order.order-adm .cart-list__elem_e6 {
-  width: 70px;
+  width: 62px;
 }
 .history-order.order-adm .cart-list__elem_e7 {
-  width: 70px;
+  width: 62px;
 }
 .history-order.order-adm .cart-list__elem_e8 {
   width: 60px;
 }
 .history-order.order-adm .cart-list__elem_e9 {
-  width: 70px;
+  width: 60px;
 }
 .history-order.order-adm .cart-list__elem_e10 {
-  width: 62px;
+  width: 60px;
 }
 .history-order.order-adm .cart-list__elem_e11 {
-  width: 62px;
+  width: 60px;
 }
 .history-order.order-adm .cart-list__elem_e12 {
   width: 70px;
 }
 .history-order.order-adm .cart-list__elem_e13 {
-  width: 65px;
+  width: 60px;
 }
 .history .history-order__item.order-adm-item .cart-list__elem_e1 {
   width: 20px;
